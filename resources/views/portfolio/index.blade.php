@@ -962,7 +962,7 @@
                         <div class="cs_brands cs_style_1 cs_mr_30">
                             <div class="cs_brand overflow-hidden cs_radius_10 text-center">
                                 <div class="cs_brand_logo_wrap cs_center cs_brand_bg_4">
-                                    <img class="cs_brand_logo" src="assets/img/client/c4.svg" alt="">
+                                    <img class="cs_brand_logo" src="assets/img/client/Vostro_market.png" alt="">
                                 </div>
                                 <p class="m-0 cs_white_bg">Vostro Market</p>
                             </div>
