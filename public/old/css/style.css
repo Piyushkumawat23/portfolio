@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(11,17,32);
+    color: #ffffff;
+}
+
+header {
+    background-color: #007bff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #00d8ff;
+}
+
+.hero, .about, .projects, .contact {
+    padding: 40px;
+    text-align: center;
+}
+
+.hero h1, .about h2, .projects h2, .contact h2 {
+    font-size: 36px;
+    color: #007bff;
+}
+
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #00d8ff;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero-text p {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.hero-text input {
+    width: 70%;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.hero-text button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #00d8ff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Navbar Styles */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00d8ff !important;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+}
+
+.btn-subscribe {
+    background-color: #00d8ff;
+    color: #fff;
+    border: none;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
