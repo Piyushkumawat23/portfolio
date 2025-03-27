@@ -29,7 +29,7 @@
                             </p>
 
                             <div class="cs_social_btns d-flex">
-                                <a class="cs_accent_color_2" href="#">
+                                <a class="cs_accent_color_2" href="https://www.facebook.com/piyushkumawat23" target="_blank">
                                     <svg width="13" height="22" viewBox="0 0 13 22" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -38,7 +38,7 @@
                                             stroke-linejoin="round" />
                                     </svg>
                                 </a>
-                                <a class="cs_accent_color_2" href="#">
+                                <a class="cs_accent_color_2" href="https://github.com/Piyushkumawat23" target="_blank">
                                     <svg width="22" height="24" viewBox="0 0 22 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -49,7 +49,20 @@
                                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </a>
-                                <a class="cs_accent_color_2" href="#">
+
+                                <a class="cs_accent_color_2" href="https://www.instagram.com/piyushkumawat_23?utm_source=qr" target="_blank">
+                                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" 
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M7 2C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2H7Z" 
+                                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      <path d="M16.5 7.5H16.51" 
+                                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      <path d="M12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8Z" 
+                                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                              </a>
+                              
+                                {{-- <a class="cs_accent_color_2" href="#">
                                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -85,8 +98,8 @@
                                             stroke-linejoin="round" />
                                     </svg>
 
-                                </a>
-                                <a class="cs_accent_color_2" href="#">
+                                </a> --}}
+                                <a class="cs_accent_color_2" href="https://linkedin.com/in/piyush-kumawat-3aaa34227" target="_blank">
                                     <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -102,7 +115,7 @@
                                     </svg>
 
                                 </a>
-                                <a class="cs_accent_color_2" href="#">
+                                <a class="cs_accent_color_2" href="https://mail.google.com/mail/?view=cm&to=piyushkumawat90607@gmail.com" target="_blank">
                                     <svg width="22" height="18" viewBox="0 0 22 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -114,7 +127,7 @@
                                     </svg>
 
                                 </a>
-                                <a class="cs_accent_color_2" href="#">
+                                <a class="cs_accent_color_2" href="https://www.youtube.com/@piyushkumawat9203" target="_blank">
                                     <svg width="25" height="18" viewBox="0 0 25 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
