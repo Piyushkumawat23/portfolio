@@ -955,13 +955,13 @@
                             </div>
                             <div class="cs_brand overflow-hidden cs_radius_10 text-center">
                                 <div class="cs_brand_logo_wrap cs_center cs_brand_bg_5">
-                                    <img class="cs_brand_logo" src="assets/img/client/c5.svg" alt="">
+                                    <img class="cs_brand_logo" src="assets/img/client/Matrimony.png" alt="">
                                 </div>
                                 <p class="m-0 cs_white_bg">Matrimonial Portal</p>
                             </div>
                             <div class="cs_brand overflow-hidden cs_radius_10 text-center">
                                 <div class="cs_brand_logo_wrap cs_center cs_brand_bg_6">
-                                    <img class="cs_brand_logo" src="assets/img/client/c6.svg" alt="">
+                                    <img class="cs_brand_logo" src="assets/img/client/E-Commercepng.png" alt="">
                                 </div>
                                 <p class="m-0 cs_white_bg">Custom E-Commerce</p>
                             </div>
