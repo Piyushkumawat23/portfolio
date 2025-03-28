@@ -57,7 +57,7 @@
                         </a>
                     </li>
                     <li class="nav-item d-none d-md-block">
-                        <a href="{{ route('index') }}" target="_blank" class="nav-link">Browse Website</a>
+                        <a href="{{ route('index')}}" target="_blank" class="nav-link">Browse Website</a>
 
                     </li>
                     <li class="nav-item d-none d-md-block"><a href="#" class="nav-link">Home</a></li>
@@ -256,11 +256,11 @@
                     <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu"
                         data-accordion="false">
                         <li class="nav-item menu-open">
-                            <a href="#" class="nav-link">
+                            <a href="#" class="nav-link active">
                                 <i class="nav-icon bi bi-speedometer"></i>
                                 <p>
                                     Dashboard
-                                    <i class="nav-arrow bi bi-chevron-right"></i>
+                                    {{-- <i class="nav-arrow bi bi-chevron-right"></i> --}}
                                 </p>
                             </a>
                         </li>
@@ -274,14 +274,47 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="{{ route('contact') }}" class="nav-link">
+                                    <a href="{{ route('admin.contact') }}" class="nav-link">
                                         <i class="nav-icon bi bi-circle"></i>
                                         <p>Contact Tables</p>
                                     </a>
                                 </li>
                             </ul>
                         </li>
-                        
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon bi bi-menu-button-wide"></i>
+                                <p>
+                                    FAQ
+                                    <i class="nav-arrow bi bi-chevron-right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="{{ route('admin.faq') }}" class="nav-link">
+                                        <i class="nav-icon bi bi-circle"></i>
+                                        <p>FAQ Tables</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon bi bi-menu-button-wide"></i>
+                                <p>
+                                    projects
+                                    <i class="nav-arrow bi bi-chevron-right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="{{ route('admin.projects.index') }}" class="nav-link">
+                                        <i class="nav-icon bi bi-circle"></i>
+                                        <p>project view</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon bi bi-menu-button-wide"></i>
@@ -581,7 +614,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./docs/faq.html" class="nav-link">
+                                    <a href="{{ route('docs.faq') }}" class="nav-link">
                                         <i class="nav-icon bi bi-question-circle-fill"></i>
                                         <p>FAQ</p>
                                     </a>

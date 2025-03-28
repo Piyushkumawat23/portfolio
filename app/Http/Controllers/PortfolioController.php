@@ -3,22 +3,23 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Project;
+use App\Models\Portfolio;
 
 class PortfolioController extends Controller
 {
+
     public function index()
     {
-        return view('portfolio.index');
+        return view('portfolio.index'); // Ensure you have a corresponding view file
     }
 
+    
     public function about()
     {
         return view('portfolio.about');
     }
-    public function portfolio()
-    {
-        return view('portfolio.portfolio');
-    }
+
     public function portfolio_details()
     {
         return view('portfolio.portfolio-details');

@@ -49,5 +49,6 @@ class PageController extends Controller
         $contacts = Contact::paginate(10); // Fetches 10 contacts per page
         return view('admin.contacts.index', compact('contacts'));
     }
+  
     
 }

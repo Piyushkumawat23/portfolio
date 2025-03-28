@@ -1,41 +1,3 @@
-{{-- <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-
-        <title>{{ config('app.name', 'Laravel') }}</title>
-
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
-
-        <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
-    </head>
-    <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
-            @include('layouts.navigation')
-
-            <!-- Page Heading -->
-            @isset($header)
-                <header class="bg-white dark:bg-gray-800 shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
-                    </div>
-                </header>
-            @endisset
-
-            <!-- Page Content -->
-            <main>
-                {{ $slot }}
-            </main>
-        </div>
-    </body>
-</html> --}}
-
-
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
@@ -46,15 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Laralink">
     <!-- Favicon Icon -->
-    <link rel="icon" href="assets/img/favicon.png">
+    <link rel="icon" href="{{ asset('assets/img/favicon.png') }}">
+
     <!-- Site Title -->
-    <title>Piyush - </title>
-    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/fontawesome.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/odometer-theme-default.css">
-    <link rel="stylesheet" href="assets/css/plugins/select2.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/animate.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    {{-- <title>Piyush - </title> --}}
+    <title>Piyush - {{ ucfirst(request()->route()->getName()) }}</title>
+
+    <link rel="stylesheet" href="{{ asset('assets/css/plugins/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/plugins/fontawesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/plugins/odometer-theme-default.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/plugins/select2.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/plugins/animate.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+
 </head>
 
 <body>
@@ -67,14 +33,15 @@
             <div class="container">
                 <div class="cs_main_header_in">
                     <div class="cs_main_header_left">
-                        <a class="cs_site_branding" href="index">
-              <img src="assets/img/logo.png" alt="Logo">
-            </a>
+                        <a class="cs_site_branding" href="{{ url('/') }}">
+                            <img src="{{ asset('assets/img/logo.png') }}" alt="Logo">
+                        </a>
+                        
                     </div>
                     <div class="cs_main_header_center">
                         <div class="cs_nav">
                             <ul class="cs_nav_list">
-                                <li class="menu-item-has-children"><a href="index">Home</a>
+                                <li class="menu-item-has-children"><a href="{{ url('/') }}">Home</a>
                                     {{-- <ul>
                                         <li><a href="index.html">Designer Landing</a></li>
                                         <li><a href="home-v2.html">Developer Landing</a></li>
@@ -129,9 +96,12 @@
     <!-- Main content inside end-->
 
   <!-- Start Footer -->
-  <footer class="cs_footer cs_style_1 cs_filled_bg position-relative" data-src="assets/img/bg/footer_bg.svg">
+  <footer class="cs_footer cs_style_1 cs_filled_bg position-relative" 
+    data-src="{{ asset('assets/img/bg/footer_bg.svg') }}">
+
     <div class="position-absolute cs_footer_shape_1">
-      <img src="assets/img/footer_shape.svg" alt="">
+        <img src="{{ asset('assets/img/footer_shape.svg') }}" alt="">
+
     </div>
     <div class="container">
       <div class="cs_footer_cta">
@@ -146,11 +116,12 @@
   <!-- End Footer -->
 
   <!-- Script -->
-  <script src="assets/js/plugins/jquery-3.6.0.min.js"></script>
-  <script src="assets/js/plugins/gsap.min.js"></script>
-  <script src="assets/js/plugins/isotope.pkg.min.js"></script>
-  <script src="assets/js/plugins/odometer.min.js"></script>
-  <script src="assets/js/plugins/wow.min.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="{{ asset('assets/js/plugins/jquery-3.6.0.min.js') }}"></script>
+  <script src="{{ asset('assets/js/plugins/gsap.min.js') }}"></script>
+  <script src="{{ asset('assets/js/plugins/isotope.pkg.min.js') }}"></script>
+  <script src="{{ asset('assets/js/plugins/odometer.min.js') }}"></script>
+  <script src="{{ asset('assets/js/plugins/wow.min.js') }}"></script>
+  <script src="{{ asset('assets/js/main.js') }}"></script>
+  
 </body>
 </html>

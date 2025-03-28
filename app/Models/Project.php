@@ -9,7 +9,11 @@ class Project extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'description', 'image_url'];
+    protected $fillable = ['title', 'description', 'image', 'link'];
 
-    // You can add any relationships here if needed
+    public function images() {
+        return $this->hasMany(ProjectImage::class, 'project_id');
+    }
+    
 }
+

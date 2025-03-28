@@ -6,6 +6,8 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\FAQController;
+use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Auth;
 
 
@@ -15,16 +17,25 @@ use Illuminate\Support\Facades\Auth;
 Route::get('/', [PortfolioController::class, 'index'])->name('index');
 Route::get('/index', [PortfolioController::class, 'index']);
 Route::get('/about', [PortfolioController::class, 'about']);
-Route::get('/portfolio', [PortfolioController::class, 'portfolio']);
+
+Route::get('/portfolio', [ProjectController::class, 'portfolioIndex'])->name('portfolio.index');
+
+Route::get('/portfolio/{id}', [ProjectController::class, 'show'])->name('portfolio.details');
+
 Route::get('/portfolio-details', [PortfolioController::class, 'portfolio_details']);
+
 Route::get('/projects', [PortfolioController::class, 'projects']);
 Route::get('/testimonial', [PortfolioController::class, 'testimonial']);
 Route::get('/faq', [PortfolioController::class, 'faq']);
 Route::get('/error', [PortfolioController::class, 'error']);
 Route::get('/blog', [PortfolioController::class, 'blog']);
 Route::get('/blog-details', [PortfolioController::class, 'blog_details']);
-Route::get('/contact', [PortfolioController::class, 'contact']);
+// Route::get('/contact', [PortfolioController::class, 'contact']);
+Route::get('/contact', [PortfolioController::class, 'contact'])->name('contact');
 Route::post('/contact-us', [ContactController::class, 'store'])->name('contact.store');
+
+Route::post('/faq/store', [FAQController::class, 'store'])->name('faq.store');
+
 
 // Dashboard Route
 Route::get('/dashboard', function () {
@@ -73,10 +84,19 @@ Route::get('/docs/license', [PageController::class, 'license'])->name('docs.lice
 
 
 
-Route::get('/contact', [PageController::class, 'contact'])->name('contact');
+Route::get('/admin/contact', [PageController::class, 'contact'])->name('admin.contact');
 Route::get('/admin/contacts', [ContactController::class, 'index'])->name('admin.contacts');
 
+Route::get('/admin/faq', [FAQController::class, 'index'])->name('admin.faq');
 
+Route::resource('/projects', ProjectController::class)->names([
+    'index' => 'admin.projects.index',
+    'create' => 'admin.projects.create',
+    'store' => 'admin.projects.store',
+    'edit' => 'admin.projects.edit',
+    'update' => 'admin.projects.update',
+    'destroy' => 'admin.projects.destroy',
+]);
 
 });
 

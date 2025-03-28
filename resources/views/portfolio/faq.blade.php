@@ -3,6 +3,11 @@
 @section('content')
 
   <!-- End Header Section -->
+  @if(session('success'))
+  <div class="alert alert-success">
+      {{ session('success') }}
+  </div>
+@endif
 
   <!-- Main content inside start-->
   <main>
@@ -28,17 +33,18 @@
               <div class="cs_height_40 cs_height_lg_40"></div>
             </div>
             <div class="cs_form cs_style_1 cs_white_bg cs_radius_10">
-              <form action="https://-html.vercel.app/post">
+              <form action="{{ route('faq.store') }}" method="POST">
+                @csrf
                 <h4 class="cs_form_title cs_font_24 cs_semi_bold">Leave your question</h4>
                 <div class="row">
                   <div class="col-lg-6">
-                    <input class="form-control" type="text" placeholder="Name" required>
+                    <input class="form-control" type="text"  name="name" placeholder="Name" required>
                   </div>
                   <div class="col-lg-6">
-                    <input class="form-control" type="text" placeholder="Email" required>
+                    <input class="form-control" type="text" name="email" placeholder="Email" required>
                   </div>
                   <div class="col-lg-12">
-                    <textarea class="form-control" placeholder="Your message" required></textarea>
+                    <textarea class="form-control" name="message" placeholder="Your message" required></textarea>
                   </div>
                 </div>
                 <button type="submit" class="cs_btn cs_style_1 cs_primary_font"><span>Ask Me</span></button>

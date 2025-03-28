@@ -79,7 +79,7 @@
                                 <div class="cs_iconbox_info">
                                     <h4 class="cs_iconbox_title cs_font_24 cs_semi_bold">Email Me Directly</h4>
                                     <p class="cs_iconbox_text">Have a project in mind? Let's discuss how I can help!</p>
-                                    <a href="mailto:piyushkumawat90607@gmail.com?subject=Project Inquiry&body=Hi, I would like to discuss a project with you."
+                                    <a href="https://mail.google.com/mail/?view=cm&to=piyushkumawat90607@gmail.com?subject=Project Inquiry&body=Hi, I would like to discuss a project with you."
                                         class="cs_accent_color_2 cs_accent_color_hover cs_text_btn">
                                         Send an Email
                                     </a>

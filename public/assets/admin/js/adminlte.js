@@ -372,6 +372,29 @@
         });
     });
 
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const currentUrl = window.location.href; // Current Page URL
+        const navLinks = document.querySelectorAll(".nav-link"); // Get all menu links
+    
+        navLinks.forEach(link => {
+            if (link.href === currentUrl) {
+                link.classList.add("active"); // Add Active Class
+                let parentItem = link.closest(".nav-item"); // Find Parent Item
+                
+                if (parentItem) {
+                    parentItem.classList.add("menu-open"); // Open Parent Menu
+                }
+    
+                let parentTreeView = link.closest(".nav-treeview"); // Find Parent Tree
+                if (parentTreeView) {
+                    parentTreeView.style.display = "block"; // Show Submenu
+                }
+            }
+        });
+    });
+    
     /**
      * --------------------------------------------
      * @file AdminLTE direct-chat.ts

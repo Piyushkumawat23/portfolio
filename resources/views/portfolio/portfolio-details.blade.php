@@ -7,11 +7,14 @@
     <!-- Main content inside start-->
     <main>
         <!-- Start Hero Section -->
-        <section class="cs_hero cs_style_3 cs_type_2 cs_filled_bg  text-center" data-src="assets/img/bg/hero_bg_5.svg">
+                    <section class="cs_hero cs_style_3 cs_type_2 cs_filled_bg  text-center"
+                        data-src="{{ asset('assets/img/bg/hero_bg_5.svg') }}">
+                    
+
             <div class="container">
                 <div class="cs_height_150 cs_height_lg_150"></div>
                 <div class="cs_height_60 cs_height_lg_30"></div>
-                <h1 class="cs_hero_title cs_font_92 cs_extra_bold wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"><span class="cs_gradient_text_2">First project</span></h1>
+                <h1 class="cs_hero_title cs_font_92 cs_extra_bold wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"><span class="cs_gradient_text_2">{{ $project->title }}</span></h1>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index">Home</a></li>
                     <li class="breadcrumb-item active">Portfolio Details</li>
@@ -23,7 +26,7 @@
         <!--Start imagebox Section-->
         <div class="container">
             <div class="cs_image_box cs_style_5 cs_radius_15">
-                <img class="cs_radius_10 w-100" src="assets/img/portfolio/pd.jpg" alt="project-details">
+                <img class="cs_radius_10 w-100" src="{{ asset($project->images->first()->image_url) }}" alt="project-details">
             </div>
             <div class="cs_height_45 cs_height_lg_30"></div>
         </div>
@@ -82,7 +85,8 @@
                                         <p class="m-0">Envato Elements</p>
                                     </div>
                                 </div>
-                                <img class="cs_protfolio_image w-100 cs_radius_10" src="assets/img/portfolio/pd2.jpg" alt="">
+                                <img class="cs_protfolio_image w-100 cs_radius_10" src="{{ asset('assets/img/portfolio/pd2.jpg') }}" alt="">
+
                                 <p class="cs_portfolio_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
                                 <p class="cs_portfolio_text">
                                     Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis
@@ -102,17 +106,6 @@
     <!-- Main content inside end-->
 
     <!-- Start Footer -->
-    <footer class="cs_footer cs_style_1 cs_filled_bg position-relative" data-src="assets/img/bg/footer_bg.svg">
-        <div class="position-absolute cs_footer_shape_1">
-            <img src="assets/img/footer_shape.svg" alt="">
-        </div>
-        <div class="container">
-            <div class="cs_footer_cta">
-                <h2 class="cs_font_92 cs_gradient_text_2 cs_semi_bold">Have a project?</h2>
-                <a href="portfolio" class="cs_btn cs_style_1 cs_primary_font"><span>Let's Talk</span></a>
-            </div>
-            <div class="cs_copyright">© 2023 <a href="#">Laralink</a>. All rights reserved</div>
-        </div>
-    </footer>
+    
     <!-- End Footer -->
     @endsection
