@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Contact;
 
 class PageController extends Controller
 {
@@ -41,4 +42,12 @@ class PageController extends Controller
     public function howToContribute() { return view('admin.pages.docs.how-to-contribute'); }
     public function faq() { return view('admin.pages.docs.faq'); }
     public function license() { return view('admin.pages.docs.license'); }
+
+
+
+    public function contact() { 
+        $contacts = Contact::paginate(10); // Fetches 10 contacts per page
+        return view('admin.contacts.index', compact('contacts'));
+    }
+    
 }

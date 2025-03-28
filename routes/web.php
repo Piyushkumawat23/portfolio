@@ -5,13 +5,14 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Auth;
 
 
 
 // Portfolio Routes
-Route::get('/', [PortfolioController::class, 'index']);
+
+Route::get('/', [PortfolioController::class, 'index'])->name('index');
 Route::get('/index', [PortfolioController::class, 'index']);
 Route::get('/about', [PortfolioController::class, 'about']);
 Route::get('/portfolio', [PortfolioController::class, 'portfolio']);
@@ -23,6 +24,7 @@ Route::get('/error', [PortfolioController::class, 'error']);
 Route::get('/blog', [PortfolioController::class, 'blog']);
 Route::get('/blog-details', [PortfolioController::class, 'blog_details']);
 Route::get('/contact', [PortfolioController::class, 'contact']);
+Route::post('/contact-us', [ContactController::class, 'store'])->name('contact.store');
 
 // Dashboard Route
 Route::get('/dashboard', function () {
@@ -68,6 +70,14 @@ Route::get('/docs/browser-support', [PageController::class, 'browserSupport'])->
 Route::get('/docs/how-to-contribute', [PageController::class, 'howToContribute'])->name('docs.how-to-contribute');
 Route::get('/docs/faq', [PageController::class, 'faq'])->name('docs.faq');
 Route::get('/docs/license', [PageController::class, 'license'])->name('docs.license');
+
+
+
+Route::get('/contact', [PageController::class, 'contact'])->name('contact');
+Route::get('/admin/contacts', [ContactController::class, 'index'])->name('admin.contacts');
+
+
+
 });
 
 
