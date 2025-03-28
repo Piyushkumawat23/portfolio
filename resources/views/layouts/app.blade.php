@@ -47,37 +47,37 @@
                                         <li><a href="home-v2.html">Developer Landing</a></li>
                                     </ul> --}}
                                 </li>
-                                <li class="menu-item-has-children"><a href="about">About</a>
+                                <li class="menu-item-has-children"><a href="{{ url('/about') }}">About</a>
                                     {{-- <ul>
                                         <li><a href="about.html">Designer About</a></li>
                                         <li><a href="about-v2.html">Developer About</a></li>
                                     </ul> --}}
                                 </li>
-                                <li class="menu-item-has-children"><a href="portfolio">Portfolio</a>
+                                <li class="menu-item-has-children"><a href="{{ url('/portfolio') }}">Portfolio</a>
+                                    {{-- <ul>
+                                        <li><a href="{{ url('/portfolio') }}">Portfolio</a></li>
+                                        <li><a href="{{ url('/portfolio-details') }}">Portfolio Details</a></li>
+                                    </ul> --}}
+                                </li>
+                                <li class="menu-item-has-children"><a href="{{ url('/testimonial') }}">Pages</a>
                                     <ul>
-                                        <li><a href="portfolio">Portfolio</a></li>
-                                        <li><a href="portfolio-details">Portfolio Details</a></li>
+                                        <li><a href="{{ url('/testimonial') }}">Testimonial</a></li>
+                                        <li><a href="{{ url('/faq') }}">FAQ</a></li>
+                                        <li><a href="{{ url('/error') }}">Error 404</a></li>
                                     </ul>
                                 </li>
-                                <li class="menu-item-has-children"><a href="">Pages</a>
+                                <li class="menu-item-has-children"><a href="{{ url('/blog') }}">Blog</a>
                                     <ul>
-                                        <li><a href="testimonial">Testimonial</a></li>
-                                        <li><a href="faq">FAQ</a></li>
-                                        <li><a href="error">Error 404</a></li>
+                                        <li><a href="{{ url('/blog') }}">Blog</a></li>
+                                        <li><a href="{{ url('/blog-details') }}">Blog Details</a></li>
                                     </ul>
                                 </li>
-                                <li class="menu-item-has-children"><a href="">Blog</a>
-                                    <ul>
-                                        <li><a href="blog">Blog</a></li>
-                                        <li><a href="blog-details">Blog Details</a></li>
-                                    </ul>
-                                </li>
-                                <li> <a href="contact">Contact</a></li>
+                                <li> <a href="{{ url('/contact') }}">Contact</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="cs_main_header_right">
-                        <a href="contact" class="cs_btn cs_style_1 cs_primary_font"><span>Hire Me</span></a>
+                        <a href="{{ url('/contact') }}" class="cs_btn cs_style_1 cs_primary_font"><span>Hire Me</span></a>
                     </div>
                 </div>
             </div>
@@ -106,7 +106,7 @@
     <div class="container">
       <div class="cs_footer_cta">
         <h2 class="cs_font_92 cs_gradient_text_2 cs_semi_bold">Have a project?</h2>
-        <a href="contact" class="cs_btn cs_style_1 cs_primary_font"><span>Let’s
+        <a href="{{ url('/contact') }}" class="cs_btn cs_style_1 cs_primary_font"><span>Let’s
             Talk</span></a>
       </div>
       <div class="cs_copyright">© 2025 <a href="mailto:piyushkumawat90607@gmail.com">Piyush Kumawat</a>. All rights reserved.</div>
