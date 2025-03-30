@@ -17,7 +17,7 @@
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Title</th>
+                                <th>Name</th>
                                 <th>Description</th>
                                 <th>Image</th>
                                 <th>Actions</th>
@@ -29,10 +29,12 @@
                                     <td>{{ $key + 1 }}</td>
                                     <td>{{ $project->name }}</td>
                                     <td>{{ $project->description }}</td>
-                                    <td> @foreach($project->images as $image)
-                                        <img src="{{ asset($image->image_url) }}" width="100">
-
-                                    @endforeach</td>
+                                    <td>
+                                        @foreach($project->images->where('image_type', 'banner') as $image)
+                                            <img src="{{ asset('assets/img/portfolio/' . $image->image_url) }}" width="100">
+                                        @endforeach
+                                    </td>
+                                    
                                     <td>
                                         <a href="{{ route('admin.projects.edit', $project->id) }}" class="btn btn-warning">Edit</a>
                                         <form action="{{ route('admin.projects.destroy', $project->id) }}" method="POST" style="display:inline;">
@@ -45,7 +47,11 @@
                             @endforeach
                         </tbody>
                     </table>
-                    {{-- {{ $projects->links() }} --}}
+                    <div class="card-footer clearfix">
+                        <ul class="pagination pagination-sm m-0 float-end">
+                            {{ $projects->links('vendor.pagination.bootstrap-4') }}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

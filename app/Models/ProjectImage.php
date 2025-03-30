@@ -9,7 +9,7 @@ class ProjectImage extends Model {
 
     protected $table = 'project_images';
 
-    protected $fillable = ['project_id', 'file_name'];
+    protected $fillable = ['project_id', 'image_url' ,'image_type'];
 
     public function project() {
         return $this->belongsTo(Project::class, 'project_id');

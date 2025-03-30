@@ -22,7 +22,7 @@ Route::get('/portfolio', [ProjectController::class, 'portfolioIndex'])->name('po
 
 Route::get('/portfolio/{id}', [ProjectController::class, 'show'])->name('portfolio.details');
 
-Route::get('/portfolio-details', [PortfolioController::class, 'portfolio_details']);
+// Route::get('/portfolio-details', [PortfolioController::class, 'portfolio_details']);
 
 Route::get('/projects', [PortfolioController::class, 'projects']);
 Route::get('/testimonial', [PortfolioController::class, 'testimonial']);
@@ -44,6 +44,7 @@ Route::get('/dashboard', function () {
 
 // Admin Routes (Only for Authenticated Users)
 Route::middleware(['auth', 'verified'])->group(function () {
+    
     Route::get('/admin', [AdminController::class, 'index'])->name('admin.dashboard');
 // Define routes for all other pages
 Route::get('/generate/theme', [PageController::class, 'theme'])->name('generate.theme');
@@ -97,6 +98,9 @@ Route::resource('/projects', ProjectController::class)->names([
     'update' => 'admin.projects.update',
     'destroy' => 'admin.projects.destroy',
 ]);
+Route::delete('/admin/projects/remove-image/{id}', [ProjectController::class, 'removeImage'])->name('admin.projects.removeImage');
+
+
 
 });
 

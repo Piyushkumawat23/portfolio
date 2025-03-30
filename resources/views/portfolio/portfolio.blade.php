@@ -43,8 +43,13 @@
                             <a href="{{ route('portfolio.details', $project->id) }}" class="cs_portfolio cs_style_1">
 
                                 <div class="cs_portfolio_thumbnail">
-                                    <img class="cs_zoom_in w-100" src="{{ asset($project->images->first()->image_url) }}" alt="{{ $project->title }}">
+                                    @if($project->images->isNotEmpty())
+                                        <img class="cs_zoom_in w-100" src="{{ asset('assets/img/portfolio/' . $project->images->first()->image_url) }}" alt="{{ $project->title }}">
+                                    @else
+                                        <img class="cs_zoom_in w-100" src="{{ asset('assets/img/default.png') }}" alt="No Image Available">
+                                    @endif
                                 </div>
+                                
                                 
 
                                

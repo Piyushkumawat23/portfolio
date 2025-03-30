@@ -355,31 +355,30 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cs_isotop_item">
-                        <div class="cs_portfolio cs_style_2 cs_radius_20 position-relative">
-                            <div class="cs_browser cs_style_1">
-                                <div class="cs_btns">
-                                    <span></span><span></span><span></span>
-                                </div>
-                                <div class="cs_input_filed w-100"></div>
+                    @foreach ($projects as $project)
+                    <div class="cs_isotop_item cs_zoom">
+                        <a href="{{ route('portfolio.details', $project->id) }}" target="_blank" class="cs_portfolio cs_style_1">
+                            <div class="cs_portfolio_thumbnail">
+                                @if($project->images->count() > 0)
+                                    <img class="cs_zoom_in w-100" src="{{ asset('assets/img/portfolio/' . $project->images->first()->image_url) }}" alt="{{ $project->name }}">
+                                @else
+                                    <img class="cs_zoom_in w-100" src="{{ asset('assets/img/default.png') }}" alt="Default Image">
+                                @endif
                             </div>
-                            <a href="portfolio-details" class="cs_portfolio_thumbnail cs_zoom">
-                                <img class="cs_zoom_in w-100" src="assets/img/portfolio/p4.jpg" alt="">
-                            </a>
-                            <div class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute">
-                                <h2 class="cs_font_28 cs_white_color cs_medium mb-0">Second Project</h2>
-                                <a href="portfolio-details"
-                                    class="cs_font_16 cs_white_color_hover d-inline-flex align-items-center cs_gap_15 cs_medium">
+                            <div class="cs_portfolio_info cs_white_color cs_medium position-absolute">
+                                <h2 class="cs_font_28 cs_white_color cs_medium mb-0">{{ $project->name }}</h2>
+                                <div class="cs_font_16 cs_gap_15 d-inline-flex cs_medium align-items-center">
                                     <span class="cs_text_btn cs_secondary_font cs_type_1 text-uppercase">View work</span>
                                     <svg width="5" height="9" viewBox="0 0 5 9" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0 0L5 4.5L0 9L0 0Z" fill="currentColor" />
                                     </svg>
-                                </a>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                    <div class="cs_isotop_item">
+                    @endforeach
+                    {{-- <div class="cs_isotop_item">
                         <div class="cs_portfolio cs_style_2 cs_radius_20 position-relative">
                             <div class="cs_browser cs_style_1">
                                 <div class="cs_btns">
@@ -426,7 +425,7 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     <div class="cs_isotop_item">
                         <div class="cs_portfolio cs_style_2 text-center cs_radius_20 overflow-hidden wow fadeInUp"
                             data-wow-duration="0.8s" data-wow-delay="0.2s">

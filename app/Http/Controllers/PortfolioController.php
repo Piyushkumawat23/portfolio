@@ -11,21 +11,16 @@ class PortfolioController extends Controller
 
     public function index()
     {
-        return view('portfolio.index'); // Ensure you have a corresponding view file
+        $projects = Project::with('images')->limit(3)->get();
+        return view('portfolio.index', compact('projects'));
     }
-
     
     public function about()
     {
         return view('portfolio.about');
     }
 
-    public function portfolio_details()
-    {
-        return view('portfolio.portfolio-details');
-    }
-
-
+   
     public function projects()
     {
         return view('portfolio.projects');
