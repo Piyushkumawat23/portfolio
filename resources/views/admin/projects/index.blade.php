@@ -36,11 +36,16 @@
                                     </td>
                                     
                                     <td>
-                                        <a href="{{ route('admin.projects.edit', $project->id) }}" class="btn btn-warning">Edit</a>
+                                        <!-- Edit Icon -->
+                                        <a href="{{ route('admin.projects.edit', $project->id) }}" class="text-warning">
+                                            <i class="fas fa-edit"></i>
+                                        </a>
                                         <form action="{{ route('admin.projects.destroy', $project->id) }}" method="POST" style="display:inline;">
                                             @csrf
                                             @method('DELETE')
-                                            <button type="submit" class="btn btn-danger">Delete</button>
+                                            <button type="submit" style="border: none; background: none; color: red; cursor: pointer;">
+                                                <i class="fas fa-trash-alt"></i>
+                                            </button>
                                         </form>
                                     </td>
                                 </tr>

@@ -26,8 +26,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
         integrity="sha256-9kPW/n5nn53j4WMRYAxe9c1rCY96Oogo/MKSVdKzPmI=" crossorigin="anonymous" />
     <!--end::Third Party Plugin(Bootstrap Icons)-->
-    <!--begin::Required Plugin(AdminLTE)-->
-    {{-- <link rel="stylesheet" href="../../dist/css/adminlte.css" /> --}}
     <link rel="stylesheet" href="{{ asset('assets/admin/css/adminlte.css') }}">
 
 
@@ -38,8 +36,10 @@
     <!-- jsvectormap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/css/jsvectormap.min.css"
         integrity="sha256-+uGLJmmTKOqBr+2E6KDYs/NRsHxSkONXFHUL0fy2O/4=" crossorigin="anonymous" />
-</head>
-<!--end::Head-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+
 <!--begin::Body-->
 
 <body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
@@ -315,6 +315,43 @@
                                 </li>
                             </ul>
                         </li>
+
+                        {{-- <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon bi bi-menu-button-wide"></i>
+                                <p>
+                                    Pages
+                                    <i class="nav-arrow bi bi-chevron-right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="{{ route('index') }}" class="nav-link">
+                                        <i class="nav-icon bi bi-house-door"></i>
+                                        <p>Home</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{ route('about') }}" class="nav-link">
+                                        <i class="nav-icon bi bi-file-person"></i>
+                                        <p>About</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{ route('contact') }}" class="nav-link">
+                                        <i class="nav-icon bi bi-envelope"></i>
+                                        <p>Contact</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{ route('portfolio.index') }}" class="nav-link">
+                                        <i class="nav-icon bi bi-briefcase"></i>
+                                        <p>Projects</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li> --}}
+                        
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon bi bi-menu-button-wide"></i>

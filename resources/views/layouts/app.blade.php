@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/plugins/select2.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/plugins/animate.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 </head>
 
@@ -122,6 +123,27 @@
   <script src="{{ asset('assets/js/plugins/odometer.min.js') }}"></script>
   <script src="{{ asset('assets/js/plugins/wow.min.js') }}"></script>
   <script src="{{ asset('assets/js/main.js') }}"></script>
+  <script>
+    // Typing effect for "Kumawat" -> changing to different titles
+    var typedName = new Typed("#typed-name", {
+        strings: ["Kumawat", "Developer", "Coder", "Programmer"],
+        typeSpeed: 60,
+        backSpeed: 40,
+        backDelay: 1000,
+        startDelay: 500,
+        loop: true
+    });
+
+    // Typing effect for title below
+    var typedTitle = new Typed("#typed-title", {
+        strings: ["Full-stack Web Developer", "Frontend Developer", "Backend Developer"],
+        typeSpeed: 50,
+        backSpeed: 30,
+        backDelay: 1000,
+        startDelay: 1000,
+        loop: true
+    });
+</script>
   
 </body>
 </html>

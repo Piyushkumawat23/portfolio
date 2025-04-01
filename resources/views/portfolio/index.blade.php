@@ -8,15 +8,13 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="cs_hero_info cs_pr_20">
-                            <h4 class="cs_hero_meta cs_font_48 cs_white_blue_text_2 cs_semi_bold cs_primary_font mb-0">Hi!
-                                I’m<br>
-                            </h4>
-                            <h1 class="cs_hero_title cs_font_92 cs_black wow fadeInLeft" data-wow-duration="0.8s"
-                                data-wow-delay="0.2s"><span class="cs_gradient_text">Piyush </span><span
-                                    class="cs_gradient_border_text">kumawat</span></h1>
+                            <h4 class="cs_hero_meta cs_font_48 cs_white_blue_text_2 cs_semi_bold cs_primary_font mb-0">Hi! I’m<br></h4>
+
+                            <h1 class="cs_hero_title cs_font_92 cs_black wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                                <span class="cs_gradient_text">Piyush </span><span id="typed-name" class="cs_gradient_border_text"></span>
+                            </h1>
                             <h4 class="cs_hero_subtitle cs_font_36 cs_semi_bold cs_primary_font cs_white_blue_text_2">
-                                Full-stack
-                                <span class="cs_accent_color_2">Web Developer</span>
+                                <span id="typed-title"></span>
                             </h4>
                             <p class="cs_about_text">
                                 I am a <span class="cs_primary_color">PHP Developer</span> with expertise in
@@ -62,43 +60,7 @@
                                   </svg>
                               </a>
                               
-                                {{-- <a class="cs_accent_color_2" href="#">
-                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M13.5 9C12.67 9 12 8.33 12 7.5V2.5C12 1.67 12.67 1 13.5 1C14.33 1 15 1.67 15 2.5V7.5C15 8.33 14.33 9 13.5 9Z"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path
-                                            d="M19.5 9H18V7.5C18 6.67 18.67 6 19.5 6C20.33 6 21 6.67 21 7.5C21 8.33 20.33 9 19.5 9Z"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path
-                                            d="M8.5 13C9.33 13 10 13.67 10 14.5V19.5C10 20.33 9.33 21 8.5 21C7.67 21 7 20.33 7 19.5V14.5C7 13.67 7.67 13 8.5 13Z"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path
-                                            d="M2.5 13H4V14.5C4 15.33 3.33 16 2.5 16C1.67 16 1 15.33 1 14.5C1 13.67 1.67 13 2.5 13Z"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path
-                                            d="M13 13.5C13 12.67 13.67 12 14.5 12H19.5C20.33 12 21 12.67 21 13.5C21 14.33 20.33 15 19.5 15H14.5C13.67 15 13 14.33 13 13.5Z"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path
-                                            d="M14.5 18H13V19.5C13 20.33 13.67 21 14.5 21C15.33 21 16 20.33 16 19.5C16 18.67 15.33 18 14.5 18Z"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path
-                                            d="M9 8.5C9 7.67 8.33 7 7.5 7H2.5C1.67 7 1 7.67 1 8.5C1 9.33 1.67 10 2.5 10H7.5C8.33 10 9 9.33 9 8.5Z"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M7.5 4H9V2.5C9 1.67 8.33 1 7.5 1C6.67 1 6 1.67 6 2.5C6 3.33 6.67 4 7.5 4Z"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-
-                                </a> --}}
+                                
                                 <a class="cs_accent_color_2" href="https://linkedin.com/in/piyush-kumawat-3aaa34227" target="_blank">
                                     <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
