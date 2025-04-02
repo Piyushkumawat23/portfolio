@@ -136,7 +136,7 @@
 
     // Typing effect for title below
     var typedTitle = new Typed("#typed-title", {
-        strings: ["Full-stack Web Developer", "Frontend Developer", "Backend Developer"],
+        strings: ["Full-stack Web Developer", "Frontend Developer", "Backend Developer","MYSQL Developer"],
         typeSpeed: 50,
         backSpeed: 30,
         backDelay: 1000,

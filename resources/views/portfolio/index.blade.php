@@ -11,7 +11,8 @@
                             <h4 class="cs_hero_meta cs_font_48 cs_white_blue_text_2 cs_semi_bold cs_primary_font mb-0">Hi! I’m<br></h4>
 
                             <h1 class="cs_hero_title cs_font_92 cs_black wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">
-                                <span class="cs_gradient_text">Piyush </span><span id="typed-name" class="cs_gradient_border_text"></span>
+                                <span class="cs_gradient_text">Piyush </span><br>
+                                <span id="typed-name" class="cs_gradient_border_text"></span>
                             </h1>
                             <h4 class="cs_hero_subtitle cs_font_36 cs_semi_bold cs_primary_font cs_white_blue_text_2">
                                 <span id="typed-title"></span>
