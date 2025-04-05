@@ -14,6 +14,11 @@ use Illuminate\Support\Facades\Auth;
 
 // Portfolio Routes
 
+Route::fallback(function () {
+    return redirect('/error')->with('error', 'Page not found.')->setStatusCode(404);
+});
+
+
 Route::get('/', [PortfolioController::class, 'index'])->name('index');
 Route::get('/index', [PortfolioController::class, 'index']);
 Route::get('/about', [PortfolioController::class, 'about']);
