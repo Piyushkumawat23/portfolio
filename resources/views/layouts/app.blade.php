@@ -74,12 +74,24 @@
                                     </ul>
                                 </li>
                                 <li> <a href="{{ url('/contact') }}">Contact</a></li>
+                                {{-- <li>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+                                    
+                                    <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                        Logout
+                                    </a>
+                                </li> --}}
                             </ul>
                         </div>
                     </div>
                     <div class="cs_main_header_right">
                         <a href="{{ url('/contact') }}" class="cs_btn cs_style_1 cs_primary_font"><span>Hire Me</span></a>
                     </div>
+                    
+                    
                 </div>
             </div>
         </div>

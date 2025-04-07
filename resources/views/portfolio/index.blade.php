@@ -1,7 +1,12 @@
 @extends('layouts.app')
 
+
+
 @section('content')
+
+
     <main>
+
         <!-- Start Hero Section -->
         <section class="cs_hero cs_style_2 cs_filled_bg" data-src="assets/img/bg/hero_bg_2.svg">
             <div class="container">
@@ -17,6 +22,8 @@
                             <h4 class="cs_hero_subtitle cs_font_36 cs_semi_bold cs_primary_font cs_white_blue_text_2">
                                 <span id="typed-title"></span>
                             </h4>
+                            
+      
                             <p class="cs_about_text">
                                 I am a <span class="cs_primary_color">PHP Developer</span> with expertise in
                                 <span class="cs_primary_color">Laravel Framework</span> and <span

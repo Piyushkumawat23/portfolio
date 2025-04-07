@@ -12,11 +12,14 @@ class AdminSeeder extends Seeder
     {
         DB::table('users')->insert([
             'name' => 'Admin',
-            'email' => 'admin@gmail.com', // Yahan apna email set karein
-            'password' => Hash::make('123456'), // Yahan apna password set karein
-            'user_type' => 'admin', // Agar aapke users table me role ka column ho
+            'email' => 'piyushkumawat90607@gmail.com',
+            'email_verified_at' => now(), // Email verified set kar diya
+            'password' => Hash::make('Piyush90607@'),
+            'user_type' => 'admin',
+            'remember_token' => null,
             'created_at' => now(),
             'updated_at' => now(),
+            'role' => 'admin',
         ]);
     }
 }

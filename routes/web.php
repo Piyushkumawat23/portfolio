@@ -14,9 +14,9 @@ use Illuminate\Support\Facades\Auth;
 
 // Portfolio Routes
 
-Route::fallback(function () {
-    return redirect('/error')->with('error', 'Page not found.')->setStatusCode(404);
-});
+// Route::fallback(function () {
+//     return redirect('/error')->with('error', 'Page not found.')->setStatusCode(404);
+// });
 
 
 Route::get('/', [PortfolioController::class, 'index'])->name('index');
@@ -48,8 +48,7 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 // Admin Routes (Only for Authenticated Users)
-Route::middleware(['auth', 'verified'])->group(function () {
-    
+Route::middleware(['auth', 'admin'])->group(function () {
     Route::get('/admin', [AdminController::class, 'index'])->name('admin.dashboard');
 // Define routes for all other pages
 Route::get('/generate/theme', [PageController::class, 'theme'])->name('generate.theme');
