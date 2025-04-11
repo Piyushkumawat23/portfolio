@@ -9,6 +9,8 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FAQController;
 use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Auth;
+use Spatie\Sitemap\Sitemap;
+use Spatie\Sitemap\Tags\Url;
 
 
 
@@ -18,6 +20,21 @@ use Illuminate\Support\Facades\Auth;
 //     return redirect('/error')->with('error', 'Page not found.')->setStatusCode(404);
 // });
 
+Route::get('/sitemap.xml', function () {
+    Sitemap::create()
+        ->add(Url::create('/'))
+        ->add(Url::create('/about'))
+        ->add(Url::create('/portfolio'))
+        ->add(Url::create('/blog'))
+        ->add(Url::create('/contact'))
+        ->writeToFile(public_path('sitemap.xml'));
+
+    return response()->file(public_path('sitemap.xml'));
+});
+
+Route::get('/robots.txt', function () {
+    return response()->view('robots')->header('Content-Type', 'text/plain');
+});
 
 Route::get('/', [PortfolioController::class, 'index'])->name('index');
 Route::get('/index', [PortfolioController::class, 'index']);

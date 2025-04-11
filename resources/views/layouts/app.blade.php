@@ -7,13 +7,20 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Laralink">
+    <meta name="robots" content="index, follow">
+
     <!-- Favicon Icon -->
     <link rel="icon" href="{{ asset('assets/img/favicon.png') }}">
 
     <!-- Site Title -->
     {{-- <title>Piyush - </title> --}}
     <title>Piyush - {{ ucfirst(request()->route()->getName()) }}</title>
-
+    <title>Piyush - Index</title> {{-- You can dynamically change this if needed --}}
+<meta name="description" content="I'm Piyush, a Laravel and PHP backend developer specializing in MVC, MySQL, and API integration.">
+<meta name="keywords" content="Piyush, Laravel, PHP, Backend, Developer">
+    
+    <link rel="canonical" href="{{ url()->current() }}" />
+    <link rel="alternate" hreflang="en" href="{{ url()->current() }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/plugins/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/plugins/fontawesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/plugins/odometer-theme-default.css') }}">
@@ -22,6 +29,30 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://analytics.ahrefs.com/analytics.js" data-key="84Gr+Jgc9UAFrwpSAp5w2g" async></script>
+
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Piyush",
+          "url": "{{ url('/') }}",
+          "jobTitle": "PHP & Laravel Backend Developer",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Freelance"
+          },
+          "sameAs": [
+            "https://github.com/yourusername",
+            "https://linkedin.com/in/yourusername",
+            "https://twitter.com/yourusername"
+          ],
+          "image": "{{ asset('assets/img/hero/hero_1.png') }}",
+          "description": "I’m a backend developer specializing in Laravel, MVC architecture, and API development."
+        }
+        </script>
+
+        
 </head>
 
 <body>

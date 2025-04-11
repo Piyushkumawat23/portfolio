@@ -1,4 +1,9 @@
 <IfModule mod_rewrite.c>
+
+    <FilesMatch "\.(html|php)$">
+    Header set X-Robots-Tag "index, follow"
+    </FilesMatch>
+
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
     </IfModule>

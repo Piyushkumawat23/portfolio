@@ -15,7 +15,13 @@ return Application::configure(basePath: dirname(__DIR__))
         $middleware->alias([
             'admin' => AdminMiddleware::class,
         ]);
+        $middleware->append([
+            \App\Http\Middleware\AddXRobotsTagHeader::class,
+        ]);
     })
+    ->withCommands([
+        \App\Console\Commands\GenerateSitemap::class, 
+    ])
     ->withExceptions(function (Exceptions $exceptions) {
         //
     })->create();
