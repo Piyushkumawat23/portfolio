@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/plugins/animate.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="84Gr+Jgc9UAFrwpSAp5w2g" async></script>
 </head>
 
 <body>
