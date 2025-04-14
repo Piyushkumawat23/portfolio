@@ -1,8 +1,8 @@
 User-agent: *
 Disallow:
 
-Sitemap: http://127.0.0.1:8000/sitemap.xml
+
 Sitemap: https://piyushkumawat.free.nf/public/sitemap.xml
-Sitemap: {{ url('/sitemap.xml') }}
+
 
 
