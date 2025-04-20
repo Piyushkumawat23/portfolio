@@ -8,4 +8,8 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    build: {
+        outDir: 'public/build', // 👈 Make sure this is set
+    },
+    base: '/portfolio/', // 👈 Very Important when Laravel is in subfolder
 });

@@ -1,4 +1,4 @@
-<x-guest-layout>
+{{-- <x-guest-layout>
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
@@ -44,4 +44,93 @@
             </x-primary-button>
         </div>
     </form>
-</x-guest-layout>
+</x-guest-layout> --}}
+
+
+
+
+@extends('layouts.guest')
+@section('content')
+<div class="card card-warning card-outline mb-4">
+    <!--begin::Header-->
+    <div class="card-header">
+      <div class="card-title">Login</div>
+    </div>
+    <!--end::Header-->
+  
+    <!--begin::Form-->
+    <form method="POST" action="{{ route('login') }}">
+      @csrf
+      <!--begin::Body-->
+      <div class="card-body">
+        {{-- Email --}}
+        <div class="row mb-3">
+          <label for="email" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email"
+                   class="form-control @error('email') is-invalid @enderror"
+                   name="email"
+                   id="email"
+                   value="{{ old('email') }}"
+                   required
+                   autofocus
+                   autocomplete="username">
+            @error('email')
+              <span class="invalid-feedback d-block" role="alert">
+                <strong>{{ $message }}</strong>
+              </span>
+            @enderror
+          </div>
+        </div>
+  
+        {{-- Password --}}
+        <div class="row mb-3">
+          <label for="password" class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password"
+                   class="form-control @error('password') is-invalid @enderror"
+                   name="password"
+                   id="password"
+                   required
+                   autocomplete="current-password">
+            @error('password')
+              <span class="invalid-feedback d-block" role="alert">
+                <strong>{{ $message }}</strong>
+              </span>
+            @enderror
+          </div>
+        </div>
+  
+        {{-- Remember Me --}}
+        <div class="row mb-3">
+          <div class="col-sm-10 offset-sm-2">
+            <div class="form-check">
+              <input class="form-check-input"
+                     type="checkbox"
+                     name="remember"
+                     id="remember"
+                     {{ old('remember') ? 'checked' : '' }}>
+              <label class="form-check-label" for="remember">
+                Remember me
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end::Body-->
+  
+      <!--begin::Footer-->
+      <div class="card-footer">
+        <button type="submit" class="btn btn-warning">Log In</button>
+  
+        @if (Route::has('password.request'))
+          <a class="btn btn-link float-end" href="{{ route('password.request') }}">
+            Forgot Your Password?
+          </a>
+        @endif
+      </div>
+      <!--end::Footer-->
+    </form>
+    <!--end::Form-->
+  </div>
+  

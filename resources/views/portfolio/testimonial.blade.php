@@ -4,7 +4,7 @@
     <!-- Main content inside start-->
     <main>
         <!-- Start Hero Section -->
-        <section class="cs_hero cs_style_3 cs_filled_bg cs_center text-center" data-src="assets/img/bg/hero_bg_5.svg">
+        <section class="cs_hero cs_style_3 cs_filled_bg cs_center text-center" data-src="public/assets/img/bg/hero_bg_5.svg">
             <div class="container">
                 <div class="cs_height_45 cs_height_lg_45"></div>
                 <h1 class="cs_hero_title cs_font_92 cs_extra_bold wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
@@ -27,10 +27,10 @@
                     <div class="cs_testimonial cs_style_2 cs_radius_20 cs_white_bg cs_transition_3 cs_transform_up_hover_3">
                         <div class="cs_testimonial_in">
                             <div class="cs_testimonial_img overflow-hidden">
-                                <img class="h-100 w-100" src="assets/img/testmonial/a1.jpg" alt="avaterImg">
+                                <img class="h-100 w-100" src="public/assets/img/testmonial/a1.jpg" alt="avaterImg">
                             </div>
                             <div class="cs_testimonial_info">
-                                <img class="cs_testimonial_quote" src="assets/img/icon/Quote.svg" alt="Testmonial Quote">
+                                <img class="cs_testimonial_quote" src="public/assets/img/icon/Quote.svg" alt="Testmonial Quote">
                                 <p class="cs_testimonial_text">
                                     "Piyush built an exceptional Laravel-based e-commerce platform for our business. The
                                     website is secure, fast,
@@ -50,10 +50,10 @@
                     <div class="cs_testimonial cs_style_2 cs_radius_20 cs_white_bg cs_transition_3 cs_transform_up_hover_3">
                         <div class="cs_testimonial_in">
                             <div class="cs_testimonial_img overflow-hidden">
-                                <img class="h-100 w-100" src="assets/img/testmonial/a2.jpg" alt="avaterImg">
+                                <img class="h-100 w-100" src="public/assets/img/testmonial/a2.jpg" alt="avaterImg">
                             </div>
                             <div class="cs_testimonial_info">
-                                <img class="cs_testimonial_quote" src="assets/img/icon/Quote.svg" alt="Testmonial Quote">
+                                <img class="cs_testimonial_quote" src="public/assets/img/icon/Quote.svg" alt="Testmonial Quote">
                                 <p class="cs_testimonial_text">
                                     "His expertise in Laravel and API development helped us automate our business
                                     operations. The coin distribution
@@ -73,10 +73,10 @@
                     <div class="cs_testimonial cs_style_2 cs_radius_20 cs_white_bg cs_transition_3 cs_transform_up_hover_3">
                         <div class="cs_testimonial_in">
                             <div class="cs_testimonial_img overflow-hidden">
-                                <img class="h-100 w-100" src="assets/img/testmonial/a3.jpg" alt="avaterImg">
+                                <img class="h-100 w-100" src="public/assets/img/testmonial/a3.jpg" alt="avaterImg">
                             </div>
                             <div class="cs_testimonial_info">
-                                <img class="cs_testimonial_quote" src="assets/img/icon/Quote.svg" alt="Testmonial Quote">
+                                <img class="cs_testimonial_quote" src="public/assets/img/icon/Quote.svg" alt="Testmonial Quote">
                                 <p class="cs_testimonial_text">
                                     "Piyush developed a seamless API integration for our business. Our customers can now
                                     process payments
@@ -96,10 +96,10 @@
                     <div class="cs_testimonial cs_style_2 cs_radius_20 cs_white_bg cs_transition_3 cs_transform_up_hover_3">
                         <div class="cs_testimonial_in">
                             <div class="cs_testimonial_img overflow-hidden">
-                                <img class="h-100 w-100" src="assets/img/testmonial/a4.jpg" alt="avaterImg">
+                                <img class="h-100 w-100" src="public/assets/img/testmonial/a4.jpg" alt="avaterImg">
                             </div>
                             <div class="cs_testimonial_info">
-                                <img class="cs_testimonial_quote" src="assets/img/icon/Quote.svg" alt="Testmonial Quote">
+                                <img class="cs_testimonial_quote" src="public/assets/img/icon/Quote.svg" alt="Testmonial Quote">
                                 <p class="cs_testimonial_text">
                                     "The matrimonial website built by Piyush was well-structured, mobile-friendly, and had a
                                     great
@@ -119,10 +119,10 @@
                     <div class="cs_testimonial cs_style_2 cs_radius_20 cs_white_bg cs_transition_3 cs_transform_up_hover_3">
                         <div class="cs_testimonial_in">
                             <div class="cs_testimonial_img overflow-hidden">
-                                <img class="h-100 w-100" src="assets/img/testmonial/a5.jpg" alt="avaterImg">
+                                <img class="h-100 w-100" src="public/assets/img/testmonial/a5.jpg" alt="avaterImg">
                             </div>
                             <div class="cs_testimonial_info">
-                                <img class="cs_testimonial_quote" src="assets/img/icon/Quote.svg" alt="Testmonial Quote">
+                                <img class="cs_testimonial_quote" src="public/assets/img/icon/Quote.svg" alt="Testmonial Quote">
                                 <p class="cs_testimonial_text">
                                     "Piyush enhanced the performance of our existing Laravel website, reducing loading times
                                     by 50%. We couldn't be happier!"
@@ -141,10 +141,10 @@
                     <div class="cs_testimonial cs_style_2 cs_radius_20 cs_white_bg cs_transition_3 cs_transform_up_hover_3">
                         <div class="cs_testimonial_in">
                             <div class="cs_testimonial_img overflow-hidden">
-                                <img class="h-100 w-100" src="assets/img/testmonial/a6.jpg" alt="avaterImg">
+                                <img class="h-100 w-100" src="public/assets/img/testmonial/a6.jpg" alt="avaterImg">
                             </div>
                             <div class="cs_testimonial_info">
-                                <img class="cs_testimonial_quote" src="assets/img/icon/Quote.svg" alt="Testmonial Quote">
+                                <img class="cs_testimonial_quote" src="public/assets/img/icon/Quote.svg" alt="Testmonial Quote">
                                 <p class="cs_testimonial_text">
                                     "The security improvements and API authentication system Piyush implemented
                                     have made our platform more reliable and safer!"
@@ -164,10 +164,10 @@
                         class="cs_testimonial cs_style_2 cs_radius_20 cs_white_bg cs_transition_3 cs_transform_up_hover_3">
                         <div class="cs_testimonial_in">
                             <div class="cs_testimonial_img overflow-hidden">
-                                <img class="h-100 w-100" src="assets/img/testmonial/a7.jpg" alt="avaterImg">
+                                <img class="h-100 w-100" src="public/assets/img/testmonial/a7.jpg" alt="avaterImg">
                             </div>
                             <div class="cs_testimonial_info">
-                                <img class="cs_testimonial_quote" src="assets/img/icon/Quote.svg" alt="Testmonial Quote">
+                                <img class="cs_testimonial_quote" src="public/assets/img/icon/Quote.svg" alt="Testmonial Quote">
                                 <p class="cs_testimonial_text">
                                     "Piyush developed a high-performance backend for our USDT coin distribution project.
                                     The Laravel integration and database optimization were top-notch!"
@@ -187,10 +187,10 @@
                         class="cs_testimonial cs_style_2 cs_radius_20 cs_white_bg cs_transition_3 cs_transform_up_hover_3">
                         <div class="cs_testimonial_in">
                             <div class="cs_testimonial_img overflow-hidden">
-                                <img class="h-100 w-100" src="assets/img/testmonial/a8.jpg" alt="avaterImg">
+                                <img class="h-100 w-100" src="public/assets/img/testmonial/a8.jpg" alt="avaterImg">
                             </div>
                             <div class="cs_testimonial_info">
-                                <img class="cs_testimonial_quote" src="assets/img/icon/Quote.svg" alt="Testmonial Quote">
+                                <img class="cs_testimonial_quote" src="public/assets/img/icon/Quote.svg" alt="Testmonial Quote">
                                 <p class="cs_testimonial_text">
                                     "The Laravel-based admin panel Piyush built for our e-commerce store is feature-rich and
                                     easy to manage.
@@ -211,10 +211,10 @@
                         class="cs_testimonial cs_style_2 cs_radius_20 cs_white_bg cs_transition_3 cs_transform_up_hover_3">
                         <div class="cs_testimonial_in">
                             <div class="cs_testimonial_img overflow-hidden">
-                                <img class="h-100 w-100" src="assets/img/testmonial/a9.jpg" alt="avaterImg">
+                                <img class="h-100 w-100" src="public/assets/img/testmonial/a9.jpg" alt="avaterImg">
                             </div>
                             <div class="cs_testimonial_info">
-                                <img class="cs_testimonial_quote" src="assets/img/icon/Quote.svg" alt="Testmonial Quote">
+                                <img class="cs_testimonial_quote" src="public/assets/img/icon/Quote.svg" alt="Testmonial Quote">
                                 <p class="cs_testimonial_text">
                                     "From integrating APIs to ensuring a seamless checkout experience, Piyush has done an
                                     amazing job with our online store. Would love to work with him again!"
@@ -234,10 +234,10 @@
                         class="cs_testimonial cs_style_2 cs_radius_20 cs_white_bg cs_transition_3 cs_transform_up_hover_3">
                         <div class="cs_testimonial_in">
                             <div class="cs_testimonial_img overflow-hidden">
-                                <img class="h-100 w-100" src="assets/img/testmonial/a10.jpg" alt="avaterImg">
+                                <img class="h-100 w-100" src="public/assets/img/testmonial/a10.jpg" alt="avaterImg">
                             </div>
                             <div class="cs_testimonial_info">
-                                <img class="cs_testimonial_quote" src="assets/img/icon/Quote.svg" alt="Testmonial Quote">
+                                <img class="cs_testimonial_quote" src="public/assets/img/icon/Quote.svg" alt="Testmonial Quote">
                                 <p class="cs_testimonial_text">
                                     "Piyush not only optimized our website speed but also helped in implementing
                                     SEO-friendly
@@ -258,10 +258,10 @@
                         class="cs_testimonial cs_style_2 cs_radius_20 cs_white_bg cs_transition_3 cs_transform_up_hover_3">
                         <div class="cs_testimonial_in">
                             <div class="cs_testimonial_img overflow-hidden">
-                                <img class="h-100 w-100" src="assets/img/testmonial/a11.jpg" alt="avaterImg">
+                                <img class="h-100 w-100" src="public/assets/img/testmonial/a11.jpg" alt="avaterImg">
                             </div>
                             <div class="cs_testimonial_info">
-                                <img class="cs_testimonial_quote" src="assets/img/icon/Quote.svg" alt="Testmonial Quote">
+                                <img class="cs_testimonial_quote" src="public/assets/img/icon/Quote.svg" alt="Testmonial Quote">
                                 <p class="cs_testimonial_text">
                                     "His ability to troubleshoot and optimize backend architecture is incredible.
                                     The custom Laravel solution he built for us works flawlessly!"
@@ -281,10 +281,10 @@
                         class="cs_testimonial cs_style_2 cs_radius_20 cs_white_bg cs_transition_3 cs_transform_up_hover_3">
                         <div class="cs_testimonial_in">
                             <div class="cs_testimonial_img overflow-hidden">
-                                <img class="h-100 w-100" src="assets/img/testmonial/a11.jpg" alt="avaterImg">
+                                <img class="h-100 w-100" src="public/assets/img/testmonial/a11.jpg" alt="avaterImg">
                             </div>
                             <div class="cs_testimonial_info">
-                                <img class="cs_testimonial_quote" src="assets/img/icon/Quote.svg" alt="Testmonial Quote">
+                                <img class="cs_testimonial_quote" src="public/assets/img/icon/Quote.svg" alt="Testmonial Quote">
                                 <p class="cs_testimonial_text">
                                     "Piyush set up an advanced Telegram bot for our coin distribution system,
                                     and it has been running without a hitch for months. Highly skilled developer!"

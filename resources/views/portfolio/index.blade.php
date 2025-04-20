@@ -8,7 +8,7 @@
     <main>
 
         <!-- Start Hero Section -->
-        <section class="cs_hero cs_style_2 cs_filled_bg" data-src="assets/img/bg/hero_bg_2.svg">
+        <section class="cs_hero cs_style_2 cs_filled_bg" data-src="public/assets/img/bg/hero_bg_2.svg">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
@@ -16,9 +16,13 @@
                             <h4 class="cs_hero_meta cs_font_48 cs_white_blue_text_2 cs_semi_bold cs_primary_font mb-0">Hi! I’m<br></h4>
 
                             <h1 class="cs_hero_title cs_font_92 cs_black wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">
-                                <span class="cs_gradient_text">Piyush </span><br>
-                                <span id="typed-name" class="cs_gradient_border_text"></span>
+                                <span class="cs_gradient_text">Piyush </span>
+                                {{-- <br> --}}
+                                {{-- <span id="typed-name" class="cs_gradient_border_text"></span> --}}
                             </h1>
+                            <h4 class="cs_hero_title cs_font_92 cs_black wow fadeInLeft"data-wow-duration="0.8s" data-wow-delay="0.2s">
+                                <span id="typed-name" class="cs_gradient_border_text"></span>
+                            </h4>
                             <h4 class="cs_hero_subtitle cs_font_36 cs_semi_bold cs_primary_font cs_white_blue_text_2">
                                 <span id="typed-title"></span>
                             </h4>
@@ -111,7 +115,7 @@
                                 </a>
                             </div>
                             <div class="cs_btns">
-                                <a href="assets/cv/Piyush-Kumawat-.pdf"class="cs_btn cs_style_1" download><span>Download
+                                <a href="public/assets/cv/Piyush-Kumawat-.pdf"class="cs_btn cs_style_1" download><span>Download
                                         CV</span></a>
                                 <a class="cs_font_24 cs_accent_color_2 cs_accent_color_2_hover cs_text_btn cs_type_2 cs_semi_bold"
                                     href="contact">Let’s Talk</a>
@@ -119,8 +123,8 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="cs_hero_image_box cs_filled_bg" data-src="assets/img/bg/hero_bg_3.svg">
-                            <div class="cs_imagebox_img w-100"><img src="assets/img/hero/hero_1.png" alt="heroImg">
+                        <div class="cs_hero_image_box cs_filled_bg" data-src="public/assets/img/bg/hero_bg_3.svg">
+                            <div class="cs_imagebox_img w-100"><img src="public/assets/img/hero/hero_1.png" alt="heroImg">
                             </div>
                             <div
                                 class="cs_happy_client position-absolute cs_white_bg d-flex align-items-center cs_radius_20 cs_gap_15">
@@ -141,7 +145,7 @@
         <!-- Start About Section -->
         <section class="position-relative">
             <div class="position-absolute cs_about_shape_3">
-                <img src="assets/img/about_shape_2.svg" alt="">
+                <img src="public/assets/img/about_shape_2.svg" alt="">
             </div>
             <div class="cs_height_150 cs_height_lg_80"></div>
             <div class="container">
@@ -193,7 +197,7 @@
                             <div class="cs_iconbox cs_style_2 cs_radius_20 cs_transition_4">
                                 <div class="cs_iconbox_in">
                                     <div class="cs_iconbox_icon cs_center">
-                                        <img src="assets/img/icon/about_icon_1.svg" alt="Icon">
+                                        <img src="public/assets/img/icon/about_icon_1.svg" alt="Icon">
                                     </div>
                                     <div class="cs_iconbox_info position-relative w-100">
                                         <h3 class="cs_iconbox_title cs_font_28 cs_medium m-0">Front-end Development</h3>
@@ -227,7 +231,7 @@
                             <div class="cs_iconbox cs_style_2 cs_radius_20 cs_transition_4">
                                 <div class="cs_iconbox_in">
                                     <div class="cs_iconbox_icon cs_center">
-                                        <img src="assets/img/icon/about_icon_2.svg" alt="Icon">
+                                        <img src="public/assets/img/icon/about_icon_2.svg" alt="Icon">
                                     </div>
                                     <div class="cs_iconbox_info position-relative w-100">
                                         <h3 class="cs_iconbox_title cs_font_28 cs_medium m-0">Back-end Development</h3>
@@ -261,7 +265,7 @@
                             <div class="cs_iconbox cs_style_2 cs_radius_20 cs_transition_4">
                                 <div class="cs_iconbox_in">
                                     <div class="cs_iconbox_icon cs_center">
-                                        <img src="assets/img/icon/about_icon_3.svg" alt="Icon">
+                                        <img src="public/assets/img/icon/about_icon_3.svg" alt="Icon">
                                     </div>
                                     <div class="cs_iconbox_info position-relative w-100">
                                         <h3 class="cs_iconbox_title cs_font_28 cs_medium m-0">SEO & Optimization</h3>
@@ -301,7 +305,7 @@
         <!-- End About Section -->
 
         <!-- Start Portfolio Section -->
-        <section class="cs_filled_bg cs_100_bg" data-src="assets/img/bg/protfolio_bg2.png">
+        <section class="cs_filled_bg cs_100_bg" data-src="public/assets/img/bg/protfolio_bg2.png">
             <div class="cs_height_150 cs_height_lg_80"></div>
             <div class="container">
                 <div class="cs_isotop cs_isotop_col_2 cs_has_gutter_80">
@@ -330,9 +334,9 @@
                         <a href="{{ route('portfolio.details', $project->id) }}" target="_blank" class="cs_portfolio cs_style_1">
                             <div class="cs_portfolio_thumbnail">
                                 @if($project->images->count() > 0)
-                                    <img class="cs_zoom_in w-100" src="{{ asset('assets/img/portfolio/' . $project->images->first()->image_url) }}" alt="{{ $project->name }}">
+                                    <img class="cs_zoom_in w-100" src="{{ asset('public/assets/img/portfolio/' . $project->images->first()->image_url) }}" alt="{{ $project->name }}">
                                 @else
-                                    <img class="cs_zoom_in w-100" src="{{ asset('assets/img/default.png') }}" alt="Default Image">
+                                    <img class="cs_zoom_in w-100" src="{{ asset('public/assets/img/default.png') }}" alt="Default Image">
                                 @endif
                             </div>
                             <div class="cs_portfolio_info cs_white_color cs_medium position-absolute">
@@ -357,7 +361,7 @@
                                 <div class="cs_input_filed w-100"></div>
                             </div>
                             <a href="portfolio-details" class="cs_portfolio_thumbnail cs_zoom">
-                                <img class="cs_zoom_in w-100" src="assets/img/portfolio/p5.jpg" alt="">
+                                <img class="cs_zoom_in w-100" src="public/assets/img/portfolio/p5.jpg" alt="">
                             </a>
                             <div class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute">
                                 <h2 class="cs_font_28 cs_white_color cs_medium mb-0">First Project</h2>
@@ -381,7 +385,7 @@
                                 <div class="cs_input_filed w-100"></div>
                             </div>
                             <a href="portfolio-details" class="cs_portfolio_thumbnail cs_zoom">
-                                <img class="cs_zoom_in w-100" src="assets/img/portfolio/p6.jpg" alt="">
+                                <img class="cs_zoom_in w-100" src="public/assets/img/portfolio/p6.jpg" alt="">
                             </a>
                             <div class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute">
                                 <h2 class="cs_font_28 cs_white_color cs_medium mb-0">Three Project</h2>
@@ -429,12 +433,12 @@
 
         <!-- Start Funfact Section -->
         <section class="cs_funfact_2_wrap">
-            <div class="cs_funfact_bg cs_filled_bg" data-src="assets/img/bg/funfact_bg_1.svg"></div>
+            <div class="cs_funfact_bg cs_filled_bg" data-src="public/assets/img/bg/funfact_bg_1.svg"></div>
             <div class="container">
                 <div class="row cs_gap_40">
                     <div class="col-lg-4 cs_mt_40">
                         <div class="cs_funfact cs_style_2 text-center">
-                            <div class="cs_funfact_in cs_filled_bg" data-src="assets/img/bg/funfact_bg.svg">
+                            <div class="cs_funfact_in cs_filled_bg" data-src="public/assets/img/bg/funfact_bg.svg">
                                 <h3 class="cs_funfact_number cs_font_48 cs_semi_bold cs_center m-0 overflow-hidden">
                                     <span>
                                         <span class="odometer" data-count-to="4"></span>+
@@ -479,7 +483,7 @@
                     </div>
                     <div class="col-lg-4 cs_mt_40">
                         <div class="cs_funfact cs_style_2 text-center">
-                            <div class="cs_funfact_in cs_filled_bg" data-src="assets/img/bg/funfact_bg.svg">
+                            <div class="cs_funfact_in cs_filled_bg" data-src="public/assets/img/bg/funfact_bg.svg">
                                 <h3 class="cs_funfact_number cs_font_48 cs_semi_bold cs_center m-0 overflow-hidden">
                                     <span>
                                         <span class="odometer" data-count-to="220"></span>+
@@ -523,7 +527,7 @@
                     </div>
                     <div class="col-lg-4 cs_mt_40">
                         <div class="cs_funfact cs_style_2 text-center">
-                            <div class="cs_funfact_in cs_filled_bg" data-src="assets/img/bg/funfact_bg.svg">
+                            <div class="cs_funfact_in cs_filled_bg" data-src="public/assets/img/bg/funfact_bg.svg">
                                 <h3 class="cs_funfact_number cs_font_48 cs_semi_bold cs_center m-0 overflow-hidden">
                                     <span>
                                         <span class="odometer" data-count-to="180"></span>+
@@ -624,12 +628,12 @@
                             class="cs_testimonial cs_style_2 cs_radius_20 cs_white_bg cs_transition_3 cs_transform_up_hover_3">
                             <div class="cs_testimonial_in">
                                 <div class="cs_testimonial_img overflow-hidden">
-                                    {{-- <img class="h-100 w-100" src="assets/img/testmonial/client2.jpg" alt="Client Image"> --}}
-                                    <img class="h-100 w-100" src="assets/img/testmonial/a4.jpg" alt="avaterImg">
+                                    {{-- <img class="h-100 w-100" src="public/assets/img/testmonial/client2.jpg" alt="Client Image"> --}}
+                                    <img class="h-100 w-100" src="public/assets/img/testmonial/a4.jpg" alt="avaterImg">
 
                                 </div>
                                 <div class="cs_testimonial_info">
-                                    <img class="cs_testimonial_quote" src="assets/img/icon/Quote.svg"
+                                    <img class="cs_testimonial_quote" src="public/assets/img/icon/Quote.svg"
                                         alt="Testimonial Quote">
                                     <p class="cs_testimonial_text">
                                         "He developed a custom Telegram bot for our coin distribution system. The API
@@ -650,12 +654,12 @@
                             class="cs_testimonial cs_style_2 cs_radius_20 cs_white_bg cs_transition_3 cs_transform_up_hover_3">
                             <div class="cs_testimonial_in">
                                 <div class="cs_testimonial_img overflow-hidden">
-                                    {{-- <img class="h-100 w-100" src="assets/img/testmonial/client1.jpg" alt="Client Image"> --}}
-                                    <img class="h-100 w-100" src="assets/img/testmonial/a5.jpg" alt="avaterImg">
+                                    {{-- <img class="h-100 w-100" src="public/assets/img/testmonial/client1.jpg" alt="Client Image"> --}}
+                                    <img class="h-100 w-100" src="public/assets/img/testmonial/a5.jpg" alt="avaterImg">
 
                                 </div>
                                 <div class="cs_testimonial_info">
-                                    <img class="cs_testimonial_quote" src="assets/img/icon/Quote.svg"
+                                    <img class="cs_testimonial_quote" src="public/assets/img/icon/Quote.svg"
                                         alt="Testimonial Quote">
 
                                     <p class="cs_testimonial_text">
@@ -681,7 +685,7 @@
         <!-- End Testimonial Section -->
 
         <!-- Start Blog Section -->
-        <section class="cs_filled_bg" data-src="assets/img/bg/blog_bg_2.png">
+        <section class="cs_filled_bg" data-src="public/assets/img/bg/blog_bg_2.png">
             <div class="cs_height_145 cs_height_lg_75"></div>
             <div class="container">
                 <div class="d-md-flex justify-content-between">
@@ -718,7 +722,7 @@
                         <div class="cs_blog_in">
                             <div class="cs_blog_thumbnail cs_zoom">
                                 <a href="blog-details">
-                                    <img class="cs_zoom_in w-100" src="assets/img/blog/blog_4.jpg" alt="blog_img">
+                                    <img class="cs_zoom_in w-100" src="public/assets/img/blog/blog_4.jpg" alt="blog_img">
                                 </a>
                             </div>
                             <div class="cs_blog_info">
@@ -727,7 +731,7 @@
                                         Applications</a></h3>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="cs_blog_avater d-flex align-items-center">
-                                        <img src="assets/img/blog/a3.png" alt="avatar_img">
+                                        <img src="public/assets/img/blog/a3.png" alt="avatar_img">
                                         <div class="cs_ml_20">
                                             <h2 class="cs_blog_name cs_font_20 cs_semi_bold mb-0">Piyush Kumawat</h2>
                                             <p class="cs_blog_designation cs_font_16 cs_normal mb-0">10 Mar 2024</p>
@@ -756,13 +760,13 @@
                     </div>
                     <div class="cs_blog cs_style_2 cs_transition_4">
                         <a href="blog-details" class="cs_blog_thumbnail cs_zoom">
-                            <img class="cs_zoom_in w-100 h-100" src="assets/img/blog/blog_2.jpg" alt="">
+                            <img class="cs_zoom_in w-100 h-100" src="public/assets/img/blog/blog_2.jpg" alt="">
                         </a>
                         <div class="cs_blog_info">
                             <h2 class="cs_blog_title cs_font_20 cs_semi_bold"><a class="cs_accent_color_2_hover"
                                     href="blog-details">Optimizing MySQL Queries for High-Performance Applications</a></h2>
                             <div class="cs_blog_avater d-flex align-items-center">
-                                <img src="assets/img/blog/a3.png" alt="avatar_img">
+                                <img src="public/assets/img/blog/a3.png" alt="avatar_img">
                                 <div class="cs_ml_20">
                                     <h2 class="cs_blog_name cs_font_20 cs_semi_bold mb-0">Piyush Kumawat</h2>
                                     <p class="cs_blog_designation cs_font_16 cs_normal mb-0">02 Mar 2024</p>
@@ -789,13 +793,13 @@
                     </div>
                     <div class="cs_blog cs_style_2 cs_transition_4">
                         <a href="blog-details" class="cs_blog_thumbnail cs_zoom">
-                            <img class="cs_zoom_in w-100 h-100" src="assets/img/blog/blog_3.jpg" alt="">
+                            <img class="cs_zoom_in w-100 h-100" src="public/assets/img/blog/blog_3.jpg" alt="">
                         </a>
                         <div class="cs_blog_info">
                             <h2 class="cs_blog_title cs_font_20 cs_semi_bold"><a class="cs_accent_color_2_hover"
                                     href="blog-details">SEO for Developers: How to Rank Your Web Projects</a></h2>
                             <div class="cs_blog_avater d-flex align-items-center">
-                                <img src="assets/img/blog/a2.png" alt="avatar_img">
+                                <img src="public/assets/img/blog/a2.png" alt="avatar_img">
                                 <div class="cs_ml_20">
                                     <h2 class="cs_blog_name cs_font_20 cs_semi_bold mb-0">Piyush Kumawat</h2>
                                     <p class="cs_blog_designation cs_font_16 cs_normal mb-0">25 Feb 2024</p>
@@ -822,13 +826,13 @@
                     </div>
                     <div class="cs_blog cs_style_2 cs_transition_4">
                         <a href="blog-details" class="cs_blog_thumbnail cs_zoom">
-                            <img class="cs_zoom_in w-100 h-100" src="assets/img/blog/blog_1.jpg" alt="">
+                            <img class="cs_zoom_in w-100 h-100" src="public/assets/img/blog/blog_1.jpg" alt="">
                         </a>
                         <div class="cs_blog_info">
                             <h2 class="cs_blog_title cs_font_20 cs_semi_bold"><a class="cs_accent_color_2_hover"
                                     href="blog-details">Building a Secure Authentication System in Laravel</a></h2>
                             <div class="cs_blog_avater d-flex align-items-center">
-                                <img src="assets/img/blog/a1.png" alt="avatar_img">
+                                <img src="public/assets/img/blog/a1.png" alt="avatar_img">
                                 <div class="cs_ml_20">
                                     <h2 class="cs_blog_name cs_font_20 cs_semi_bold mb-0">Piyush Kumawat</h2>
                                     <p class="cs_blog_designation cs_font_16 cs_normal mb-0">18 Feb 2024</p>
@@ -897,7 +901,7 @@
                             <a href="https://t.me/Unitrades_bot/Unitrade_app" target="_blank" rel="noopener noreferrer">
                                 <div class="cs_brand overflow-hidden cs_radius_10 text-center">
                                     <div class="cs_brand_logo_wrap cs_center cs_brand_bg_1">
-                                        <img class="cs_brand_logo" src="assets/img/client/Unitrade_app.JPG" alt="Unitrade_app">
+                                        <img class="cs_brand_logo" src="public/assets/img/client/Unitrade_app.JPG" alt="Unitrade_app">
                                     </div>
                                     <p class="m-0 cs_white_bg">Unitrade Coin System</p>
                                 </div>
@@ -906,8 +910,8 @@
                             <a href="https://pandbimports.com/" target="_blank" rel="noopener noreferrer">
                                 <div class="cs_brand overflow-hidden cs_radius_10 text-center">
                                     <div class="cs_brand_logo_wrap cs_center cs_brand_bg_2">
-                                        <img class="cs_brand_logo" src="assets/img/client/p&b.png" alt="p&b">
-                                        {{-- <img class="cs_brand_logo" src="assets/img/client/c2.svg" alt=""> --}}
+                                        <img class="cs_brand_logo" src="public/assets/img/client/p&b.png" alt="p&b">
+                                        {{-- <img class="cs_brand_logo" src="public/assets/img/client/c2.svg" alt=""> --}}
                                     </div>
                                     <p class="m-0 cs_white_bg">P&B Imports</p>
                                 </div>
@@ -917,8 +921,8 @@
 
                                 <div class="cs_brand overflow-hidden cs_radius_10 text-center">
                                     <div class="cs_brand_logo_wrap cs_center cs_brand_bg_3">
-                                        {{-- <img class="cs_brand_logo" src="assets/img/client/c3.svg" alt=""> --}}
-                                        <img class="cs_brand_logo" src="assets/img/client/bautlr.webp" alt="bautlr">
+                                        {{-- <img class="cs_brand_logo" src="public/assets/img/client/c3.svg" alt=""> --}}
+                                        <img class="cs_brand_logo" src="public/assets/img/client/bautlr.webp" alt="bautlr">
                                     </div>
                                     <p class="m-0 cs_white_bg">Bautlr</p>
                                 </div>
@@ -931,19 +935,19 @@
                         <div class="cs_brands cs_style_1 cs_mr_30">
                             <div class="cs_brand overflow-hidden cs_radius_10 text-center">
                                 <div class="cs_brand_logo_wrap cs_center cs_brand_bg_4">
-                                    <img class="cs_brand_logo" src="assets/img/client/Vostro_market.png" alt="">
+                                    <img class="cs_brand_logo" src="public/assets/img/client/Vostro_market.png" alt="">
                                 </div>
                                 <p class="m-0 cs_white_bg">Vostro Market</p>
                             </div>
                             <div class="cs_brand overflow-hidden cs_radius_10 text-center">
                                 <div class="cs_brand_logo_wrap cs_center cs_brand_bg_5">
-                                    <img class="cs_brand_logo" src="assets/img/client/Matrimony.png" alt="">
+                                    <img class="cs_brand_logo" src="public/assets/img/client/Matrimony.png" alt="">
                                 </div>
                                 <p class="m-0 cs_white_bg">Matrimonial Portal</p>
                             </div>
                             <div class="cs_brand overflow-hidden cs_radius_10 text-center">
                                 <div class="cs_brand_logo_wrap cs_center cs_brand_bg_6">
-                                    <img class="cs_brand_logo" src="assets/img/client/E-Commercepng.png" alt="">
+                                    <img class="cs_brand_logo" src="public/assets/img/client/E-Commercepng.png" alt="">
                                 </div>
                                 <p class="m-0 cs_white_bg">Custom E-Commerce</p>
                             </div>

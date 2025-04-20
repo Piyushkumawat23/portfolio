@@ -10,7 +10,7 @@
     <meta name="robots" content="index, follow">
 
     <!-- Favicon Icon -->
-    <link rel="icon" href="{{ asset('assets/img/favicon.png') }}">
+    <link rel="icon" href="{{ asset('public/assets/img/p.png') }}">
 
     <!-- Site Title -->
     {{-- <title>Piyush - </title> --}}
@@ -21,12 +21,12 @@
     
     <link rel="canonical" href="{{ url()->current() }}" />
     <link rel="alternate" hreflang="en" href="{{ url()->current() }}" />
-    <link rel="stylesheet" href="{{ asset('assets/css/plugins/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/plugins/fontawesome.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/plugins/odometer-theme-default.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/plugins/select2.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/plugins/animate.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/assets/css/plugins/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/assets/css/plugins/fontawesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/assets/css/plugins/odometer-theme-default.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/assets/css/plugins/select2.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/assets/css/plugins/animate.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/assets/css/style.css') }}">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://analytics.ahrefs.com/analytics.js" data-key="84Gr+Jgc9UAFrwpSAp5w2g" async></script>
 
@@ -47,7 +47,7 @@
             "https://linkedin.com/in/yourusername",
             "https://twitter.com/yourusername"
           ],
-          "image": "{{ asset('assets/img/hero/hero_1.png') }}",
+          "image": "{{ asset('/public/assets/img/hero/hero_1.png') }}",
           "description": "I’m a backend developer specializing in Laravel, MVC architecture, and API development."
         }
         </script>
@@ -66,7 +66,7 @@
                 <div class="cs_main_header_in">
                     <div class="cs_main_header_left">
                         <a class="cs_site_branding" href="{{ url('/') }}">
-                            <img src="{{ asset('assets/img/logo.png') }}" alt="Logo">
+                            <img src="{{ asset('/public/assets/img/logo.png') }}" alt="Logo">
                         </a>
                         
                     </div>
@@ -141,10 +141,10 @@
 
   <!-- Start Footer -->
   <footer class="cs_footer cs_style_1 cs_filled_bg position-relative" 
-    data-src="{{ asset('assets/img/bg/footer_bg.svg') }}">
+    data-src="{{ asset('public/assets/img/bg/footer_bg.svg') }}">
 
     <div class="position-absolute cs_footer_shape_1">
-        <img src="{{ asset('assets/img/footer_shape.svg') }}" alt="">
+        <img src="{{ asset('/public/assets/img/footer_shape.svg') }}" alt="">
 
     </div>
     <div class="container">
@@ -160,12 +160,12 @@
   <!-- End Footer -->
 
   <!-- Script -->
-  <script src="{{ asset('assets/js/plugins/jquery-3.6.0.min.js') }}"></script>
-  <script src="{{ asset('assets/js/plugins/gsap.min.js') }}"></script>
-  <script src="{{ asset('assets/js/plugins/isotope.pkg.min.js') }}"></script>
-  <script src="{{ asset('assets/js/plugins/odometer.min.js') }}"></script>
-  <script src="{{ asset('assets/js/plugins/wow.min.js') }}"></script>
-  <script src="{{ asset('assets/js/main.js') }}"></script>
+  <script src="{{ asset('public/assets/js/plugins/jquery-3.6.0.min.js') }}"></script>
+  <script src="{{ asset('public/assets/js/plugins/gsap.min.js') }}"></script>
+  <script src="{{ asset('public/assets/js/plugins/isotope.pkg.min.js') }}"></script>
+  <script src="{{ asset('public/assets/js/plugins/odometer.min.js') }}"></script>
+  <script src="{{ asset('public/assets/js/plugins/wow.min.js') }}"></script>
+  <script src="{{ asset('public/assets/js/main.js') }}"></script>
   <script>
     // Typing effect for "Kumawat" -> changing to different titles
     var typedName = new Typed("#typed-name", {

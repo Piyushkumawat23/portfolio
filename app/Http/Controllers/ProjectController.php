@@ -47,7 +47,7 @@ class ProjectController extends Controller {
         if ($request->hasFile('images')) {
             foreach ($request->file('images') as $image) {
                 $imageName = time().'_'.$image->getClientOriginalName();
-                $destinationPath = public_path('assets/img/portfolio');
+                $destinationPath = public_path('public/assets/img/portfolio');
                 $image->move($destinationPath, $imageName);
     
                 // Save image record in `project_images` table
@@ -104,7 +104,7 @@ class ProjectController extends Controller {
         if ($request->hasFile('banner_image')) {
             $image = $request->file('banner_image');
             $imageName = time().'_banner_'.$image->getClientOriginalName();
-            $destinationPath = public_path('assets/img/portfolio');
+            $destinationPath = public_path('public/assets/img/portfolio');
             $image->move($destinationPath, $imageName);
     
             ProjectImage::updateOrCreate(
@@ -116,7 +116,7 @@ class ProjectController extends Controller {
         if ($request->hasFile('center_image')) {
             $image = $request->file('center_image');
             $imageName = time().'_center_'.$image->getClientOriginalName();
-            $destinationPath = public_path('assets/img/portfolio');
+            $destinationPath = public_path('public/assets/img/portfolio');
             $image->move($destinationPath, $imageName);
     
             ProjectImage::updateOrCreate(
@@ -134,7 +134,7 @@ class ProjectController extends Controller {
             $image = ProjectImage::findOrFail($id);
         
             // Image ka physical file delete karein
-            $imagePath = public_path('assets/img/portfolio/' . $image->image_url);
+            $imagePath = public_path('public/assets/img/portfolio/' . $image->image_url);
             if (!empty($image->image_url) && file_exists($imagePath)) {
                 unlink($imagePath);
             }
@@ -160,7 +160,7 @@ class ProjectController extends Controller {
     public function destroy(Project $project) {
         // Project ki saari images delete karni hain
         foreach ($project->images as $image) {
-            $imagePath = public_path('assets/img/portfolio/' . $image->image_url);
+            $imagePath = public_path('public/assets/img/portfolio/' . $image->image_url);
             if (file_exists($imagePath)) {
                 unlink($imagePath);
             }

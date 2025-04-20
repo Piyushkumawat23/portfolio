@@ -62,7 +62,7 @@
                         <div class="mt-2">
                             @foreach($project->images->where('image_type', 'banner') as $image)
                                 <div class="d-inline-block position-relative">
-                                    <img src="{{ asset('assets/img/portfolio/' . $image->image_url) }}" width="100" class="me-2">
+                                    <img src="{{ asset('public/assets/img/portfolio/' . $image->image_url) }}" width="100" class="me-2">
                                     <button type="button" class="btn btn-outline-danger btn-sm position-absolute top-0 end-0 delete-image" 
                                         data-image-id="{{ $image->id }}"
                                         style="border-radius: 50%; width: 24px; height: 24px; font-size: 20px; display: flex; align-items: center; justify-content: center;">
@@ -80,7 +80,7 @@
                         <div class="mt-2">
                             @foreach($project->images->where('image_type', 'center') as $image)
                                 <div class="d-inline-block position-relative">
-                                    <img src="{{ asset('assets/img/portfolio/' . $image->image_url) }}" width="100" class="me-2">
+                                    <img src="{{ asset('public/assets/img/portfolio/' . $image->image_url) }}" width="100" class="me-2">
                                     <button type="button" class="btn btn-outline-danger btn-sm position-absolute top-0 end-0 delete-image" 
                                         data-image-id="{{ $image->id }}"
                                         style="border-radius: 50%; width: 24px; height: 24px; font-size: 20px; display: flex; align-items: center; justify-content: center;">
@@ -98,7 +98,7 @@
                         <div class="mt-2">
                             @foreach($project->images as $image)
                                 <div class="d-inline-block position-relative">
-                                    <img src="{{ asset('assets/img/portfolio/' . $image->image_url) }}" width="100" class="me-2">
+                                    <img src="{{ asset('public/assets/img/portfolio/' . $image->image_url) }}" width="100" class="me-2">
                                     <button type="button" class="btn btn-outline-danger btn-sm position-absolute top-0 end-0 delete-image" 
                                         data-image-id="{{ $image->id }}"
                                         style="border-radius: 50%; width: 24px; height: 24px; font-size: 20px; display: flex; align-items: center; justify-content: center;">

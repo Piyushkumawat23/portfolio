@@ -3,7 +3,7 @@
     <!-- Main content inside start-->
     <main>
         <!-- Start Hero Section -->
-        <section class="cs_hero cs_style_3 cs_filled_bg cs_center text-center" data-src="{{ asset('assets/img/bg/hero_bg_5.svg') }}">
+        <section class="cs_hero cs_style_3 cs_filled_bg cs_center text-center" data-src="{{ asset('public/assets/img/bg/hero_bg_5.svg') }}">
             <div class="container">
 
                 <div class="cs_height_45 cs_height_lg_45"></div>
@@ -44,9 +44,9 @@
 
                                 <div class="cs_portfolio_thumbnail">
                                     @if($project->images->isNotEmpty())
-                                        <img class="cs_zoom_in w-100" src="{{ asset('assets/img/portfolio/' . $project->images->first()->image_url) }}" alt="{{ $project->title }}">
+                                        <img class="cs_zoom_in w-100" src="{{ asset('public/assets/img/portfolio/' . $project->images->first()->image_url) }}" alt="{{ $project->title }}">
                                     @else
-                                        <img class="cs_zoom_in w-100" src="{{ asset('assets/img/default.png') }}" alt="No Image Available">
+                                        <img class="cs_zoom_in w-100" src="{{ asset('public/assets/img/default.png') }}" alt="No Image Available">
                                     @endif
                                 </div>
                                 

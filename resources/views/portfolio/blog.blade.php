@@ -15,7 +15,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-6">
                             <a href="blog-details" class="cs_image_box cs_style_4 cs_radius_10 overflow-hidden">
-                  <img class="w-100" src="assets/img/blog/blog_d1.jpg" alt="blog_details_img">
+                  <img class="w-100" src="public/assets/img/blog/blog_d1.jpg" alt="blog_details_img">
                 </a>
                             <div class="cs_height_lg_40"></div>
                         </div>
@@ -62,7 +62,7 @@
                     <form class="cs_search_form cs_style_1 position-relative overflow-hidden cs_radius_10 cs_white_bg">
                         <input class="form-control h-100 w-100 cs_white_bg" type="search" name="search-blog" id="search-blog" placeholder="Search..." required>
                         <button type="submit" class="cs_center position-absolute h-100 top-0 end-0">
-              <img src="assets/img/icon/search_icon.svg" alt="search">
+              <img src="public/assets/img/icon/search_icon.svg" alt="search">
             </button>
                     </form>
                 </div>
@@ -89,7 +89,7 @@
                             <div class="cs_blog cs_style_1 cs_transition_4">
                                 <div class="flex-none">
                                     <a href="blog-details" class="cs_blog_thumbnail cs_zoom">
-                    <img class="cs_zoom_in" src="assets/img/blog/blog_1.jpg" alt="">
+                    <img class="cs_zoom_in" src="public/assets/img/blog/blog_1.jpg" alt="">
                   </a>
                                 </div>
                                 <div class="cs_blog_info">
@@ -119,7 +119,7 @@
                             <div class="cs_blog cs_style_1 cs_transition_4">
                                 <div class="flex-none">
                                     <a href="blog-details" class="cs_blog_thumbnail cs_zoom">
-                    <img class="cs_zoom_in" src="assets/img/blog/blog_2.jpg" alt="">
+                    <img class="cs_zoom_in" src="public/assets/img/blog/blog_2.jpg" alt="">
                   </a>
                                 </div>
                                 <div class="cs_blog_info">
@@ -149,7 +149,7 @@
                             <div class="cs_blog cs_style_1 cs_transition_4">
                                 <div class="flex-none">
                                     <a href="blog-details" class="cs_blog_thumbnail cs_zoom">
-                    <img class="cs_zoom_in" src="assets/img/blog/blog_3.jpg" alt="">
+                    <img class="cs_zoom_in" src="public/assets/img/blog/blog_3.jpg" alt="">
                   </a>
                                 </div>
                                 <div class="cs_blog_info">
@@ -179,7 +179,7 @@
                             <div class="cs_blog cs_style_1 cs_transition_4">
                                 <div class="flex-none">
                                     <a href="blog-details" class="cs_blog_thumbnail cs_zoom">
-                    <img class="cs_zoom_in" src="assets/img/blog/blog_1.jpg" alt="">
+                    <img class="cs_zoom_in" src="public/assets/img/blog/blog_1.jpg" alt="">
                   </a>
                                 </div>
                                 <div class="cs_blog_info">
@@ -209,7 +209,7 @@
                             <div class="cs_blog cs_style_1 cs_transition_4">
                                 <div class="flex-none">
                                     <a href="blog-details" class="cs_blog_thumbnail cs_zoom">
-                    <img class="cs_zoom_in" src="assets/img/blog/blog_2.jpg" alt="">
+                    <img class="cs_zoom_in" src="public/assets/img/blog/blog_2.jpg" alt="">
                   </a>
                                 </div>
                                 <div class="cs_blog_info">
@@ -239,7 +239,7 @@
                             <div class="cs_blog cs_style_1 cs_transition_4">
                                 <div class="flex-none">
                                     <a href="blog-details" class="cs_blog_thumbnail cs_zoom">
-                    <img class="cs_zoom_in" src="assets/img/blog/blog_3.jpg" alt="">
+                    <img class="cs_zoom_in" src="public/assets/img/blog/blog_3.jpg" alt="">
                   </a>
                                 </div>
                                 <div class="cs_blog_info">

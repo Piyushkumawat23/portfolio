@@ -23,7 +23,7 @@
                                 <span>10 min read</span>
                             </div>
                             <div class="cs_image_box cs_style_5 cs_radius_15">
-                                <img class="cs_radius_10 w-100" src="assets/img/blog/blog_d2.jpg" alt="project-details">
+                                <img class="cs_radius_10 w-100" src="public/assets/img/blog/blog_d2.jpg" alt="project-details">
                             </div>
                             <div class="row">
                                 <div class="col-xl-1 col-lg-2">
@@ -70,14 +70,14 @@
                                             vitae, justo. </p>
                                         <p class="cs_blog_text">Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
                                         <h3 class="cs_blog_subtitle cs_font_28 cs_medium">Wireframe</h3>
-                                        <img class="cs_blog_image_inside w-100" src="assets/img/blog/blog_d3.jpg" alt="blog_details_image">
+                                        <img class="cs_blog_image_inside w-100" src="public/assets/img/blog/blog_d3.jpg" alt="blog_details_image">
                                         <p class="cs_blog_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
                                         <p class="cs_blog_text">Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
                                             vitae, justo. </p>
                                         <p class="cs_blog_text">Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
                                         <div class="cs_meta cs_style_1 d-flex cs_gap_25 cs_white_bg cs_radius_10">
                                             <div class="cs_meta_avater_image">
-                                                <img class="w-100 h-100" src="assets/img/testmonial/a1.jpg" alt="Testmonial">
+                                                <img class="w-100 h-100" src="public/assets/img/testmonial/a1.jpg" alt="Testmonial">
                                             </div>
                                             <div class="cs_meta_info">
                                                 <p class="cs_meta_author cs_font_16">About Author</p>
@@ -88,7 +88,7 @@
                                         <div class="cs_comment_wrap  cs_white_bg cs_radius_10">
                                             <div class="cs_comment cs_style_1 d-flex cs_gap_25">
                                                 <div class="cs_comment_avater_image">
-                                                    <img class="w-100 h-100" src="assets/img/testmonial/a1.jpg" alt="Testmonial">
+                                                    <img class="w-100 h-100" src="public/assets/img/testmonial/a1.jpg" alt="Testmonial">
                                                 </div>
                                                 <div class="cs_comment_info">
                                                     <div class="d-flex justify-content-between align-items-center">
@@ -109,7 +109,7 @@
                                             </div>
                                             <div class="cs_comment cs_style_1 d-flex cs_gap_25 cs_ml_30">
                                                 <div class="cs_comment_avater_image">
-                                                    <img class="w-100 h-100" src="assets/img/testmonial/a2.jpg" alt="Testimonial">
+                                                    <img class="w-100 h-100" src="public/assets/img/testmonial/a2.jpg" alt="Testimonial">
                                                 </div>
                                                 <div class="cs_comment_info">
                                                     <div class="d-flex justify-content-between align-items-center">

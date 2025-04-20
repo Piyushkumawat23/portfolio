@@ -21,15 +21,14 @@ use Spatie\Sitemap\Tags\Url;
 // });
 
 Route::get('/sitemap.xml', function () {
-    Sitemap::create()
+    $sitemap = Sitemap::create()
         ->add(Url::create('/'))
         ->add(Url::create('/about'))
         ->add(Url::create('/portfolio'))
         ->add(Url::create('/blog'))
-        ->add(Url::create('/contact'))
-        ->writeToFile(public_path('sitemap.xml'));
+        ->add(Url::create('/contact'));
 
-    return response()->file(public_path('sitemap.xml'));
+    return $sitemap->toResponse(request());
 });
 
 Route::get('/robots.txt', function () {

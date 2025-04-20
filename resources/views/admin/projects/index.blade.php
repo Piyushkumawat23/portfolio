@@ -31,7 +31,7 @@
                                     <td>{{ $project->description }}</td>
                                     <td>
                                         @foreach($project->images->where('image_type', 'banner') as $image)
-                                            <img src="{{ asset('assets/img/portfolio/' . $image->image_url) }}" width="100">
+                                            <img src="{{ asset('public/assets/img/portfolio/' . $image->image_url) }}" width="100">
                                         @endforeach
                                     </td>
                                     

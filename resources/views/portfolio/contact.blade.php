@@ -5,7 +5,7 @@
     <main>
         <!-- Start Hero Section -->
         <section class="cs_hero cs_style_3 cs_type_1 cs_filled_bg cs_center text-center"
-            data-src="assets/img/bg/hero_bg_5.svg">
+            data-src="public/assets/img/bg/hero_bg_5.svg">
             <div class="container">
                 <div class="cs_height_45 cs_height_lg_45"></div>
                 <h1 class="cs_hero_title cs_font_92 cs_extra_bold wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
@@ -98,7 +98,7 @@
         <!--Start Contact Section-->
         <section class="position-relative">
             <div class="cs_service_shape_1 position-absolute">
-                <img src="assets/img/service_shape_1.svg" alt="">
+                <img src="public/assets/img/service_shape_1.svg" alt="">
             </div>
             <div class="cs_height_115 cs_height_lg_45"></div>
             <div class="container">

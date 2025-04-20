@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
         integrity="sha256-9kPW/n5nn53j4WMRYAxe9c1rCY96Oogo/MKSVdKzPmI=" crossorigin="anonymous" />
     <!--end::Third Party Plugin(Bootstrap Icons)-->
-    <link rel="stylesheet" href="{{ asset('assets/admin/css/adminlte.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/assets/admin/css/adminlte.css') }}">
 
 
     <!--end::Required Plugin(AdminLTE)-->
@@ -84,7 +84,7 @@
                                 <!--begin::Message-->
                                 <div class="d-flex">
                                     <div class="flex-shrink-0">
-                                        <img src="{{ asset('assets/admin/assets/img/user1-128x128.jpg') }}"
+                                        <img src="{{ asset('public/assets/admin/assets/img/user1-128x128.jpg') }}"
                                             alt="User Avatar" class="img-size-50 rounded-circle me-3" />
                                     </div>
                                     <div class="flex-grow-1">
@@ -106,7 +106,7 @@
                                 <!--begin::Message-->
                                 <div class="d-flex">
                                     <div class="flex-shrink-0">
-                                        <img src="{{ asset('assets/admin/assets/img/user8-128x128.jpg') }}"
+                                        <img src="{{ asset('public/assets/admin/assets/img/user8-128x128.jpg') }}"
                                             alt="User Avatar" class="img-size-50 rounded-circle me-3" />
                                     </div>
                                     <div class="flex-grow-1">
@@ -129,7 +129,7 @@
                                 <!--begin::Message-->
                                 <div class="d-flex">
                                     <div class="flex-shrink-0">
-                                        <img src="{{ asset('assets/admin/assets/img/user3-128x128.jpg') }}"
+                                        <img src="{{ asset('public/assets/admin/assets/img/user3-128x128.jpg') }}"
                                             alt="User Avatar" class="img-size-50 rounded-circle me-3" />
                                     </div>
                                     <div class="flex-grow-1">
@@ -191,14 +191,14 @@
                     <!--begin::User Menu Dropdown-->
                     <li class="nav-item dropdown user-menu">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <img src="{{ asset('assets/admin/assets/img/user2-160x160.jpg') }}"
+                            <img src="{{ asset('public/assets/admin/assets/img/user2-160x160.jpg') }}"
                                 class="user-image rounded-circle shadow" alt="User Image" />
                             <span class="d-none d-md-inline">Alexander Pierce</span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
                             <!--begin::User Image-->
                             <li class="user-header text-bg-primary">
-                                <img src="{{ asset('assets/admin/assets/img/user2-160x160.jpg') }}"
+                                <img src="{{ asset('public/assets/admin/assets/img/user2-160x160.jpg') }}"
                                     class="rounded-circle shadow" alt="User Image" />
                                 <p>
                                     Alexander Pierce - Web Developer
@@ -247,7 +247,7 @@
                 <!--begin::Brand Link-->
                 <a href="{{ route('admin.dashboard') }}" class="brand-link">
                     <!--begin::Brand Image-->
-                    <img src="{{ asset('assets/admin/assets/img/AdminLTELogo.png') }}" {{-- src="{{ asset('assets/admin/assets/img/AdminLTELogo.jpng')}} --}}
+                    <img src="{{ asset('public/assets/admin/assets/img/AdminLTELogo.png') }}" {{-- src="{{ asset('public/assets/admin/assets/img/AdminLTELogo.jpng')}} --}}
                         alt="AdminLTE Logo" class="brand-image opacity-75 shadow" />
                     <!--end::Brand Image-->
                     <!--begin::Brand Text-->
@@ -806,7 +806,7 @@
     </script>
     <!--end::Required Plugin(Bootstrap 5)--><!--begin::Required Plugin(AdminLTE)-->
     {{-- <script src="../../dist/js/adminlte.js"></script> --}}
-    <script src="{{ asset('assets/admin/js/adminlte.js') }}"></script>
+    <script src="{{ asset('public/assets/admin/js/adminlte.js') }}"></script>
 
     <!--end::Required Plugin(AdminLTE)--><!--begin::OverlayScrollbars Configure-->
     <script>

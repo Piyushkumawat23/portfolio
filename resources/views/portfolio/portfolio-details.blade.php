@@ -7,7 +7,7 @@
     <main>
         <!-- Start Hero Section -->
         <section class="cs_hero cs_style_3 cs_type_2 cs_filled_bg  text-center"
-            data-src="{{ asset('assets/img/bg/hero_bg_5.svg') }}">
+            data-src="{{ asset('public/assets/img/bg/hero_bg_5.svg') }}">
 
 
             <div class="container">
@@ -29,10 +29,10 @@
             <div class="cs_image_box cs_style_5 cs_radius_15">
                 @if ($bannerImage = $project->images->where('image_type', 'banner')->first())
                     <img class="cs_radius_10 w-100"
-                        src="{{ asset('assets/img/portfolio/' . $bannerImage->image_url) }}"
+                        src="{{ asset('public/assets/img/portfolio/' . $bannerImage->image_url) }}"
                         alt="project-details">
                 @else
-                    <img class="cs_radius_10 w-100" src="{{ asset('assets/img/default.png') }}" alt="Default Image">
+                    <img class="cs_radius_10 w-100" src="{{ asset('public/assets/img/default.png') }}" alt="Default Image">
                 @endif
 
             </div>
@@ -111,10 +111,10 @@
                                 @if ($centerImage = $project->images->where('image_type', 'center')->first())
                                     <img class="cs_protfolio_image cs_radius_10"
                                         style="width: 100%; max-height: 350px; object-fit: contain; border-radius: 5%;"
-                                        src="{{ asset('assets/img/portfolio/' . $centerImage->image_url) }}"
+                                        src="{{ asset('public/assets/img/portfolio/' . $centerImage->image_url) }}"
                                         alt="project-image">
                                 @else
-                                    <img class="cs_radius_10 w-100" src="{{ asset('assets/img/default.png') }}" alt="Default Image">
+                                    <img class="cs_radius_10 w-100" src="{{ asset('public/assets/img/default.png') }}" alt="Default Image">
                                 @endif
 
                                     <h3 id="project-challenge" class="cs_portfolio_title cs_font_25">Project Challenge</h3>
