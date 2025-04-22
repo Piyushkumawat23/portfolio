@@ -11,7 +11,7 @@ use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Auth;
 use Spatie\Sitemap\Sitemap;
 use Spatie\Sitemap\Tags\Url;
-
+use Illuminate\Support\Facades\Response;
 
 
 // Portfolio Routes
@@ -20,20 +20,49 @@ use Spatie\Sitemap\Tags\Url;
 //     return redirect('/error')->with('error', 'Page not found.')->setStatusCode(404);
 // });
 
+// Route::get('/sitemap.xml', function () {
+//     $sitemap = Sitemap::create()
+//         ->add(Url::create('/'))
+//         ->add(Url::create('/about'))
+//         ->add(Url::create('/portfolio'))
+//         ->add(Url::create('/blog'))
+//         ->add(Url::create('/contact'))
+//         ->add(Url::create('/testimonial'))
+//         ->add(Url::create('/faq'))
+//         ->add(Url::create('/error'))
+//         ->add(Url::create('/blog-details'));
+
+//     return $sitemap->toResponse(request());
+// });
+
 Route::get('/sitemap.xml', function () {
     $sitemap = Sitemap::create()
         ->add(Url::create('/'))
         ->add(Url::create('/about'))
         ->add(Url::create('/portfolio'))
         ->add(Url::create('/blog'))
-        ->add(Url::create('/contact'));
+        ->add(Url::create('/contact'))
+        ->add(Url::create('/testimonial'))
+        ->add(Url::create('/faq'))
+        ->add(Url::create('/error'))
+        ->add(Url::create('/blog-details'));
 
-    return $sitemap->toResponse(request());
+    return $sitemap->toResponse(request())
+        ->header('X-Robots-Tag', 'noindex, nofollow');
 });
+
+
+// Route::get('/robots.txt', function () {
+//     return response()->view('robots')->header('Content-Type', 'text/plain');
+// });
 
 Route::get('/robots.txt', function () {
-    return response()->view('robots')->header('Content-Type', 'text/plain');
+    return response()
+        ->view('robots')
+        ->header('Content-Type', 'text/plain')
+        ->header('X-Robots-Tag', 'noindex, nofollow');
 });
+
 
 Route::get('/', [PortfolioController::class, 'index'])->name('index');
 Route::get('/index', [PortfolioController::class, 'index']);

@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-    <url>
-    <loc>http://localhost:8000</loc>
-            </url>
-    <url>
-    <loc>http://localhost:8000/about</loc>
-            </url>
-    <url>
-    <loc>http://localhost:8000/portfolio</loc>
-            </url>
-    <url>
-    <loc>http://localhost:8000/blog</loc>
-            </url>
-    <url>
-    <loc>http://localhost:8000/contact</loc>
-            </url>
+  <url>
+    <loc>https://piyushkumawat.free.nf/</loc>
+  </url>
+  <url>
+    <loc>https://piyushkumawat.free.nf/about</loc>
+  </url>
+  <url>
+    <loc>https://piyushkumawat.free.nf/portfolio</loc>
+  </url>
+  <url>
+    <loc>https://piyushkumawat.free.nf/blog</loc>
+  </url>
+  <url>
+    <loc>https://piyushkumawat.free.nf/contact</loc>
+  </url>
+  <url>
+    <loc>https://piyushkumawat.free.nf/testimonial</loc>
+  </url>
+  <url>
+    <loc>https://piyushkumawat.free.nf/faq</loc>
+  </url>
+  <url>
+    <loc>https://piyushkumawat.free.nf/error</loc>
+  </url>
+  <url>
+    <loc>https://piyushkumawat.free.nf/blog-details</loc>
+  </url>
 </urlset>
