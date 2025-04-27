@@ -3058,7 +3058,7 @@ hr {
 }
 @media (max-width: 1550px) {
   .cs_hero.cs_style_2 .cs_hero_image_box .cs_imagebox_img {
-    top: 70px;
+    top: 0px;
   }
   .cs_hero.cs_style_2 .cs_hero_image_box .cs_imagebox_img img {
     max-height: 100%;
