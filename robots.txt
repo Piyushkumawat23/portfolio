@@ -2,7 +2,7 @@ User-agent: *
 Disallow:
 
 
-Sitemap: https://piyushkumawat.free.nf/public/sitemap.xml
+Sitemap: https://piyushkumawat.in/sitemap.xml
 
 
 

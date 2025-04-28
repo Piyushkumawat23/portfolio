@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Laralink">
     <meta name="robots" content="index, follow">
-
+    <meta name="ahrefs-site-verification" content="754774d9ffbd8bfc796abc017207d3178d33feb7db663561eebb7287009cbd81">
     <!-- Favicon Icon -->
     <link rel="icon" href="{{ asset('public/assets/img/p.png') }}">
 
@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="{{ asset('public/assets/css/style.css') }}">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://analytics.ahrefs.com/analytics.js" data-key="84Gr+Jgc9UAFrwpSAp5w2g" async></script>
-
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="dQqnb0G3vtKqUuBxmd8XiQ" async></script>
 
     <script type="application/ld+json">
         {
@@ -166,6 +166,14 @@
   <script src="{{ asset('public/assets/js/plugins/odometer.min.js') }}"></script>
   <script src="{{ asset('public/assets/js/plugins/wow.min.js') }}"></script>
   <script src="{{ asset('public/assets/js/main.js') }}"></script>
+
+  <script>
+    var ahrefs_analytics_script = document.createElement('script');
+    ahrefs_analytics_script.async = true;
+    ahrefs_analytics_script.src = 'https://analytics.ahrefs.com/analytics.js';
+    ahrefs_analytics_script.setAttribute('data-key', 'dQqnb0G3vtKqUuBxmd8XiQ');
+    document.getElementsByTagName('head')[0].appendChild(ahrefs_analytics_script);
+  </script>
   <script>
     // Typing effect for "Kumawat" -> changing to different titles
     var typedName = new Typed("#typed-name", {
