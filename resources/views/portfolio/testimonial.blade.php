@@ -10,7 +10,7 @@
                 <h1 class="cs_hero_title cs_font_92 cs_extra_bold wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
                     <span class="cs_gradient_text_2">Testimonial</span></h1>
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index">Home</a></li>
+                    <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
                     <li class="breadcrumb-item active">Testimonial</li>
                 </ol>
             </div>

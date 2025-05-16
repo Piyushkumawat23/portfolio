@@ -9,9 +9,11 @@
             <div class="container">
                 <div class="cs_height_45 cs_height_lg_45"></div>
                 <h1 class="cs_hero_title cs_font_92 cs_extra_bold wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
-                    <span class="cs_gradient_text_2">Contact Us</span></h1>
+                    <span class="cs_gradient_text_2">
+                        Contact Me
+                    </span></h1>
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index">Home</a></li>
+                    <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
                     <li class="breadcrumb-item active">Contact</li>
                 </ol>
             </div>
@@ -35,11 +37,10 @@
                                 </div>
                                 <div class="cs_iconbox_info">
                                     <h4 class="cs_iconbox_title cs_font_24 cs_semi_bold">My Articles</h4>
-                                    <p class="cs_iconbox_text">Read my latest blogs on Laravel, PHP, and Web Development.
-                                    </p>
-                                    <a class="cs_accent_color_2 cs_accent_color_hover cs_text_btn" href="blog-details">Read
-                                        Articles</a>
+                                    <p class="cs_iconbox_text">Explore expert blogs on Laravel, PHP best practices, and modern web development trends.</p>
+                                    <a class="cs_accent_color_2 cs_accent_color_hover cs_text_btn" href="blog-details">Read Articles</a>
                                 </div>
+                                
 
                             </div>
                         </div>
@@ -57,12 +58,11 @@
                                     </svg>
                                 </div>
                                 <div class="cs_iconbox_info">
-                                    <h4 class="cs_iconbox_title cs_font_24 cs_semi_bold">FAQ's</h4>
-                                    <p class="cs_iconbox_text">Have questions about my services? Find all the answers here.
-                                    </p>
-                                    <a class="cs_accent_color_2 cs_accent_color_hover cs_text_btn" href="faq">Check
-                                        FAQ’s</a>
+                                    <h4 class="cs_iconbox_title cs_font_24 cs_semi_bold">FAQs</h4>
+                                    <p class="cs_iconbox_text">Looking for more info about my services? Get answers to the most common questions.</p>
+                                    <a class="cs_accent_color_2 cs_accent_color_hover cs_text_btn" href="faq">Browse FAQs</a>
                                 </div>
+                                
 
                             </div>
                         </div>
@@ -78,13 +78,13 @@
                                 </div>
                                 <div class="cs_iconbox_info">
                                     <h4 class="cs_iconbox_title cs_font_24 cs_semi_bold">Email Me Directly</h4>
-                                    <p class="cs_iconbox_text">Have a project in mind? Let's discuss how I can help!</p>
-                                    <a href="https://mail.google.com/mail/?view=cm&to=piyushkumawat90607@gmail.com?subject=Project Inquiry&body=Hi, I would like to discuss a project with you."
-                                        class="cs_accent_color_2 cs_accent_color_hover cs_text_btn">
+                                    <p class="cs_iconbox_text">Have a project in mind? Let's connect and bring it to life.</p>
+                                    <a href="mailto:piyushkumawat90607@gmail.com?subject=Project Inquiry&body=Hi, I would like to discuss a project with you."
+                                       class="cs_accent_color_2 cs_accent_color_hover cs_text_btn">
                                         Send an Email
                                     </a>
-
                                 </div>
+                                
 
 
                             </div>

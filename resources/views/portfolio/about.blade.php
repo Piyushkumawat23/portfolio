@@ -9,10 +9,14 @@
         <section class="cs_hero cs_style_3 cs_filled_bg cs_center text-center" data-src="public/assets/img/bg/hero_bg_4.svg">
             <div class="container">
                 <div class="cs_height_45 cs_height_lg_45"></div>
-                <h1 class="cs_hero_title cs_font_92 cs_black wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"><span
-                        class="cs_gradient_text">About </span><span class="cs_gradient_border_text">Me</span></h1>
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index">Home</a></li>
+                {{-- <h1 class="cs_hero_title cs_font_92 cs_black wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"><span
+                        class="cs_gradient_text">About </span><span class="cs_gradient_border_text">Me</span></h1> --}}
+                    <h1 class="cs_hero_title cs_font_92 cs_black wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                        <span class="cs_gradient_text">About </span><span class="cs_gradient_border_text">Me - PHP & Laravel Developer</span>
+                    </h1>
+                    
+                    <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
                     <li class="breadcrumb-item active">About</li>
                 </ol>
             </div>
@@ -50,72 +54,58 @@
                     <div class="col-lg-6">
                         <div class="cs_about cs_style_1 cs_pl_50">
                             <h3 class="cs_about_title cs_font_48 cs_semi_bold">
-                                I <span class="cs_accent_color">build web solutions</span> that solve real-world problems
+                              I <span class="cs_accent_color">build web solutions</span> that solve real-world business challenges
                             </h3>
                             <p class="cs_about_text">
-                                Hi, I’m **Piyush Kumawat**, a passionate **PHP & Laravel Developer** based in **Jaipur,
-                                India**.
-                                I specialize in **backend development**, creating scalable and secure web applications using
-                                **Laravel, Core PHP, and MySQL**.
-                                My focus is on **delivering high-performance solutions** that help businesses grow.
+                              Hi, I’m <strong>Piyush Kumawat</strong>, a dedicated <strong>PHP & Laravel Developer</strong> based in <strong>Jaipur, India</strong>. I specialize in robust <strong>backend development</strong>, delivering secure and scalable <strong>web applications</strong> using <strong>Laravel, Core PHP, and MySQL</strong>. My mission is to provide <strong>high-performance digital solutions</strong> that accelerate business growth.
                             </p>
-
+                          
                             <p class="cs_about_text">
-                                With experience in **API integrations, database optimization, and security enhancements**, I
-                                ensure that every
-                                project I work on is **efficient, fast, and reliable**. I have built **e-commerce platforms,
-                                coin distribution
-                                systems, and custom web applications**, always keeping user experience and functionality in
-                                mind.
+                              My expertise includes <strong>API integration</strong>, <strong>database optimization</strong>, and <strong>security hardening</strong>—ensuring that every project I handle is <strong>efficient, fast-loading, and reliable</strong>. I’ve successfully built <strong>e-commerce websites</strong>, <strong>automated coin distribution systems</strong>, and <strong>custom web platforms</strong> with a strong focus on user experience and functionality.
                             </p>
-
+                          
                             <p class="cs_about_text">
-                                Apart from backend development, I have hands-on experience in **frontend technologies** like
-                                **HTML, CSS, JavaScript, Bootstrap, and jQuery**. I also understand the importance of
-                                **SEO**
-                                and implement strategies to improve website rankings and performance.
+                              Alongside backend development, I have practical experience in <strong>frontend technologies</strong> like <strong>HTML, CSS, JavaScript, Bootstrap, and jQuery</strong>. I also implement <strong>SEO best practices</strong> to boost search engine visibility and improve website performance.
                             </p>
-
+                          
                             <h4 class="cs_about_subtitle cs_font_36 cs_semi_bold">In Summary</h4>
                             <ul class="cs_mp_0 cs_about_summary_list">
-                                <li>
-                                    <p class="m-0 text-capitalize">Current Location</p>
-                                    <h5 class="cs_font_20 m-0 cs_semi_bold">Jaipur, India</h5>
-                                </li>
-                                <li>
-                                    <p class="m-0 text-capitalize">Education</p>
-                                    <h5 class="cs_font_20 m-0 cs_semi_bold">Bachelor of Computer Applications, Rajasthan
-                                        University</h5>
-                                </li>
-                                <li>
-                                    <p class="m-0 text-capitalize">Experience</p>
-                                    <h5 class="cs_font_20 m-0 cs_semi_bold">
-                                        Worked on multiple web development projects, including Laravel-based applications,
-                                        API-driven platforms, and custom PHP solutions.
-                                    </h5>
-                                </li>
-                                <li>
-                                    <p class="m-0 text-capitalize">Skills</p>
-                                    <h5 class="cs_font_20 m-0 cs_semi_bold">
-                                        PHP, Laravel, MySQL, API Development, Core PHP, HTML, CSS, JavaScript, Bootstrap,
-                                        Git, SEO
-                                    </h5>
-                                </li>
-                                <li>
-                                    <p class="m-0 text-capitalize">Interests</p>
-                                    <h5 class="cs_font_20 m-0 cs_semi_bold">
-                                        Web Development, Technology, Problem Solving, Continuous Learning
-                                    </h5>
-                                </li>
-                                <li>
-                                    <p class="m-0 text-capitalize">Email</p>
-                                    <h5 class="cs_font_20 m-0 cs_semi_bold wow fadeInLeft" data-wow-duration="0.8s"
-                                        data-wow-delay="0.2s">
-                                        piyushkumawat90607@gmail.com
-                                    </h5>
-                                </li>
+                              <li>
+                                <p class="m-0 text-capitalize">Current Location</p>
+                                <h5 class="cs_font_20 m-0 cs_semi_bold">Jaipur, India</h5>
+                              </li>
+                              <li>
+                                <p class="m-0 text-capitalize">Education</p>
+                                <h5 class="cs_font_20 m-0 cs_semi_bold">Bachelor of Computer Applications, Rajasthan University</h5>
+                              </li>
+                              <li>
+                                <p class="m-0 text-capitalize">Experience</p>
+                                <h5 class="cs_font_20 m-0 cs_semi_bold">
+                                  Built various web solutions including Laravel-based systems, API-powered platforms, and custom Core PHP projects.
+                                </h5>
+                              </li>
+                              <li>
+                                <p class="m-0 text-capitalize">Skills</p>
+                                <h5 class="cs_font_20 m-0 cs_semi_bold">
+                                  PHP, Laravel, MySQL, RESTful APIs, Core PHP, HTML, CSS, JavaScript, Bootstrap, Git, SEO Optimization
+                                </h5>
+                              </li>
+                              <li>
+                                <p class="m-0 text-capitalize">Interests</p>
+                                <h5 class="cs_font_20 m-0 cs_semi_bold">
+                                  Full-stack Development, Web Technologies, Problem Solving, Continuous Learning
+                                </h5>
+                              </li>
+                              <li>
+                                <p class="m-0 text-capitalize">Email</p>
+                                <h5 class="cs_font_20 m-0 cs_semi_bold wow fadeInLeft" data-wow-duration="0.8s"
+                                  data-wow-delay="0.2s">
+                                  piyushkumawat90607@gmail.com
+                                </h5>
+                              </li>
                             </ul>
-                        </div>
+                          </div>
+                          
                     </div>
 
                 </div>
@@ -135,9 +125,9 @@
                     <div class="d-lg-flex justify-content-between">
                         <div class="cs_section_heading cs_style_1">
                             <h2 class="cs_section_title cs_font_48 cs_semi_bold wow fadeInUp" data-wow-duration="0.8s"
-                                data-wow-delay="0.2s">I'm great in what I do<br> and <span class="cs_accent_color">I'm
-                                    loving it</span>
-                            </h2>
+                            data-wow-delay="0.2s">I excel at web development<br> and <span class="cs_accent_color">I genuinely love what I do</span>
+                        </h2>
+                        
                         </div>
                         <div class="align-self-end">
                             <div class="cs_height_25 cs_height_lg_25"></div>
@@ -221,53 +211,58 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="cs_slill_wrap cs_pl_70">
-                            <h3 class="cs_font_36 mb-0">Slills</h3>
+                            <h3 class="cs_font_36 mb-0">Technical Skills</h3>
                             <div class="cs_height_25 cs_height_lg_15"></div>
+                        
                             <div class="cs_progressbar cs_style_2">
-                                <div class="label cs_font_20 cs_semi_bold">Laravel & PHP</div>
+                                <div class="label cs_font_20 cs_semi_bold">Laravel & PHP Development</div>
                                 <h3 class="cs_progressbar_head cs_ternary_color cs_normal cs_font_14 text-end">95%</h3>
                                 <div class="cs_progress" data-progress="95">
                                     <div class="cs_progress_in"></div>
                                 </div>
                             </div>
+                        
                             <div class="cs_progressbar cs_style_2">
-                                <div class="label cs_font_20 cs_semi_bold">MySQL & Database Optimization</div>
+                                <div class="label cs_font_20 cs_semi_bold">MySQL & Database Performance Tuning</div>
                                 <h3 class="cs_progressbar_head cs_ternary_color cs_normal cs_font_14 text-end">90%</h3>
                                 <div class="cs_progress" data-progress="90">
                                     <div class="cs_progress_in"></div>
                                 </div>
                             </div>
+                        
                             <div class="cs_progressbar cs_style_2">
-                                <div class="label cs_font_20 cs_semi_bold">API Development & Integration</div>
+                                <div class="label cs_font_20 cs_semi_bold">RESTful API Development & Integration</div>
                                 <h3 class="cs_progressbar_head cs_ternary_color cs_normal cs_font_14 text-end">85%</h3>
                                 <div class="cs_progress" data-progress="85">
                                     <div class="cs_progress_in"></div>
                                 </div>
                             </div>
+                        
                             <div class="cs_progressbar cs_style_2">
-                                <div class="label cs_font_20 cs_semi_bold">Frontend Development (HTML, CSS, JavaScript,
-                                    Bootstrap)</div>
+                                <div class="label cs_font_20 cs_semi_bold">Frontend (HTML, CSS, JavaScript, Bootstrap)</div>
                                 <h3 class="cs_progressbar_head cs_ternary_color cs_normal cs_font_14 text-end">80%</h3>
                                 <div class="cs_progress" data-progress="80">
                                     <div class="cs_progress_in"></div>
                                 </div>
                             </div>
+                        
                             <div class="cs_progressbar cs_style_2">
-                                <div class="label cs_font_20 cs_semi_bold">SEO (On-Page, Off-Page, Technical SEO)</div>
+                                <div class="label cs_font_20 cs_semi_bold">Search Engine Optimization (SEO)</div>
                                 <h3 class="cs_progressbar_head cs_ternary_color cs_normal cs_font_14 text-end">75%</h3>
                                 <div class="cs_progress" data-progress="75">
                                     <div class="cs_progress_in"></div>
                                 </div>
                             </div>
-
+                        
                             <div class="cs_progressbar cs_style_2">
-                                <div class="label cs_font_20 cs_semi_bold">Version Control (Git, GitHub)</div>
+                                <div class="label cs_font_20 cs_semi_bold">Version Control (Git & GitHub)</div>
                                 <h3 class="cs_progressbar_head cs_ternary_color cs_normal cs_font_14 text-end">85%</h3>
                                 <div class="cs_progress" data-progress="85">
                                     <div class="cs_progress_in"></div>
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -292,9 +287,9 @@
                             </svg>
 
                         </p>
-                        <h2 class="cs_section_title cs_font_48 cs_semi_bold">What <span class="cs_accent_color">my
-                                client</span>
-                            have<br>to say <span class="cs_accent_color_2">about me</span>
+                        <h2 class="cs_section_title cs_font_48 cs_semi_bold">
+                            What <span class="cs_accent_color">my clients</span><br>
+                            have to say <span class="cs_accent_color_2">about my work</span>
                         </h2>
                     </div>
                     <div class="align-self-end">
@@ -335,15 +330,14 @@
                                 <div class="cs_testimonial_info">
                                     <img class="cs_testimonial_quote" src="public/assets/img/icon/Quote.svg"
                                         alt="Testimonial Quote">
-                                    <p class="cs_testimonial_text">
-                                        "He developed a custom Telegram bot for our coin distribution system. The API
-                                        integrations and
-                                        backend logic were seamless. Amazing work!"
-                                    </p>
-                                    <div class="cs_testimonial_author">
-                                        <div class="cs_author_name cs_font_20 cs_semi_bold">Michael Johnson</div>
-                                        <div class="cs_author_designation cs_font_16">Project Manager, Crypto Startup</div>
-                                    </div>
+                                        <p class="cs_testimonial_text">
+                                            "Piyush built a custom Telegram bot for our coin distribution platform. The API integration and backend logic were flawless. Exceptional development work!"
+                                        </p>
+                                        <div class="cs_testimonial_author">
+                                            <div class="cs_author_name cs_font_20 cs_semi_bold">Michael Johnson</div>
+                                            <div class="cs_author_designation cs_font_16">Project Manager, Crypto Startup</div>
+                                        </div>
+                                        
                                 </div>
                             </div>
                         </div>
@@ -362,15 +356,14 @@
                                     <img class="cs_testimonial_quote" src="public/assets/img/icon/Quote.svg"
                                         alt="Testimonial Quote">
 
-                                    <p class="cs_testimonial_text">
-                                        "Piyush built a high-performing Laravel-based e-commerce website for us. The SEO
-                                        optimization
-                                        significantly boosted our online presence. Highly recommended!"
-                                    </p>
-                                    <div class="cs_testimonial_author">
-                                        <div class="cs_author_name cs_font_20 cs_semi_bold">John Smith</div>
-                                        <div class="cs_author_designation cs_font_16">Founder, USA Jewelry Store</div>
-                                    </div>
+                                        <p class="cs_testimonial_text">
+                                            "Piyush delivered a high-performance Laravel e-commerce website for us. His SEO strategies greatly enhanced our online visibility. Truly professional work—highly recommended!"
+                                        </p>
+                                        <div class="cs_testimonial_author">
+                                            <div class="cs_author_name cs_font_20 cs_semi_bold">John Smith</div>
+                                            <div class="cs_author_designation cs_font_16">Founder, USA Jewelry Store</div>
+                                        </div>
+                                        
                                 </div>
                             </div>
                         </div>
@@ -400,8 +393,9 @@
                     </p>
 
                     <h2 class="cs_section_title cs_font_48 cs_semi_bold">
-                        I have worked with <br> <span class="cs_accent_color">leading businesses & startups</span>
+                        I’ve collaborated with <br> <span class="cs_accent_color">top startups and established brands</span>
                     </h2>
+                    
                     <div class="cs_height_70 cs_height_lg_40"></div>
 
                     <div class="cs_brands cs_style_1 cs_type_1">
@@ -436,8 +430,6 @@
                         <div class="cs_brand overflow-hidden cs_radius_10 text-center">
                             <div class="cs_brand_logo_wrap cs_center cs_brand_bg_5">
                                 <img class="cs_brand_logo" src="public/assets/img/client/Matrimony.png" alt="">
-
-                                {{-- <img class="cs_brand_logo" src="public/assets/img/client/matrimonial.svg" alt="Matrimonial Website"> --}}
                             </div>
                             <p class="m-0 cs_white_bg">Custom Matrimonial Platform</p>
                         </div>

@@ -1,29 +1,40 @@
 <IfModule mod_rewrite.c>
 
+    # ✅ Allow indexing for HTML & PHP files
     <FilesMatch "\.(html|php)$">
-    Header set X-Robots-Tag "index, follow"
+        Header set X-Robots-Tag "index, follow"
     </FilesMatch>
 
+    # ✅ Disable MultiViews & Index listings
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
     </IfModule>
 
     RewriteEngine On
-    RewriteCond %{HTTPS} off
-    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-    
-    # Handle Authorization Header
+    # 🔁 Redirect from old domain (free.nf) to new domain
+    RewriteCond %{HTTP_HOST} ^piyushkumawat\.free\.nf$ [NC]
+    RewriteRule ^(.*)$ https://piyushkumawat.in/$1 [L,R=301]
+
+    # 🔒 Force HTTPS
+    RewriteCond %{HTTPS} off
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # 🌐 Redirect www to non-www (optional but recommended)
+    RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+    RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+
+    # 🛡️ Pass Authorization headers properly
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
-    # Redirect Trailing Slashes If Not A Folder...
+    # 🚫 Remove trailing slash if not a directory
     RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_URI} (.+)/$
-    RewriteRule ^ %1 [L,R=301]
+    RewriteRule ^(.*)/$ /$1 [R=301,L]
 
-    # Send Requests To Front Controller...
+    # 🚀 Route all other requests to index.php
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+
 </IfModule>

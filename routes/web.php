@@ -44,11 +44,10 @@ Route::get('/sitemap.xml', function () {
         ->add(Url::create('/contact'))
         ->add(Url::create('/testimonial'))
         ->add(Url::create('/faq'))
-        ->add(Url::create('/error'))
         ->add(Url::create('/blog-details'));
 
     return $sitemap->toResponse(request())
-        ->header('X-Robots-Tag', 'noindex, nofollow');
+        ->header('X-Robots-Tag', 'index, follow');
 });
 
 
@@ -60,7 +59,7 @@ Route::get('/robots.txt', function () {
     return response()
         ->view('robots')
         ->header('Content-Type', 'text/plain')
-        ->header('X-Robots-Tag', 'noindex, nofollow');
+        ->header('X-Robots-Tag', 'index, follow');
 });
 
 

@@ -3,6 +3,3 @@ Disallow:
 
 
 Sitemap: https://piyushkumawat.in/sitemap.xml
-
-
-

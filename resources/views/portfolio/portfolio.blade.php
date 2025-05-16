@@ -8,11 +8,15 @@
 
                 <div class="cs_height_45 cs_height_lg_45"></div>
 
-                <h1 class="cs_hero_title cs_font_92 cs_extra_bold wow fadeInUp"><span class="cs_gradient_text_2">Portfolio</span></h1>
-
+                {{-- <h1 class="cs_hero_title cs_font_92 cs_extra_bold wow fadeInUp"><span class="cs_gradient_text_2">Portfolio</span></h1> --}}
+                <h1 class="cs_hero_title cs_font_92 cs_extra_bold wow fadeInUp">
+                    <span class="cs_gradient_text_2">My Project Portfolio</span>
+                </h1>
+                
                 <ol class="breadcrumb">
 
-                    {{-- <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li> --}}
+                   
+                    <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
 
                     <li class="breadcrumb-item active">Portfolio</li>
 

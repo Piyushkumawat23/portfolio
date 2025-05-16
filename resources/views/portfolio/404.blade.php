@@ -32,7 +32,7 @@
             <div class=" text-center">
                 <img class="cs_img" src="public/assets/img/not_found_1.svg" alt="errorPageOneImage">
                 <h1 class="cs_title cs_font_48 cs_semi_bold">Sorry! Page did <span class="cs_accent_color">not found</span> </h1>
-                <a class="cs_btn cs_style_1" href="index"><span>Back To Home</span></a>
+                <a class="cs_btn cs_style_1" href="{{ url('/') }}"><span>Back To Home</span></a>
             </div>
         </div>
     </section>

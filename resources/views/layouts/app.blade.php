@@ -6,30 +6,53 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Laralink">
     <meta name="robots" content="index, follow">
-    <meta name="ahrefs-site-verification" content="754774d9ffbd8bfc796abc017207d3178d33feb7db663561eebb7287009cbd81">
+    <meta name="author" content="Piyush">
+    <meta name="language" content="English">
+    {{-- <title>Piyush - Index</title>  --}}
+    <meta name="description" content="I'm Piyush, a Laravel and PHP backend developer specializing in MVC, MySQL, and API integration.">
+    <meta name="keywords" content="Piyush, Laravel Developer, PHP Developer, Backend Developer, MVC, REST API, MySQL, Web Development">
+
+      <!-- Open Graph Tags -->
+    <meta property="og:title" content="Piyush - PHP & Laravel Backend Developer" />
+    <meta property="og:description" content="I’m Piyush, a backend developer specializing in Laravel, MVC, and API development." />
+    <meta property="og:image" content="{{ asset('/public/assets/img/hero/hero_1.png') }}" />
+    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0e0e0e">
+
+
+    <!-- Twitter Cards -->
+    {{-- <meta name="twitter:card" content="summary_large_image"> --}}
+    <meta name="twitter:title" content="Piyush - Laravel Developer">
+    <meta name="twitter:description" content="Experienced in Laravel, MVC architecture, and REST APIs.">
+    {{-- <meta name="twitter:image" content="{{ asset('/public/assets/img/hero/hero_1.png') }}"> --}}
+
+
+    {{-- <link rel="canonical" href="https://piyushkumawat.in/" /> --}}
+
+    <link rel="canonical" href="{{ url()->current() }}" />
+    <link rel="alternate" hreflang="en" href="{{ url()->current() }}" />    
     <!-- Favicon Icon -->
     <link rel="icon" href="{{ asset('public/assets/img/p.png') }}">
-
+    
     <!-- Site Title -->
     {{-- <title>Piyush - </title> --}}
-    <title>Piyush - {{ ucfirst(request()->route()->getName()) }}</title>
-    <title>Piyush - Index</title> {{-- You can dynamically change this if needed --}}
-<meta name="description" content="I'm Piyush, a Laravel and PHP backend developer specializing in MVC, MySQL, and API integration.">
-<meta name="keywords" content="Piyush, Laravel, PHP, Backend, Developer">
+    {{-- <title>Piyush - {{ ucfirst(request()->route()->getName()) }}</title> --}}
+    <title>Piyush - {{ ucfirst(request()->route()->getName() ?? 'Home') }}</title>
     
-    <link rel="canonical" href="{{ url()->current() }}" />
-    <link rel="alternate" hreflang="en" href="{{ url()->current() }}" />
+    
+      <!-- Stylesheets -->
     <link rel="stylesheet" href="{{ asset('public/assets/css/plugins/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('public/assets/css/plugins/fontawesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('public/assets/css/plugins/odometer-theme-default.css') }}">
     <link rel="stylesheet" href="{{ asset('public/assets/css/plugins/select2.min.css') }}">
     <link rel="stylesheet" href="{{ asset('public/assets/css/plugins/animate.css') }}">
     <link rel="stylesheet" href="{{ asset('public/assets/css/style.css') }}">
+
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://analytics.ahrefs.com/analytics.js" data-key="84Gr+Jgc9UAFrwpSAp5w2g" async></script>
-    <script src="https://analytics.ahrefs.com/analytics.js" data-key="dQqnb0G3vtKqUuBxmd8XiQ" async></script>
+
+      <!-- Schema JSON-LD -->
 
     <script type="application/ld+json">
         {
@@ -43,9 +66,9 @@
             "name": "Freelance"
           },
           "sameAs": [
-            "https://github.com/yourusername",
-            "https://linkedin.com/in/yourusername",
-            "https://twitter.com/yourusername"
+            "https://github.com/Piyushkumawat23",
+            "https://linkedin.com/in/piyush-kumawat-3aaa34227",
+            "https://x.com/Piyush__Kumawat"
           ],
           "image": "{{ asset('/public/assets/img/hero/hero_1.png') }}",
           "description": "I’m a backend developer specializing in Laravel, MVC architecture, and API development."
@@ -167,13 +190,7 @@
   <script src="{{ asset('public/assets/js/plugins/wow.min.js') }}"></script>
   <script src="{{ asset('public/assets/js/main.js') }}"></script>
 
-  <script>
-    var ahrefs_analytics_script = document.createElement('script');
-    ahrefs_analytics_script.async = true;
-    ahrefs_analytics_script.src = 'https://analytics.ahrefs.com/analytics.js';
-    ahrefs_analytics_script.setAttribute('data-key', 'dQqnb0G3vtKqUuBxmd8XiQ');
-    document.getElementsByTagName('head')[0].appendChild(ahrefs_analytics_script);
-  </script>
+
   <script>
     // Typing effect for "Kumawat" -> changing to different titles
     var typedName = new Typed("#typed-name", {
