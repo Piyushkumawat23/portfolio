@@ -138,9 +138,9 @@
                             <div
                                 class="cs_happy_client position-absolute cs_white_bg d-flex align-items-center cs_radius_20 cs_gap_15">
                                 <div class="cs_font_36 cs_semi_bold cs_accent_color_2"><span class="odometer"
-                                        data-count-to="5"></span><span>+</span></div>
+                                        data-count-to="4"></span><span>+</span></div>
                                         <div>
-                                            <h5 class="mb-0 cs_normal" aria-label="Experience Years">5+ Years</h5>
+                                            <h5 class="mb-0 cs_normal" aria-label="Experience Years">4+ Years</h5>
                                             <p class="mb-0 cs_font_16">Happy Clients</p>
                                           </div>
                                           
@@ -351,8 +351,17 @@
                     <div class="cs_isotop_item cs_zoom">
                         <a href="{{ route('portfolio.details', $project->id) }}" target="_blank" class="cs_portfolio cs_style_1">
                             <div class="cs_portfolio_thumbnail">
-                                @if($project->images->count() > 0)
+                                {{-- @if($project->images->count() > 0)
                                     <img class="cs_zoom_in w-100" src="{{ asset('public/assets/img/portfolio/' . $project->images->first()->image_url) }}" alt="{{ $project->name }}">
+                                @else
+                                    <img class="cs_zoom_in w-100" src="{{ asset('public/assets/img/default.png') }}" alt="Default Image">
+                                @endif --}}
+
+
+                                @if ($bannerImage = $project->images->where('image_type', 'banner')->first())
+                                <img class="cs_zoom_in w-100"
+                                        src="{{ asset('public/assets/img/portfolio/' . $bannerImage->image_url) }}"
+                                        alt="project-details">
                                 @else
                                     <img class="cs_zoom_in w-100" src="{{ asset('public/assets/img/default.png') }}" alt="Default Image">
                                 @endif
@@ -504,7 +513,7 @@
                             <div class="cs_funfact_in cs_filled_bg" data-src="public/assets/img/bg/funfact_bg.svg">
                                 <h3 class="cs_funfact_number cs_font_48 cs_semi_bold cs_center m-0 overflow-hidden">
                                     <span>
-                                        <span class="odometer" data-count-to="220"></span>+
+                                        <span class="odometer" data-count-to="120"></span>+
                                     </span>
                                 </h3>
                                 <div class="cs_funfact_text cs_font_24 cs_center m-0"><span>Satisfied Clients Worldwide</span></div>

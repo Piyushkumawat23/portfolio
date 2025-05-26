@@ -6,6 +6,8 @@
         <div class="card card-primary card-outline mb-4">
             <div class="card-header">
                 <div class="card-title">Edit Project</div>
+            
+                <div class="card-title-previous">Back</div>
             </div>
             <form action="{{ route('admin.projects.update', $project->id) }}" method="POST" enctype="multipart/form-data">
                 @csrf

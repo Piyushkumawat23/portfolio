@@ -90,6 +90,7 @@
                     <div class="cs_main_header_left">
                         <a class="cs_site_branding" href="{{ url('/') }}">
                             <img src="{{ asset('/public/assets/img/logo.png') }}" alt="Logo">
+                            {{-- <img src="{{ asset('/public/assets/img/logo2.png') }}" alt="Logo"> --}}
                         </a>
                         
                     </div>
