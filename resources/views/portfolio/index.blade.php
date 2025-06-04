@@ -127,7 +127,7 @@
                                 <a href="public/assets/cv/Piyush-Kumawat-.pdf"class="cs_btn cs_style_1" download><span>Download
                                         CV</span></a>
                                 <a class="cs_font_24 cs_accent_color_2 cs_accent_color_2_hover cs_text_btn cs_type_2 cs_semi_bold"
-                                    href="contact">Let’s Talk</a>
+                                    href="{{ url('/contact') }}">Let’s Talk</a>
                             </div>
                         </div>
                     </div>
@@ -195,8 +195,8 @@
                             <p class="m-0">🔹 Looking for a reliable web developer? Let’s turn your vision into reality! 🚀</p>
 
                             <div class="cs_height_25 cs_height_lg_20"></div>
-                            {{-- <a class="cs_btn cs_style_1" href="contact"><span>Hire Me</span></a> --}}
-                            <a class="cs_btn cs_style_1" href="/contact" title="Contact Piyush Kumawat for your next project">
+                            {{-- <a class="cs_btn cs_style_1" href="{{ url('/contact') }}"><span>Hire Me</span></a> --}}
+                            <a class="cs_btn cs_style_1" href="{{ url('/contact') }}" title="Contact Piyush Kumawat for your next project">
                                 <span>Hire Me</span>
                               </a>
                               
@@ -220,7 +220,7 @@
                                             <span
                                                 class="cs_letter_spacing_15 cs_ternary_color cs_secondary_font cs_font_15 text-uppercase m-0">50+
                                                 Projects</span>
-                                            <a href="portfolio"
+                                            <a href="{{ url('/portfolio') }}"
                                                 class="cs_circle_btn cs_style_1 cs_accent_color_2 cs_center rounded-circle">
                                                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -256,7 +256,7 @@
                                             <span
                                                 class="cs_letter_spacing_15 cs_ternary_color cs_secondary_font cs_font_15 text-uppercase m-0">80+
                                                 Projects</span>
-                                            <a href="portfolio"
+                                            <a href="{{ url('/portfolio') }}"
                                                 class="cs_circle_btn cs_style_1 cs_accent_color_2 cs_center rounded-circle">
                                                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -292,7 +292,7 @@
                                             <span
                                                 class="cs_letter_spacing_15 cs_ternary_color cs_secondary_font cs_font_15 text-uppercase m-0">30+
                                                 Projects</span>
-                                            <a href="portfolio"
+                                            <a href="{{ url('/portfolio') }}"
                                                 class="cs_circle_btn cs_style_1 cs_accent_color_2 cs_center rounded-circle">
                                                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -431,7 +431,7 @@
                         <div class="cs_portfolio cs_style_2 text-center cs_radius_20 overflow-hidden wow fadeInUp"
                             data-wow-duration="0.8s" data-wow-delay="0.2s">
                             <a class="cs_portfolio_text_btn d-inline-flex cs_gap_25 align-items-center cs_font_24 cs_accent_color cs_semi_bold"
-                                href="portfolio">
+                                href="{{ url('/portfolio') }}">
                                 <span class="cs_text_btn">View All Project</span>
                                 <span class="cs_circle_btn cs_style_1 cs_accent_color cs_center rounded-circle">
                                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
@@ -627,7 +627,7 @@
                     <div class="align-self-end">
                         <div class="cs_height_25 cs_height_lg_25"></div>
                         <a class="cs_portfolio_text_btn d-inline-flex cs_gap_25 align-items-center cs_font_24 cs_accent_color cs_semi_bold"
-                            href="testimonial">
+                            href="{{ url('/testimonial') }}">
                             {{-- <span class="cs_text_btn">View All Testmonial</span> --}}
                             <span class="cs_text_btn">Read All Client Testimonials</span>
 
@@ -657,9 +657,7 @@
                             class="cs_testimonial cs_style_2 cs_radius_20 cs_white_bg cs_transition_3 cs_transform_up_hover_3">
                             <div class="cs_testimonial_in">
                                 <div class="cs_testimonial_img overflow-hidden">
-                                    {{-- <img class="h-100 w-100" src="public/assets/img/testmonial/client2.jpg" alt="Client Image"> --}}
                                     <img class="h-100 w-100" src="public/assets/img/testmonial/a4.jpg" alt="avaterImg">
-
                                 </div>
                                 <div class="cs_testimonial_info">
                                     <img class="cs_testimonial_quote" src="public/assets/img/icon/Quote.svg"
@@ -734,7 +732,7 @@
                     <div class="align-self-end">
                         <div class="cs_height_25 cs_height_lg_25"></div>
                         <a class="d-inline-flex cs_gap_15 align-items-center text-uppercase cs_letter_spacing_15 cs_font_16 cs_accent_color"
-                            href="blog">
+                            href="{{ url('/blog') }}">
                             <span class="cs_text_btn">Read All Blog Posts</span>
                             <svg width="5" height="9" viewBox="0 0 5 9" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -748,13 +746,13 @@
                     <div class="cs_blog cs_style_3 cs_transition_3 cs_white_bg cs_radius_20 cs_transform_up_hover_3">
                         <div class="cs_blog_in">
                             <div class="cs_blog_thumbnail cs_zoom">
-                                <a href="blog-details">
+                                <a href="{{ url('/blog-details') }}">
                                     <img class="cs_zoom_in w-100" src="public/assets/img/blog/blog_4.jpg" alt="blog_img">
                                 </a>
                             </div>
                             <div class="cs_blog_info">
                                 <h3 class="cs_blog_title cs_font_28">
-                                    <a class="cs_accent_color_2_hover" href="blog-details">
+                                    <a class="cs_accent_color_2_hover" href="{{ url('/blog-details') }}">
                                         Mastering Laravel: Best Practices for Scalable Web Applications
                                     </a>
                                 </h3>
@@ -766,7 +764,7 @@
                                             <p class="cs_blog_designation cs_font_16 cs_normal mb-0">10 Mar 2024</p>
                                         </div>
                                     </div>
-                                    <a href="blog-details"
+                                    <a href="{{ url('/blog-details') }}"
                                         class="cs_circle_btn cs_style_1 cs_type_1 cs_accent_color_2 cs_center rounded-circle">
                                         <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -788,12 +786,12 @@
                         </div>
                     </div>
                     <div class="cs_blog cs_style_2 cs_transition_4">
-                        <a href="blog-details" class="cs_blog_thumbnail cs_zoom">
+                        <a href="{{ url('/blog-details') }}" class="cs_blog_thumbnail cs_zoom">
                             <img class="cs_zoom_in w-100 h-100" src="public/assets/img/blog/blog_2.jpg" alt="">
                         </a>
                         <div class="cs_blog_info">
                             <h2 class="cs_blog_title cs_font_20 cs_semi_bold">
-                                <a class="cs_accent_color_2_hover" href="blog-details">
+                                <a class="cs_accent_color_2_hover" href="{{ url('/blog-details') }}">
                                     Optimizing MySQL Queries for High-Performance Web Applications
                                 </a>
                             </h2>
@@ -806,7 +804,7 @@
                                 </div>
                             </div>
                             
-                            <a href="blog-details"
+                            <a href="{{ url('/blog-details') }}"
                                 class="cs_circle_btn cs_style_1 cs_type_1 cs_accent_color_2 cs_center rounded-circle">
                                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -826,12 +824,12 @@
                         </div>
                     </div>
                     <div class="cs_blog cs_style_2 cs_transition_4">
-                        <a href="blog-details" class="cs_blog_thumbnail cs_zoom">
+                        <a href="{{ url('/blog-details') }}" class="cs_blog_thumbnail cs_zoom">
                             <img class="cs_zoom_in w-100 h-100" src="public/assets/img/blog/blog_3.jpg" alt="">
                         </a>
                         <div class="cs_blog_info">
                             <h2 class="cs_blog_title cs_font_20 cs_semi_bold">
-                                <a class="cs_accent_color_2_hover" href="blog-details">
+                                <a class="cs_accent_color_2_hover" href="{{ url('/blog-details') }}">
                                     SEO for Developers: Effective Strategies to Rank Your Web Projects
                                 </a>
                             </h2>
@@ -843,7 +841,7 @@
                                     <p class="cs_blog_designation cs_font_16 cs_normal mb-0">25 Feb 2024</p>
                                 </div>
                             </div>
-                            <a href="blog-details"
+                            <a href="{{ url('/blog-details') }}"
                                 class="cs_circle_btn cs_style_1 cs_type_1 cs_accent_color_2 cs_center rounded-circle">
                                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -863,12 +861,12 @@
                         </div>
                     </div>
                     <div class="cs_blog cs_style_2 cs_transition_4">
-                        <a href="blog-details" class="cs_blog_thumbnail cs_zoom">
+                        <a href="{{ url('/blog-details') }}" class="cs_blog_thumbnail cs_zoom">
                             <img class="cs_zoom_in w-100 h-100" src="public/assets/img/blog/blog_1.jpg" alt="">
                         </a>
                         <div class="cs_blog_info">
                             <h2 class="cs_blog_title cs_font_20 cs_semi_bold">
-                                <a class="cs_accent_color_2_hover" href="blog-details">
+                                <a class="cs_accent_color_2_hover" href="{{ url('/blog-details') }}">
                                     Building a Secure Authentication System in Laravel: Best Practices for Developers
                                 </a>
                             </h2>
@@ -880,7 +878,7 @@
                                     <p class="cs_blog_designation cs_font_16 cs_normal mb-0">18 Feb 2024</p>
                                 </div>
                             </div>
-                            <a href="blog-details"
+                            <a href="{{ url('/blog-details') }}"
                                 class="cs_circle_btn cs_style_1 cs_type_1 cs_accent_color_2 cs_center rounded-circle">
                                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -940,47 +938,45 @@
                     </div>
                     <div class="col-lg-7 offset-lg-1">
                         <div class="cs_brands cs_style_1 cs_ml_30">
-                            <a href="https://t.me/Unitrades_bot/Unitrade_app" target="_blank" rel="noopener noreferrer">
+                            {{-- <a href="https://t.me/Unitrades_bot/Unitrade_app" target="_blank" rel="noopener noreferrer">
                                 <div class="cs_brand overflow-hidden cs_radius_10 text-center">
                                     <div class="cs_brand_logo_wrap cs_center cs_brand_bg_1">
                                         <img class="cs_brand_logo" src="public/assets/img/client/Unitrade_app.JPG" alt="Unitrade_app">
                                     </div>
                                     <p class="m-0 cs_white_bg">Unitrade Coin System</p>
                                 </div>
-                            </a>
+                            </a> --}}
 
-                            <a href="https://pandbimports.com/" target="_blank" rel="noopener noreferrer">
+                            {{-- <a href="https://pandbimports.com/" target="_blank" rel="noopener noreferrer">
                                 <div class="cs_brand overflow-hidden cs_radius_10 text-center">
                                     <div class="cs_brand_logo_wrap cs_center cs_brand_bg_2">
                                         <img class="cs_brand_logo" src="public/assets/img/client/p&b.png" alt="p&b">
-                                        {{-- <img class="cs_brand_logo" src="public/assets/img/client/c2.svg" alt=""> --}}
-                                    </div>
+                                         </div>
                                     <p class="m-0 cs_white_bg">P&B Imports</p>
                                 </div>
-                            </a>
+                            </a> --}}
 
-                            <a href="https://bautlr.com/" target="_blank" rel="noopener noreferrer">
+                            {{-- <a href="https://bautlr.com/" target="_blank" rel="noopener noreferrer">
 
                                 <div class="cs_brand overflow-hidden cs_radius_10 text-center">
                                     <div class="cs_brand_logo_wrap cs_center cs_brand_bg_3">
-                                        {{-- <img class="cs_brand_logo" src="public/assets/img/client/c3.svg" alt=""> --}}
                                         <img class="cs_brand_logo" src="public/assets/img/client/bautlr.webp" alt="bautlr">
                                     </div>
                                     <p class="m-0 cs_white_bg">Bautlr</p>
                                 </div>
-                            </a>
+                            </a> --}}
 
                         </div>
 
                         <div class="cs_height_50 cs_height_lg_30"></div>
 
                         <div class="cs_brands cs_style_1 cs_mr_30">
-                            <div class="cs_brand overflow-hidden cs_radius_10 text-center">
+                            {{-- <div class="cs_brand overflow-hidden cs_radius_10 text-center">
                                 <div class="cs_brand_logo_wrap cs_center cs_brand_bg_4">
                                     <img class="cs_brand_logo" src="public/assets/img/client/Vostro_market.png" alt="">
                                 </div>
                                 <p class="m-0 cs_white_bg">Vostro Market</p>
-                            </div>
+                            </div> --}}
                             <div class="cs_brand overflow-hidden cs_radius_10 text-center">
                                 <div class="cs_brand_logo_wrap cs_center cs_brand_bg_5">
                                     <img class="cs_brand_logo" src="public/assets/img/client/Matrimony.png" alt="">

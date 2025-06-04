@@ -147,10 +147,11 @@ Route::middleware(['auth', 'admin'])->group(function () {
         'destroy' => 'admin.projects.destroy',
     ]);
     Route::delete('/admin/projects/remove-image/{id}', [ProjectController::class, 'removeImage'])->name('admin.projects.removeImage');
-
+Route::get('admin/projects/toggle-status/{id}', [ProjectController::class, 'toggleStatus'])->name('admin.projects.toggleStatus');
 
 
 });
+
 
 
 

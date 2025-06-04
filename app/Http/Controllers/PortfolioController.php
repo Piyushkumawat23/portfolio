@@ -9,11 +9,24 @@ use App\Models\Portfolio;
 class PortfolioController extends Controller
 {
 
+    // public function index()
+    // {
+    //     $projects = Project::with('images')->limit(3)->get();
+    //     return view('portfolio.index', compact('projects'));
+    // }
+
+
     public function index()
-    {
-        $projects = Project::with('images')->limit(3)->get();
-        return view('portfolio.index', compact('projects'));
-    }
+{
+    $projects = Project::with('images')
+                ->where('status', 1) // Only published projects
+                ->latest()
+                ->limit(3)
+                ->get();
+
+    return view('portfolio.index', compact('projects'));
+}
+
     
     public function about()
     {

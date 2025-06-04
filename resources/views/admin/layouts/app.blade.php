@@ -36,17 +36,59 @@
     <!-- jsvectormap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/css/jsvectormap.min.css"
         integrity="sha256-+uGLJmmTKOqBr+2E6KDYs/NRsHxSkONXFHUL0fy2O/4=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    </head>
+    <style>
+    .custom-flash {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 9999;
+        min-width: 250px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        animation: fadeinout 5s forwards;
+    }
+
+    @keyframes fadeinout {
+        0% { opacity: 0; transform: translateY(20px); }
+        10% { opacity: 1; transform: translateY(0); }
+        90% { opacity: 1; transform: translateY(0); }
+        100% { opacity: 0; transform: translateY(20px); }
+    }
+</style>
+
+    
+    
+</head>
+
+
 
 <!--begin::Body-->
 
 <body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
+
+    <!-- Flash Messages -->
+        @if(session('success'))
+            <div class="alert alert-success alert-dismissible custom-flash" role="alert">
+                {{ session('success') }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        @endif
+
+        @if(session('error'))
+            <div class="alert alert-danger alert-dismissible custom-flash" role="alert">
+                {{ session('error') }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        @endif
+
+        <!-- End Flash Messages -->
+
     <!--begin::App Wrapper-->
     <div class="app-wrapper">
         <!--begin::Header-->
         <nav class="app-header navbar navbar-expand bg-body">
+
             <!--begin::Container-->
             <div class="container-fluid">
                 <!--begin::Start Navbar Links-->
@@ -57,7 +99,7 @@
                         </a>
                     </li>
                     <li class="nav-item d-none d-md-block">
-                        <a href="{{ route('index')}}" target="_blank" class="nav-link">Browse Website</a>
+                        <a href="{{ route('index') }}" target="_blank" class="nav-link">Browse Website</a>
 
                     </li>
                     <li class="nav-item d-none d-md-block"><a href="#" class="nav-link">Home</a></li>
@@ -221,14 +263,16 @@
                             <li class="user-footer">
                                 <a href="#" class="btn btn-default btn-flat">Profile</a>
 
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                    style="display: none;">
                                     @csrf
                                 </form>
-                                
-                                <a href="#" class="btn btn-default btn-flat float-end" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+
+                                <a href="#" class="btn btn-default btn-flat float-end"
+                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                     Sign out
                                 </a>
-                    
+
                             </li>
                             <!--end::Menu Footer-->
                         </ul>
@@ -242,6 +286,7 @@
         <!--end::Header-->
         <!--begin::Sidebar-->
         <aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark">
+
             <!--begin::Sidebar Brand-->
             <div class="sidebar-brand">
                 <!--begin::Brand Link-->
@@ -359,7 +404,7 @@
                                 </li>
                             </ul>
                         </li> --}}
-                        
+
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon bi bi-menu-button-wide"></i>
@@ -368,8 +413,8 @@
                                     <i class="nav-arrow bi bi-chevron-right"></i>
                                 </p>
                             </a>
-                        
-                        
+
+
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
                                     <a href="{{ route('generate.theme') }}" class="nav-link">
@@ -758,9 +803,18 @@
                         </li>
                     </ul>
                     <!--end::Sidebar Menu-->
+
+
+                    
+          
+
+
                 </nav>
             </div>
             <!--end::Sidebar Wrapper-->
+
+
+
         </aside>
 
 
@@ -768,6 +822,9 @@
 
         <!-- Content Section -->
         @yield('content')
+
+
+
 
         <!-- Footer -->
         <footer>
@@ -1016,6 +1073,16 @@
         const sparkline3 = new ApexCharts(document.querySelector('#sparkline-3'), option_sparkline3);
         sparkline3.render();
     </script>
+
+<script>
+    setTimeout(function () {
+        let alert = document.querySelector('.custom-flash');
+        if (alert) {
+            alert.remove();
+        }
+    }, 5000);
+</script>
+
 
 
 

@@ -1,6 +1,7 @@
 @extends('admin.layouts.app')
 
 @section('content')
+             
 <main class="app-main">
     <div class="app-content-header">
         <div class="container-fluid">
@@ -47,6 +48,14 @@
                                                 <i class="fas fa-trash-alt"></i>
                                             </button>
                                         </form>
+                                        <!-- Publish / Unpublish -->
+                                        <a href="{{ route('admin.projects.toggleStatus', $project->id) }}" class="ms-2">
+                                            @if($project->status)
+                                                <span class="badge bg-success">Published</span>
+                                            @else
+                                                <span class="badge bg-secondary">Unpublished</span>
+                                            @endif
+                                        </a>
                                     </td>
                                 </tr>
                             @endforeach

@@ -42,6 +42,7 @@ class ProjectController extends Controller {
             'design_research' => $request->design_research,
             'design_approach' => $request->design_approach,
             'the_solutions' => $request->the_solutions,
+            'status' => 0
         ]);
     
         if ($request->hasFile('images')) {
@@ -202,11 +203,21 @@ class ProjectController extends Controller {
 
 
 
-    public function portfolioIndex() {
-        $projects = Project::with('images')->get();
+    // public function portfolioIndex() {
+    //     $projects = Project::with('images')->get();
+    //     return view('portfolio.portfolio', compact('projects'));
+    // }
+
+    public function portfolioIndex()
+    {
+        $projects = Project::with('images')
+                    ->where('status', 1)
+                    ->latest()
+                    ->get();
+
         return view('portfolio.portfolio', compact('projects'));
     }
-    
+
 
     
     public function show($id)
@@ -214,5 +225,16 @@ class ProjectController extends Controller {
         $project = Project::with('images')->findOrFail($id);
         return view('portfolio.portfolio-details', compact('project'));
     }
+
+
+    public function toggleStatus($id)
+    {
+        $project = Project::findOrFail($id);
+        $project->status = !$project->status;
+        $project->save();
+
+        return redirect()->back()->with('success', 'Project status updated successfully.');
+    }
+
 
 }
