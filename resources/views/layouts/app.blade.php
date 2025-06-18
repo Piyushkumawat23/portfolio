@@ -177,7 +177,14 @@
         <a href="{{ url('/contact') }}" class="cs_btn cs_style_1 cs_primary_font"><span>Let’s
             Talk</span></a>
       </div>
-      <div class="cs_copyright">© 2025 <a href="mailto:piyushkumawat90607@gmail.com">Piyush Kumawat</a>. All rights reserved.</div>
+
+      <div class="cs_footer_links" style="margin-top: 20px; text-align: center;">
+        <a href="{{ url('/privacy-policy') }}" style="margin: 0 15px; color: #ffffff; text-decoration: underline;">Privacy Policy</a>
+        <a href="{{ url('/refund-policy') }}" style="margin: 0 15px; color: #ffffff; text-decoration: underline;">Return & Refund Policy</a>
+        <a href="{{ url('/terms-conditions') }}" style="margin: 0 15px; color: #ffffff; text-decoration: underline;">Terms & Conditions</a>
+      </div>
+      
+      <div class="cs_copyright"  style="margin-top: 15px;">© 2025 <a href="mailto:piyushkumawat90607@gmail.com">Piyush Kumawat</a>. All rights reserved.</div>
 
     </div>
   </footer>

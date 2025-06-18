@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FAQController;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\LegalController;
 use Illuminate\Support\Facades\Auth;
 use Spatie\Sitemap\Sitemap;
 use Spatie\Sitemap\Tags\Url;
@@ -35,6 +36,7 @@ use Illuminate\Support\Facades\Response;
 //     return $sitemap->toResponse(request());
 // });
 
+
 Route::get('/sitemap.xml', function () {
     $sitemap = Sitemap::create()
         ->add(Url::create('/'))
@@ -44,11 +46,16 @@ Route::get('/sitemap.xml', function () {
         ->add(Url::create('/contact'))
         ->add(Url::create('/testimonial'))
         ->add(Url::create('/faq'))
-        ->add(Url::create('/blog-details'));
+        ->add(Url::create('/blog-details'))
+        ->add(Url::create('/privacy-policy'))
+        ->add(Url::create('/refund-policy'))
+        ->add(Url::create('/terms-conditions'));
 
-    return $sitemap->toResponse(request())
+    return response($sitemap->render(), 200)
+        ->header('Content-Type', 'application/xml')
         ->header('X-Robots-Tag', 'index, follow');
 });
+
 
 
 // Route::get('/robots.txt', function () {
@@ -85,6 +92,11 @@ Route::post('/contact-us', [ContactController::class, 'store'])->name('contact.s
 
 Route::post('/faq/store', [FAQController::class, 'store'])->name('faq.store');
 
+
+
+Route::get('/privacy-policy', [LegalController::class, 'privacyPolicy'])->name('privacy.policy');
+Route::get('/refund-policy', [LegalController::class, 'refundPolicy'])->name('refund.policy');
+Route::get('/terms-conditions', [LegalController::class, 'termsConditions'])->name('terms.conditions');
 
 // Dashboard Route
 // Route::get('/dashboard', function () {

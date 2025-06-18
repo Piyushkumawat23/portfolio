@@ -124,7 +124,7 @@
                                 </a>
                             </div>
                             <div class="cs_btns">
-                                <a href="public/assets/cv/Piyush-Kumawat-.pdf"class="cs_btn cs_style_1" download><span>Download
+                                <a href="public/assets/cv/Piyush-Kumawat-Resume.pdf"class="cs_btn cs_style_1" download><span>Download
                                         CV</span></a>
                                 <a class="cs_font_24 cs_accent_color_2 cs_accent_color_2_hover cs_text_btn cs_type_2 cs_semi_bold"
                                     href="{{ url('/contact') }}">Let’s Talk</a>
