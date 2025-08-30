@@ -2,49 +2,47 @@
 <html class="no-js" lang="en">
 
 <head>
-    <!-- Basic Meta Tags -->
+    <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Piyush">
     <meta name="language" content="English">
+    {{-- <title>Piyush - Index</title>  --}}
+    <meta name="description" content="I'm Piyush, a Laravel and PHP backend developer specializing in MVC, MySQL, and API integration.">
+    <meta name="keywords" content="Piyush, Laravel Developer, PHP Developer, Backend Developer, MVC, REST API, MySQL, Web Development">
 
-    <!-- Dynamic Title -->
-    <title>@yield('title', 'Piyush - Laravel & PHP Backend Developer')</title>
-
-    <!-- Dynamic Meta Description -->
-    <meta name="description" content="@yield('meta_description', 'I\'m Piyush, a Laravel and PHP backend developer specializing in MVC, MySQL, and API integration.')">
-
-    <!-- Dynamic Meta Keywords -->
-    <meta name="keywords" content="@yield('meta_keywords', 'Piyush, Laravel Developer, PHP Developer, Backend Developer, MVC, REST API, MySQL, Web Development')">
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="@yield('og_title', 'Piyush - PHP & Laravel Backend Developer')" />
-    <meta property="og:description" content="@yield('og_description', 'I’m Piyush, a backend developer specializing in Laravel, MVC, and API development.')" />
-    <meta property="og:image" content="@yield('og_image', asset('/public/assets/img/hero/hero_1.png'))" />
+      <!-- Open Graph Tags -->
+    <meta property="og:title" content="Piyush - PHP & Laravel Backend Developer" />
+    <meta property="og:description" content="I’m Piyush, a backend developer specializing in Laravel, MVC, and API development." />
+    <meta property="og:image" content="{{ asset('/public/assets/img/hero/hero_1.png') }}" />
     <meta property="og:url" content="{{ url()->current() }}" />
     <meta property="og:type" content="website" />
     <meta name="theme-color" content="#0e0e0e">
 
-    <!-- Twitter Card Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="@yield('twitter_title', 'Piyush - Laravel Developer')">
-    <meta name="twitter:description" content="@yield('twitter_description', 'Experienced in Laravel, MVC architecture, and REST APIs.')">
-    <meta name="twitter:image" content="@yield('twitter_image', asset('/public/assets/img/hero/hero_1.png'))">
 
-    <!-- Canonical and Alternate -->
+    <!-- Twitter Cards -->
+    {{-- <meta name="twitter:card" content="summary_large_image"> --}}
+    <meta name="twitter:title" content="Piyush - Laravel Developer">
+    <meta name="twitter:description" content="Experienced in Laravel, MVC architecture, and REST APIs.">
+    {{-- <meta name="twitter:image" content="{{ asset('/public/assets/img/hero/hero_1.png') }}"> --}}
+
+
+    {{-- <link rel="canonical" href="https://piyushkumawat.in/" /> --}}
+
     <link rel="canonical" href="{{ url()->current() }}" />
-    <link rel="alternate" hreflang="en" href="{{ url()->current() }}" />
-
-
-    <meta name="msvalidate.01" content="74994E9B26F8A392675172E86F79431B" />
-
-
-    <!-- Favicon -->
+    <link rel="alternate" hreflang="en" href="{{ url()->current() }}" />    
+    <!-- Favicon Icon -->
     <link rel="icon" href="{{ asset('public/assets/img/p.png') }}">
-
-    <!-- Stylesheets -->
+    
+    <!-- Site Title -->
+    {{-- <title>Piyush - </title> --}}
+    {{-- <title>Piyush - {{ ucfirst(request()->route()->getName()) }}</title> --}}
+    <title>Piyush - {{ ucfirst(request()->route()->getName() ?? 'Home') }}</title>
+    
+    
+      <!-- Stylesheets -->
     <link rel="stylesheet" href="{{ asset('public/assets/css/plugins/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('public/assets/css/plugins/fontawesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('public/assets/css/plugins/odometer-theme-default.css') }}">
@@ -52,80 +50,32 @@
     <link rel="stylesheet" href="{{ asset('public/assets/css/plugins/animate.css') }}">
     <link rel="stylesheet" href="{{ asset('public/assets/css/style.css') }}">
 
-    <!-- JS Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-    <!-- Schema Markup -->
-   <!-- Person Schema -->
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Piyush Kumawat",
-    "alternateName": "Piyush",
-    "url": "https://piyushkumawat.in",
-    "image": "https://piyushkumawat.in/public/assets/img/hero/hero_1.png",
-    "jobTitle": "Full Stack Web Developer (Laravel & PHP Specialist)",
-    "worksFor": {
-        "@type": "Organization",
-        "name": "Noventix Web AI Solution",
-        "url": "https://piyushkumawat.in",
-        "sameAs": [
-            "https://piyushkumawat.in"
-        ]
-    },
-    "alumniOf": {
-        "@type": "CollegeOrUniversity",
-        "name": "Sri Balaji PG Mahavidyalaya, Jaipur",
-        "sameAs": "https://sbpgm.sbss.ac.in/"
-    },
-    "description": "Piyush Kumawat is a Laravel and PHP backend developer with expertise in building scalable web applications, APIs, and MySQL-based systems. He offers freelance and agency-based services under the brand Noventix Web AI Solution.",
-    "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Rajasthan",
-        "addressRegion": "RJ",
-        "postalCode": "302012",
-        "addressCountry": "India"
-    },
-    "email": "mailto:piyushkumawat90607@gmail.com",
-    "telephone": "+91-9782870390",
-    "knowsAbout": [
-        "Laravel",
-        "PHP",
-        "MySQL",
-        "API Integration",
-        "Backend Architecture",
-        "REST APIs",
-        "JavaScript",
-        "Web Development",
-        "Freelance Projects"
-    ],
-    "sameAs": [
-        "https://github.com/Piyushkumawat23",
-        "https://www.linkedin.com/in/piyush-kumawat-laravel",
-        "https://www.instagram.com/piyushkumawat_23",
-        "https://piyushkumawat.in"
-    ]
-}
-</script>
+      <!-- Schema JSON-LD -->
 
-<!-- WebSite Schema -->
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Piyush Kumawat",
-    "url": "https://piyushkumawat.in"
-}
-</script>
-<script>
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "sj8azrkz69");
-</script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Piyush",
+          "url": "{{ url('/') }}",
+          "jobTitle": "PHP & Laravel Backend Developer",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Freelance"
+          },
+          "sameAs": [
+            "https://github.com/Piyushkumawat23",
+            "https://linkedin.com/in/piyush-kumawat-3aaa34227",
+            "https://x.com/Piyush__Kumawat"
+          ],
+          "image": "{{ asset('/public/assets/img/hero/hero_1.png') }}",
+          "description": "I’m a backend developer specializing in Laravel, MVC architecture, and API development."
+        }
+        </script>
 
+        
 </head>
 
 <body>
@@ -169,7 +119,7 @@
                                     <ul>
                                         <li><a href="{{ url('/testimonial') }}">Testimonial</a></li>
                                         <li><a href="{{ url('/faq') }}">FAQ</a></li>
-                                        {{-- <li><a href="{{ url('/error') }}">Error 404</a></li> --}}
+                                        <li><a href="{{ url('/error') }}">Error 404</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children"><a href="{{ url('/blog') }}">Blog</a>
