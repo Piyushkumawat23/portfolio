@@ -1,6 +1,16 @@
 @extends('layouts.app')
 
+@section('title', 'Piyush Kumawat - Laravel & PHP Backend Developer')
+@section('meta_description', 'Official portfolio of Piyush Kumawat, Laravel & PHP backend developer. Expert in APIs, MySQL, and MVC architecture.')
+@section('meta_keywords', 'Laravel Developer, PHP Developer, Backend Developer, Piyush, API Developer, MVC Expert, MySQL Developer')
 
+@section('og_title', 'Piyush Kumawat - Expert Laravel & PHP Backend Developer')
+@section('og_description', 'Explore the professional journey of Piyush, specializing in Laravel backend development, custom APIs, and web solutions.')
+@section('og_image', asset('public/assets/img/hero/hero_1.png'))
+
+@section('twitter_title', 'Piyush Kumawat | Laravel Backend Developer')
+@section('twitter_description', 'Hire Piyush – a skilled Laravel backend developer with experience in building robust and scalable web applications.')
+@section('twitter_image', asset('public/assets/img/hero/hero_1.png'))
 
 @section('content')
 
@@ -133,7 +143,9 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="cs_hero_image_box cs_filled_bg" data-src="public/assets/img/bg/hero_bg_3.svg">
-                            <div class="cs_imagebox_img w-100"><img src="public/assets/img/hero/hero_1.png" alt="heroImg">
+                            <div class="cs_imagebox_img w-100">
+                                {{-- <img src="public/assets/img/hero/hero_1.png" alt="heroImg"> --}}
+                                <img src="public/assets/img/hero/newhero_1.webp" alt="heroImg">
                             </div>
                             <div
                                 class="cs_happy_client position-absolute cs_white_bg d-flex align-items-center cs_radius_20 cs_gap_15">
