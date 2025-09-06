@@ -6,6 +6,10 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\BlogCategoryController;
+use App\Http\Controllers\BlogCommentController;
+use App\Http\Controllers\FileController;
 use App\Http\Controllers\FAQController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\LegalController;
@@ -85,7 +89,9 @@ Route::get('/testimonial', [PortfolioController::class, 'testimonial']);
 Route::get('/faq', [PortfolioController::class, 'faq']);
 Route::get('/error', [PortfolioController::class, 'error']);
 Route::get('/blog', [PortfolioController::class, 'blog']);
-Route::get('/blog-details', [PortfolioController::class, 'blog_details']);
+// Route::get('/blog-details', [PortfolioController::class, 'blog_details']);
+Route::get('/blog/{slug}', [PortfolioController::class, 'blog_details'])->name('blog.details');
+
 // Route::get('/contact', [PortfolioController::class, 'contact']);
 Route::get('/contact', [PortfolioController::class, 'contact'])->name('contact');
 Route::post('/contact-us', [ContactController::class, 'store'])->name('contact.store');
@@ -106,11 +112,39 @@ Route::get('/terms-conditions', [LegalController::class, 'termsConditions'])->na
 // Admin Routes (Only for Authenticated Users)
 Route::middleware(['auth', 'admin'])->group(function () {
     Route::get('/admin', [AdminController::class, 'index'])->name('admin.dashboard');
+    
+    
     // Define routes for all other pages
+    
+    
+    
+    Route::get('blogs', [BlogController::class, 'index'])->name('blogs.index');
+    Route::get('blogs/create', [BlogController::class, 'create'])->name('blogs.create');
+    Route::post('blogs', [BlogController::class, 'store'])->name('blogs.store');
+    Route::get('blogs/{id}/edit', [BlogController::class, 'edit'])->name('blogs.edit');
+    Route::put('blogs/{id}', [BlogController::class, 'update'])->name('blogs.update');
+    Route::delete('blogs/{id}', [BlogController::class, 'destroy'])->name('blogs.destroy');
+    Route::get('blogs/{id}', [BlogController::class, 'show'])->name('blogs.show');
+    
+    // Category Routes
+    Route::get('categories', [BlogCategoryController::class, 'index'])->name('categories.index');
+    Route::get('categories/create', [BlogCategoryController::class, 'create'])->name('categories.create');
+    Route::post('categories', [BlogCategoryController::class, 'store'])->name('categories.store');
+    Route::get('categories/{id}/edit', [BlogCategoryController::class, 'edit'])->name('categories.edit');
+    Route::put('categories/{id}', [BlogCategoryController::class, 'update'])->name('categories.update');
+    Route::delete('categories/{id}', [BlogCategoryController::class, 'destroy'])->name('categories.destroy');
+    Route::get('categories/{id}', [BlogCategoryController::class, 'show'])->name('categories.show');
+
+
     Route::get('/generate/theme', [PageController::class, 'theme'])->name('generate.theme');
     Route::get('/widgets/small-box', [PageController::class, 'smallBox'])->name('widgets.small-box');
     Route::get('/widgets/info-box', [PageController::class, 'infoBox'])->name('widgets.info-box');
     Route::get('/widgets/cards', [PageController::class, 'cards'])->name('widgets.cards');
+
+    Route::get('/uploads', [FileController::class, 'showUploadForm'])->name('admin.uploads.index');
+    Route::post('upload-file', [FileController::class, 'upload'])->name('admin.uploadFile');
+    Route::delete('/uploads', [FileController::class, 'destroy'])->name('admin.uploads.destroy');
+
 
     Route::get('/layout/unfixed-sidebar', [PageController::class, 'unfixedSidebar'])->name('layout.unfixed-sidebar');
     Route::get('/layout/fixed-sidebar', [PageController::class, 'fixedSidebar'])->name('layout.fixed-sidebar');

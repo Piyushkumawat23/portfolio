@@ -2624,7 +2624,8 @@ hr {
   top: 0;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(261deg, #fff -5.9%, #fff1ef 23.95%, #e0f0ff 160.95%);
+ background: linear-gradient(135deg, #ffd8b0 0%, #ffffff 30%, #d0f0ff 70%, #ffcc99 100%);
+
 }
 
 .cs_preloader_bg {

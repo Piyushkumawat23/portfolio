@@ -1,0 +1,6 @@
+.cs_highlight_bg {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2px 8px; /* यह टेक्स्ट के चारों ओर थोड़ी जगह देगा */
+    color: #fff; /* टेक्स्ट का रंग सफेद कर दें */
+    border-radius: 5px;
+}

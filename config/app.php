@@ -123,4 +123,19 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+
+    'aliases' => [
+
+        'App'     => Illuminate\Support\Facades\App::class,
+        'Arr'     => Illuminate\Support\Arr::class,
+        'Artisan' => Illuminate\Support\Facades\Artisan::class,
+        'Auth'    => Illuminate\Support\Facades\Auth::class,
+        'Blade'   => Illuminate\Support\Facades\Blade::class,
+        'Str'     => Illuminate\Support\Str::class,
+        'Route' => Illuminate\Support\Facades\Route::class,
+        // 👇 Intervention Image v3 alias
+        'Image'   => Intervention\Image\Laravel\Facades\Image::class,
+    ],
+
+
 ];

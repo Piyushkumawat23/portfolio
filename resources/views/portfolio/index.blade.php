@@ -1,15 +1,19 @@
 @extends('layouts.app')
 
 @section('title', 'Piyush Kumawat - Laravel & PHP Backend Developer')
-@section('meta_description', 'Official portfolio of Piyush Kumawat, Laravel & PHP backend developer. Expert in APIs, MySQL, and MVC architecture.')
-@section('meta_keywords', 'Laravel Developer, PHP Developer, Backend Developer, Piyush, API Developer, MVC Expert, MySQL Developer')
+@section('meta_description', 'Official portfolio of Piyush Kumawat, Laravel & PHP backend developer. Expert in APIs,
+    MySQL, and MVC architecture.')
+@section('meta_keywords', 'Laravel Developer, PHP Developer, Backend Developer, Piyush, API Developer, MVC Expert, MySQL
+    Developer')
 
 @section('og_title', 'Piyush Kumawat - Expert Laravel & PHP Backend Developer')
-@section('og_description', 'Explore the professional journey of Piyush, specializing in Laravel backend development, custom APIs, and web solutions.')
+@section('og_description', 'Explore the professional journey of Piyush, specializing in Laravel backend development,
+    custom APIs, and web solutions.')
 @section('og_image', asset('public/assets/img/hero/hero_1.png'))
 
 @section('twitter_title', 'Piyush Kumawat | Laravel Backend Developer')
-@section('twitter_description', 'Hire Piyush – a skilled Laravel backend developer with experience in building robust and scalable web applications.')
+@section('twitter_description', 'Hire Piyush – a skilled Laravel backend developer with experience in building robust
+    and scalable web applications.')
 @section('twitter_image', asset('public/assets/img/hero/hero_1.png'))
 
 @section('content')
@@ -23,21 +27,24 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="cs_hero_info cs_pr_20">
-                            <h4 class="cs_hero_meta cs_font_48 cs_white_blue_text_2 cs_semi_bold cs_primary_font mb-0">Hi! I’m<br></h4>
+                            <h4 class="cs_hero_meta cs_font_48 cs_white_blue_text_2 cs_semi_bold cs_primary_font mb-0">Hi!
+                                I’m<br></h4>
 
-                            <h1 class="cs_hero_title cs_font_92 cs_black wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                            <h1 class="cs_hero_title cs_font_92 cs_black wow fadeInLeft" data-wow-duration="0.8s"
+                                data-wow-delay="0.2s">
                                 <span class="cs_gradient_text">Piyush </span>
                                 {{-- <br> --}}
                                 {{-- <span id="typed-name" class="cs_gradient_border_text"></span> --}}
                             </h1>
-                            <h4 class="cs_hero_title cs_font_92 cs_black wow fadeInLeft"data-wow-duration="0.8s" data-wow-delay="0.2s">
+                            <h4 class="cs_hero_title cs_font_92 cs_black wow fadeInLeft"data-wow-duration="0.8s"
+                                data-wow-delay="0.2s">
                                 <span id="typed-name" class="cs_gradient_border_text"></span>
                             </h4>
                             <h4 class="cs_hero_subtitle cs_font_36 cs_semi_bold cs_primary_font cs_white_blue_text_2">
                                 <span id="typed-title"></span>
                             </h4>
-                            
-      
+
+
                             {{-- <p class="cs_about_text">
                                 I am a <span class="cs_primary_color">PHP Developer</span> with expertise in
                                 <span class="cs_primary_color">Laravel Framework</span> and <span
@@ -48,17 +55,22 @@
                                 <span class="cs_primary_color">RESTful APIs</span> using Laravel.
                             </p> --}}
                             <p class="cs_about_text">
-                                I am an experienced <span class="cs_primary_color">PHP Developer</span> specializing in 
-                                the <span class="cs_primary_color">Laravel Framework</span> and <span class="cs_primary_color">MVC architecture</span>, 
-                                with a strong focus on <span class="cs_primary_color">backend development</span>. I have hands-on expertise 
-                                in managing and optimizing <span class="cs_primary_color">MySQL databases</span> and am highly skilled in 
-                                integrating <span class="cs_primary_color">RESTful APIs</span> within Laravel-based web applications. 
+                                I am an experienced <span class="cs_primary_color">PHP Developer</span> specializing in
+                                the <span class="cs_primary_color">Laravel Framework</span> and <span
+                                    class="cs_primary_color">MVC architecture</span>,
+                                with a strong focus on <span class="cs_primary_color">backend development</span>. I have
+                                hands-on expertise
+                                in managing and optimizing <span class="cs_primary_color">MySQL databases</span> and am
+                                highly skilled in
+                                integrating <span class="cs_primary_color">RESTful APIs</span> within Laravel-based web
+                                applications.
                                 I aim to build scalable, secure, and efficient backend systems for modern web projects.
                             </p>
-                            
+
 
                             <div class="cs_social_btns d-flex">
-                                <a class="cs_accent_color_2" href="https://www.facebook.com/piyushkumawat23" target="_blank">
+                                <a class="cs_accent_color_2" href="https://www.facebook.com/piyushkumawat23"
+                                    target="_blank">
                                     <svg width="13" height="22" viewBox="0 0 13 22" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -79,20 +91,26 @@
                                     </svg>
                                 </a>
 
-                                <a class="cs_accent_color_2" href="https://www.instagram.com/piyushkumawat_23?utm_source=qr" target="_blank">
-                                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" 
-                                      xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M7 2C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2H7Z" 
-                                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                      <path d="M16.5 7.5H16.51" 
-                                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                      <path d="M12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8Z" 
-                                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                  </svg>
-                              </a>
-                              
-                                
-                                <a class="cs_accent_color_2" href="https://linkedin.com/in/piyush-kumawat-3aaa34227" target="_blank">
+                                <a class="cs_accent_color_2" href="https://www.instagram.com/piyushkumawat_23?utm_source=qr"
+                                    target="_blank">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7 2C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2H7Z"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M16.5 7.5H16.51" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8Z"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+
+
+                                <a class="cs_accent_color_2" href="https://linkedin.com/in/piyush-kumawat-3aaa34227"
+                                    target="_blank">
                                     <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -108,7 +126,9 @@
                                     </svg>
 
                                 </a>
-                                <a class="cs_accent_color_2" href="https://mail.google.com/mail/?view=cm&to=piyushkumawat90607@gmail.com" target="_blank">
+                                <a class="cs_accent_color_2"
+                                    href="https://mail.google.com/mail/?view=cm&to=piyushkumawat90607@gmail.com"
+                                    target="_blank">
                                     <svg width="22" height="18" viewBox="0 0 22 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -120,7 +140,8 @@
                                     </svg>
 
                                 </a>
-                                <a class="cs_accent_color_2" href="https://www.youtube.com/@piyushkumawat9203" target="_blank">
+                                <a class="cs_accent_color_2" href="https://www.youtube.com/@piyushkumawat9203"
+                                    target="_blank">
                                     <svg width="25" height="18" viewBox="0 0 25 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -134,7 +155,8 @@
                                 </a>
                             </div>
                             <div class="cs_btns">
-                                <a href="public/assets/cv/Piyush-Kumawat-Resume.pdf"class="cs_btn cs_style_1" download><span>Download
+                                <a href="public/assets/cv/Piyush-Kumawat-Resume.pdf"class="cs_btn cs_style_1"
+                                    download><span>Download
                                         CV</span></a>
                                 <a class="cs_font_24 cs_accent_color_2 cs_accent_color_2_hover cs_text_btn cs_type_2 cs_semi_bold"
                                     href="{{ url('/contact') }}">Let’s Talk</a>
@@ -151,11 +173,11 @@
                                 class="cs_happy_client position-absolute cs_white_bg d-flex align-items-center cs_radius_20 cs_gap_15">
                                 <div class="cs_font_36 cs_semi_bold cs_accent_color_2"><span class="odometer"
                                         data-count-to="4"></span><span>+</span></div>
-                                        <div>
-                                            <h5 class="mb-0 cs_normal" aria-label="Experience Years">4+ Years</h5>
-                                            <p class="mb-0 cs_font_16">Happy Clients</p>
-                                          </div>
-                                          
+                                <div>
+                                    <h5 class="mb-0 cs_normal" aria-label="Experience Years">4+ Years</h5>
+                                    <p class="mb-0 cs_font_16">Happy Clients</p>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -192,26 +214,40 @@
                             </div>
                             <div class="cs_height_40 cs_height_lg_30"></div>
                             <ul class="m-0">
-                                <li>✅ <strong>Expert in Laravel & PHP Development:</strong> Specialized in <span class="cs_primary_color">Laravel, Core PHP, and MySQL</span> for building high-performance backend systems.</li>
-    
-                                <li>✅ <strong>Full-Stack Development Skills:</strong> Proficient in <span class="cs_primary_color">HTML, CSS, JavaScript, and Bootstrap</span> to create responsive, user-friendly interfaces.</li>
-                                
-                                <li>✅ <strong>Industry-Relevant Experience:</strong> Successfully developed <span class="cs_primary_color">E-commerce platforms, Coin Management Systems, and Custom Web Applications</span>.</li>
-                                
-                                <li>✅ <strong>SEO and Website Optimization:</strong> Skilled in <span class="cs_primary_color">on-page SEO, technical SEO, and website speed optimization</span> for better search engine visibility.</li>
-                                
-                                <li>✅ <strong>Scalable and Secure Coding:</strong> Emphasizing <span class="cs_primary_color">API security, optimized database design, and scalable architecture</span> for future-ready solutions.</li>
-                                
-                                <li>✅ <strong>Version Control and Collaboration:</strong> Experienced with <span class="cs_primary_color">Git, GitHub, and team workflows</span> to ensure efficient code management and collaboration.</li>
+                                <li>✅ <strong>Expert in Laravel & PHP Development:</strong> Specialized in <span
+                                        class="cs_primary_color">Laravel, Core PHP, and MySQL</span> for building
+                                    high-performance backend systems.</li>
+
+                                <li>✅ <strong>Full-Stack Development Skills:</strong> Proficient in <span
+                                        class="cs_primary_color">HTML, CSS, JavaScript, and Bootstrap</span> to create
+                                    responsive, user-friendly interfaces.</li>
+
+                                <li>✅ <strong>Industry-Relevant Experience:</strong> Successfully developed <span
+                                        class="cs_primary_color">E-commerce platforms, Coin Management Systems, and Custom
+                                        Web Applications</span>.</li>
+
+                                <li>✅ <strong>SEO and Website Optimization:</strong> Skilled in <span
+                                        class="cs_primary_color">on-page SEO, technical SEO, and website speed
+                                        optimization</span> for better search engine visibility.</li>
+
+                                <li>✅ <strong>Scalable and Secure Coding:</strong> Emphasizing <span
+                                        class="cs_primary_color">API security, optimized database design, and scalable
+                                        architecture</span> for future-ready solutions.</li>
+
+                                <li>✅ <strong>Version Control and Collaboration:</strong> Experienced with <span
+                                        class="cs_primary_color">Git, GitHub, and team workflows</span> to ensure efficient
+                                    code management and collaboration.</li>
                             </ul>
-                            <p class="m-0">🔹 Looking for a reliable web developer? Let’s turn your vision into reality! 🚀</p>
+                            <p class="m-0">🔹 Looking for a reliable web developer? Let’s turn your vision into reality!
+                                🚀</p>
 
                             <div class="cs_height_25 cs_height_lg_20"></div>
                             {{-- <a class="cs_btn cs_style_1" href="{{ url('/contact') }}"><span>Hire Me</span></a> --}}
-                            <a class="cs_btn cs_style_1" href="{{ url('/contact') }}" title="Contact Piyush Kumawat for your next project">
+                            <a class="cs_btn cs_style_1" href="{{ url('/contact') }}"
+                                title="Contact Piyush Kumawat for your next project">
                                 <span>Hire Me</span>
-                              </a>
-                              
+                            </a>
+
                         </div>
                         <div class="cs_height_lg_30"></div>
                     </div>
@@ -223,9 +259,12 @@
                                         <img src="public/assets/img/icon/about_icon_1.svg" alt="Icon">
                                     </div>
                                     <div class="cs_iconbox_info position-relative w-100">
-                                        <h3 class="cs_iconbox_title cs_font_28 cs_medium m-0">Front-End Web Development</h3>
+                                        <h3 class="cs_iconbox_title cs_font_28 cs_medium m-0">Front-End Web Development
+                                        </h3>
                                         <p class="cs_iconbox_text">
-                                            Skilled in modern front-end technologies including <span class="cs_primary_color">HTML5, CSS3, JavaScript, Bootstrap, and jQuery</span>, delivering responsive and user-friendly web interfaces.
+                                            Skilled in modern front-end technologies including <span
+                                                class="cs_primary_color">HTML5, CSS3, JavaScript, Bootstrap, and
+                                                jQuery</span>, delivering responsive and user-friendly web interfaces.
                                         </p>
 
                                         <div class="d-flex justify-content-between align-items-center">
@@ -261,7 +300,11 @@
                                     <div class="cs_iconbox_info position-relative w-100">
                                         <h3 class="cs_iconbox_title cs_font_28 cs_medium m-0">Back-End Web Development</h3>
                                         <p class="cs_iconbox_text">
-                                            Specialized in <span class="cs_primary_color">Laravel Framework, Core PHP, and MySQL</span> for building secure, scalable server-side applications. Experienced in developing and integrating <span class="cs_primary_color">RESTful APIs</span> for seamless data connectivity.
+                                            Specialized in <span class="cs_primary_color">Laravel Framework, Core PHP, and
+                                                MySQL</span> for building secure, scalable server-side applications.
+                                            Experienced in developing and integrating <span
+                                                class="cs_primary_color">RESTful APIs</span> for seamless data
+                                            connectivity.
                                         </p>
 
                                         <div class="d-flex justify-content-between align-items-center">
@@ -295,10 +338,14 @@
                                         <img src="public/assets/img/icon/about_icon_3.svg" alt="Icon">
                                     </div>
                                     <div class="cs_iconbox_info position-relative w-100">
-                                        <h3 class="cs_iconbox_title cs_font_28 cs_medium m-0">SEO & Website Optimization</h3>
-                                    <p class="cs_iconbox_text">
-                                        Proficient in <span class="cs_primary_color">On-page SEO, Off-page SEO, and Technical SEO</span> strategies to improve website visibility, organic traffic, and search engine rankings. Experienced in optimizing website speed and performance for a better user experience.
-                                    </p>
+                                        <h3 class="cs_iconbox_title cs_font_28 cs_medium m-0">SEO & Website Optimization
+                                        </h3>
+                                        <p class="cs_iconbox_text">
+                                            Proficient in <span class="cs_primary_color">On-page SEO, Off-page SEO, and
+                                                Technical SEO</span> strategies to improve website visibility, organic
+                                            traffic, and search engine rankings. Experienced in optimizing website speed and
+                                            performance for a better user experience.
+                                        </p>
 
                                         <div class="d-flex justify-content-between align-items-center">
                                             <span
@@ -355,41 +402,46 @@
                                 <h2 class="cs_section_title cs_font_48 cs_semi_bold">
                                     My Latest <br>
                                     <span class="cs_accent_color">Web Development Projects</span>
-                                </h2>                                
+                                </h2>
                             </div>
                         </div>
                     </div>
                     @foreach ($projects as $project)
-                    <div class="cs_isotop_item cs_zoom">
-                        <a href="{{ route('portfolio.details', $project->id) }}" target="_blank" class="cs_portfolio cs_style_1">
-                            <div class="cs_portfolio_thumbnail">
-                                {{-- @if($project->images->count() > 0)
+                        <div class="cs_isotop_item cs_zoom">
+                            <a href="{{ route('portfolio.details', $project->id) }}" target="_blank"
+                                class="cs_portfolio cs_style_1">
+                                <div class="cs_portfolio_thumbnail">
+                                    {{-- @if ($project->images->count() > 0)
                                     <img class="cs_zoom_in w-100" src="{{ asset('public/assets/img/portfolio/' . $project->images->first()->image_url) }}" alt="{{ $project->name }}">
                                 @else
                                     <img class="cs_zoom_in w-100" src="{{ asset('public/assets/img/default.png') }}" alt="Default Image">
                                 @endif --}}
 
 
-                                @if ($bannerImage = $project->images->where('image_type', 'banner')->first())
-                                <img class="cs_zoom_in w-100"
-                                        src="{{ asset('public/assets/img/portfolio/' . $bannerImage->image_url) }}"
-                                        alt="project-details">
-                                @else
-                                    <img class="cs_zoom_in w-100" src="{{ asset('public/assets/img/default.png') }}" alt="Default Image">
-                                @endif
-                            </div>
-                            <div class="cs_portfolio_info cs_white_color cs_medium position-absolute">
-                                <h2 class="cs_font_28 cs_white_color cs_medium mb-0">{{ $project->name }}</h2>
-                                <div class="cs_font_16 cs_gap_15 d-inline-flex cs_medium align-items-center">
-                                    <span class="cs_text_btn cs_secondary_font cs_type_1 text-uppercase">View work</span>
-                                    <svg width="5" height="9" viewBox="0 0 5 9" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 0L5 4.5L0 9L0 0Z" fill="currentColor" />
-                                    </svg>
+                                    @if ($bannerImage = $project->images->where('image_type', 'banner')->first())
+                                        <img class="cs_zoom_in w-100"
+                                            src="{{ asset('public/assets/img/portfolio/' . $bannerImage->image_url) }}"
+                                            alt="project-details">
+                                    @else
+                                        <img class="cs_zoom_in w-100" src="{{ asset('public/assets/img/default.png') }}"
+                                            alt="Default Image">
+                                    @endif
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                                <div class="cs_portfolio_info cs_white_color cs_medium position-absolute">
+                                    <h2 class="cs_font_28 cs_medium mb-0">
+                                        <span class="cs_highlight_bg">{{ $project->name }}</span>
+                                    </h2>
+                                    <div class="cs_font_16 cs_gap_15 d-inline-flex cs_medium align-items-center">
+                                        <span class="cs_text_btn cs_secondary_font cs_type_1 text-uppercase">View
+                                            work</span>
+                                        <svg width="5" height="9" viewBox="0 0 5 9" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 0L5 4.5L0 9L0 0Z" fill="currentColor" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     @endforeach
                     {{-- <div class="cs_isotop_item">
                         <div class="cs_portfolio cs_style_2 cs_radius_20 position-relative">
@@ -483,7 +535,8 @@
                                         <span class="odometer" data-count-to="4"></span>+
                                     </span>
                                 </h3>
-                                <div class="cs_funfact_text cs_font_24 cs_center m-0"><span>Years of Professional Experience</span></div>
+                                <div class="cs_funfact_text cs_font_24 cs_center m-0"><span>Years of Professional
+                                        Experience</span></div>
 
                             </div>
                             <div class="cs_overlay">
@@ -528,7 +581,8 @@
                                         <span class="odometer" data-count-to="120"></span>+
                                     </span>
                                 </h3>
-                                <div class="cs_funfact_text cs_font_24 cs_center m-0"><span>Satisfied Clients Worldwide</span></div>
+                                <div class="cs_funfact_text cs_font_24 cs_center m-0"><span>Satisfied Clients
+                                        Worldwide</span></div>
 
                             </div>
                             <div class="cs_overlay">
@@ -573,7 +627,8 @@
                                         <span class="odometer" data-count-to="180"></span>+
                                     </span>
                                 </h3>
-                                <div class="cs_funfact_text cs_font_24 cs_center m-0"><span>Successfully Completed Projects</span></div>
+                                <div class="cs_funfact_text cs_font_24 cs_center m-0"><span>Successfully Completed
+                                        Projects</span></div>
                             </div>
                             <div class="cs_overlay">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="355" height="165"
@@ -632,9 +687,9 @@
 
                         </p>
                         <h2 class="cs_section_title cs_font_48 cs_semi_bold">
-                            What <span class="cs_accent_color">My Clients</span> Have<br> 
+                            What <span class="cs_accent_color">My Clients</span> Have<br>
                             to Say <span class="cs_accent_color_2">About My Services</span>
-                        </h2>                        
+                        </h2>
                     </div>
                     <div class="align-self-end">
                         <div class="cs_height_25 cs_height_lg_25"></div>
@@ -675,13 +730,16 @@
                                     <img class="cs_testimonial_quote" src="public/assets/img/icon/Quote.svg"
                                         alt="Testimonial Quote">
                                     <p class="cs_testimonial_text">
-                                        "He developed a custom <span class="cs_primary_color">Telegram Bot</span> for our coin distribution system. The API integrations and backend logic were seamless. Amazing work!"
+                                        "He developed a custom <span class="cs_primary_color">Telegram Bot</span> for our
+                                        coin distribution system. The API integrations and backend logic were seamless.
+                                        Amazing work!"
                                     </p>
                                     <div class="cs_testimonial_author">
                                         <div class="cs_author_name cs_font_20 cs_semi_bold">Michael Johnson</div>
-                                        <div class="cs_author_designation cs_font_16">Project Manager, <span class="cs_primary_color">Crypto Startup</span></div>
+                                        <div class="cs_author_designation cs_font_16">Project Manager, <span
+                                                class="cs_primary_color">Crypto Startup</span></div>
                                     </div>
-                                        
+
                                 </div>
                             </div>
                         </div>
@@ -692,7 +750,6 @@
                             class="cs_testimonial cs_style_2 cs_radius_20 cs_white_bg cs_transition_3 cs_transform_up_hover_3">
                             <div class="cs_testimonial_in">
                                 <div class="cs_testimonial_img overflow-hidden">
-                                    {{-- <img class="h-100 w-100" src="public/assets/img/testmonial/client1.jpg" alt="Client Image"> --}}
                                     <img class="h-100 w-100" src="public/assets/img/testmonial/a5.jpg" alt="avaterImg">
 
                                 </div>
@@ -701,13 +758,17 @@
                                         alt="Testimonial Quote">
 
                                     <p class="cs_testimonial_text">
-                                        "Piyush developed a high-performing <span class="cs_primary_color">Laravel-based e-commerce website</span> for us. The <span class="cs_primary_color">SEO optimization</span> significantly boosted our online presence. Highly recommended!"
+                                        "Piyush developed a high-performing <span class="cs_primary_color">Laravel-based
+                                            e-commerce website</span> for us. The <span class="cs_primary_color">SEO
+                                            optimization</span> significantly boosted our online presence. Highly
+                                        recommended!"
                                     </p>
                                     <div class="cs_testimonial_author">
                                         <div class="cs_author_name cs_font_20 cs_semi_bold">John Smith</div>
-                                        <div class="cs_author_designation cs_font_16">Founder, <span class="cs_primary_color">USA Jewelry Store</span></div>
+                                        <div class="cs_author_designation cs_font_16">Founder, <span
+                                                class="cs_primary_color">USA Jewelry Store</span></div>
                                     </div>
-                                        
+
                                 </div>
                             </div>
                         </div>
@@ -715,6 +776,41 @@
 
 
                 </div>
+                {{-- <div class="row cs_gap_70">
+    @foreach ($blogs->take(2) as $blog)
+        <div class="col-lg-6">
+            <div class="cs_testimonial cs_style_2 cs_radius_20 cs_white_bg cs_transition_3 cs_transform_up_hover_3">
+                <div class="cs_testimonial_in">
+                    <div class="cs_testimonial_img overflow-hidden">
+                        <a href="{{ route('blog.details', $blog->slug) }}">
+                            <img class="h-100 w-100"
+                                 src="{{ $blog->featured_image ? asset('public/uploads/blogs/' . $blog->featured_image) : asset('public/assets/img/blog/default.jpg') }}"
+                                 alt="{{ $blog->title }}">
+                        </a>
+                    </div>
+                    <div class="cs_testimonial_info">
+                        <img class="cs_testimonial_quote" src="{{ asset('public/assets/img/icon/Quote.svg') }}"
+                             alt="Blog Quote">
+                        <p class="cs_testimonial_text">
+                            {{ Str::limit($blog->description, 120) }}
+                        </p>
+                        <div class="cs_testimonial_author">
+                            <div class="cs_author_name cs_font_20 cs_semi_bold">
+                                <a href="{{ route('blog.details', $blog->slug) }}" class="cs_accent_color_2_hover">
+                                    {{ $blog->title }}
+                                </a>
+                            </div>
+                            <div class="cs_author_designation cs_font_16">
+                                Published on <span class="cs_primary_color">{{ $blog->created_at->format('M d, Y') }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    @endforeach
+</div> --}}
+
 
             </div>
             <div class="cs_height_125 cs_height_lg_55"></div>
@@ -753,8 +849,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="cs_height_70 cs_height_lg_30"></div>
-                <div class="cs_blog_group_1">
+                {{-- <div class="cs_height_70 cs_height_lg_30"></div>
+                 <div class="cs_blog_group_1">
                     <div class="cs_blog cs_style_3 cs_transition_3 cs_white_bg cs_radius_20 cs_transform_up_hover_3">
                         <div class="cs_blog_in">
                             <div class="cs_blog_thumbnail cs_zoom">
@@ -807,7 +903,7 @@
                                     Optimizing MySQL Queries for High-Performance Web Applications
                                 </a>
                             </h2>
-                            
+
                             <div class="cs_blog_avater d-flex align-items-center">
                                 <img src="public/assets/img/blog/a3.png" alt="Piyush Kumawat - MySQL Query Optimization">
                                 <div class="cs_ml_20">
@@ -815,7 +911,7 @@
                                     <p class="cs_blog_designation cs_font_16 cs_normal mb-0">02 Mar 2024</p>
                                 </div>
                             </div>
-                            
+
                             <a href="{{ url('/blog-details') }}"
                                 class="cs_circle_btn cs_style_1 cs_type_1 cs_accent_color_2 cs_center rounded-circle">
                                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
@@ -845,7 +941,7 @@
                                     SEO for Developers: Effective Strategies to Rank Your Web Projects
                                 </a>
                             </h2>
-                            
+
                             <div class="cs_blog_avater d-flex align-items-center">
                                 <img src="public/assets/img/blog/a2.png" alt="avatar_img">
                                 <div class="cs_ml_20">
@@ -882,7 +978,7 @@
                                     Building a Secure Authentication System in Laravel: Best Practices for Developers
                                 </a>
                             </h2>
-                            
+
                             <div class="cs_blog_avater d-flex align-items-center">
                                 <img src="public/assets/img/blog/a1.png" alt="avatar_img">
                                 <div class="cs_ml_20">
@@ -909,7 +1005,95 @@
                             </a>
                         </div>
                     </div>
+                </div>  --}}
+
+                <div class="cs_blog_group_1">
+    @foreach ($blogs as $key => $blog)
+        @if ($key == 0)
+            {{-- The first blog post with a different style --}}
+            <div class="cs_blog cs_style_3 cs_transition_3 cs_white_bg cs_radius_20 cs_transform_up_hover_3">
+                <div class="cs_blog_in">
+                    <div class="cs_blog_thumbnail cs_zoom">
+                        <a href="{{ url('/blog-details/' . $blog->slug) }}">
+                            <img class="cs_zoom_in w-100" src="{{ asset('public/uploads/blogs/' . $blog->featured_image) }}" alt="{{ $blog->title }}">
+                        </a>
+                    </div>
+                    <div class="cs_blog_info">
+                        <h3 class="cs_blog_title cs_font_28">
+                            <a class="cs_accent_color_2_hover" href="{{ url('/blog-details/' . $blog->slug) }}">
+                                {{ $blog->title }}
+                            </a>
+                        </h3>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="cs_blog_avater d-flex align-items-center">
+                                <img src="{{ asset('public/uploads/blogs/author.webp') }}" alt="{{ $blog->author_name }} avatar">
+                                <div class="cs_ml_20">
+                                    <h2 class="cs_blog_name cs_font_20 cs_semi_bold mb-0">Piyush kumawat</h2>
+                                    <p class="cs_blog_designation cs_font_16 cs_normal mb-0">{{ \Carbon\Carbon::parse($blog->published_at)->format('d M Y') }}</p>
+                                </div>
+                            </div>
+                            <a href="{{ url('/blog-details/' . $blog->slug) }}"
+                                class="cs_circle_btn cs_style_1 cs_type_1 cs_accent_color_2 cs_center rounded-circle">
+                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 10L10 1" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M1 1H10V10" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 10L10 1" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M1 1H10V10" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        @else
+            {{-- Subsequent blog posts with the standard style --}}
+            <div class="cs_blog cs_style_2 cs_transition_4">
+                <a href="{{ url('/blog-details/' . $blog->slug) }}" class="cs_blog_thumbnail cs_zoom">
+                    <img class="cs_zoom_in w-100 h-100" src="{{ asset('public/uploads/blogs/' . $blog->featured_image) }}" alt="{{ $blog->title }}">
+                </a>
+                <div class="cs_blog_info">
+                    <h2 class="cs_blog_title cs_font_20 cs_semi_bold">
+                        <a class="cs_accent_color_2_hover" href="{{ url('/blog-details/' . $blog->slug) }}">
+                            {{ $blog->title }}
+                        </a>
+                    </h2>
+                    <div class="cs_blog_avater d-flex align-items-center">
+                        <img src="{{ asset('public/uploads/blogs/author.webp') }}" alt="{{ $blog->author_name }} avatar">
+                        <div class="cs_ml_20">
+                            <h2 class="cs_blog_name cs_font_20 cs_semi_bold mb-0">Piyush kumawat</h2>
+                            <p class="cs_blog_designation cs_font_16 cs_normal mb-0">{{ \Carbon\Carbon::parse($blog->published_at)->format('d M Y') }}</p>
+                        </div>
+                    </div>
+                    <a href="{{ url('/blog-details/' . $blog->slug) }}"
+                        class="cs_circle_btn cs_style_1 cs_type_1 cs_accent_color_2 cs_center rounded-circle">
+                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 10L10 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M1 1H10V10" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 10L10 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M1 1H10V10" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        @endif
+    @endforeach
+</div>
             </div>
             <div class="cs_height_150 cs_height_lg_80"></div>
         </section>
@@ -941,8 +1125,12 @@
                             <div class="cs_height_25 cs_height_lg_10"></div>
 
                             <p class="mb-0">
-                                With hands-on experience in <strong class="cs_primary_color">Laravel, PHP, and MySQL</strong>, I have successfully developed and optimized <strong class="cs_primary_color">e-commerce platforms, coin distribution systems, and custom web applications</strong> for businesses in diverse industries.
-                                My focus is on <strong class="cs_primary_color">performance, security, and scalability</strong>, ensuring seamless digital solutions that drive business success.
+                                With hands-on experience in <strong class="cs_primary_color">Laravel, PHP, and
+                                    MySQL</strong>, I have successfully developed and optimized <strong
+                                    class="cs_primary_color">e-commerce platforms, coin distribution systems, and custom
+                                    web applications</strong> for businesses in diverse industries.
+                                My focus is on <strong class="cs_primary_color">performance, security, and
+                                    scalability</strong>, ensuring seamless digital solutions that drive business success.
                             </p>
 
                         </div>
@@ -991,13 +1179,15 @@
                             </div> --}}
                             <div class="cs_brand overflow-hidden cs_radius_10 text-center">
                                 <div class="cs_brand_logo_wrap cs_center cs_brand_bg_5">
-                                    <img class="cs_brand_logo" src="public/assets/img/client/Matrimony.png" alt="">
+                                    <img class="cs_brand_logo" src="public/assets/img/client/Matrimony.png"
+                                        alt="">
                                 </div>
                                 <p class="m-0 cs_white_bg">Matrimonial Portal</p>
                             </div>
                             <div class="cs_brand overflow-hidden cs_radius_10 text-center">
                                 <div class="cs_brand_logo_wrap cs_center cs_brand_bg_6">
-                                    <img class="cs_brand_logo" src="public/assets/img/client/E-Commercepng.png" alt="">
+                                    <img class="cs_brand_logo" src="public/assets/img/client/E-Commercepng.png"
+                                        alt="">
                                 </div>
                                 <p class="m-0 cs_white_bg">Custom E-Commerce</p>
                             </div>

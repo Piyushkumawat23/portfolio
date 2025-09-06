@@ -49,9 +49,9 @@
     <link rel="stylesheet" href="{{ asset('public/assets/css/plugins/select2.min.css') }}">
     <link rel="stylesheet" href="{{ asset('public/assets/css/plugins/animate.css') }}">
     <link rel="stylesheet" href="{{ asset('public/assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/assets/css/development.css') }}">
 
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
+    {{-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> --}}
       <!-- Schema JSON-LD -->
 
     <script type="application/ld+json">
@@ -197,6 +197,7 @@
   <script src="{{ asset('public/assets/js/plugins/odometer.min.js') }}"></script>
   <script src="{{ asset('public/assets/js/plugins/wow.min.js') }}"></script>
   <script src="{{ asset('public/assets/js/main.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 
   <script>

@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="{{ asset('public/assets/admin/css/adminlte.css') }}">
 
 
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!--end::Required Plugin(AdminLTE)-->
     <!-- apexcharts -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apexcharts@3.37.1/dist/apexcharts.css"
@@ -104,6 +105,16 @@
                     </li>
                     <li class="nav-item d-none d-md-block"><a href="#" class="nav-link">Home</a></li>
                     <li class="nav-item d-none d-md-block"><a href="#" class="nav-link">Contact</a></li>
+                    <li class="nav-item d-none d-md-block">
+                        <a href="{{ route('blogs.index') }}" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item d-none d-md-block">
+                        <a href="{{ route('categories.index') }}" class="nav-link">categories</a>
+                    </li>
+                    <li class="nav-item d-none d-md-block">
+                        <a href="{{ route('admin.uploads.index') }}" class="nav-link">Upload</a>
+                    </li>
+
                 </ul>
                 <!--end::Start Navbar Links-->
                 <!--begin::End Navbar Links-->
@@ -850,6 +861,11 @@
     </div>
     <!--end::App Wrapper-->
     <!--begin::Script-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+
     <!--begin::Third Party Plugin(OverlayScrollbars)-->
     <script src="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.10.1/browser/overlayscrollbars.browser.es6.min.js"
         integrity="sha256-dghWARbRe2eLlIJ56wNB+b760ywulqK3DzZYEpsg2fQ=" crossorigin="anonymous"></script>
