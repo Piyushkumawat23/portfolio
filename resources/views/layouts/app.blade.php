@@ -2,54 +2,55 @@
 <html class="no-js" lang="en">
 
 <head>
-    <!-- Meta Tags -->
+    <!-- Basic Meta Tags -->
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Piyush">
     <meta name="language" content="English">
-    {{-- <title>Piyush - Index</title>  --}}
-    <meta name="description" content="I'm Piyush, a Laravel and PHP backend developer specializing in MVC, MySQL, and API integration.">
-    <meta name="keywords" content="Piyush, Laravel Developer, PHP Developer, Backend Developer, MVC, REST API, MySQL, Web Development">
 
-      <!-- Open Graph Tags -->
-    <meta property="og:title" content="Piyush - PHP & Laravel Backend Developer" />
-    <meta property="og:description" content="I’m Piyush, a backend developer specializing in Laravel, MVC, and API development." />
-    <meta property="og:image" content="{{ asset('/public/assets/img/hero/hero_1.png') }}" />
+    <!-- Dynamic Title -->
+    <title>@yield('title', 'Piyush - Laravel & PHP Backend Developer')</title>
+
+    <!-- Dynamic Meta Description -->
+    <meta name="description" content="@yield('meta_description', 'I\'m Piyush, a Laravel and PHP backend developer specializing in MVC, MySQL, and API integration.')">
+
+    <!-- Dynamic Meta Keywords -->
+    <meta name="keywords" content="@yield('meta_keywords', 'Piyush, Laravel Developer, PHP Developer, Backend Developer, MVC, REST API, MySQL, Web Development')">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="@yield('og_title', 'Piyush - PHP & Laravel Backend Developer')" />
+    <meta property="og:description" content="@yield('og_description', 'I’m Piyush, a backend developer specializing in Laravel, MVC, and API development.')" />
+    <meta property="og:image" content="@yield('og_image', asset('/public/assets/img/hero/hero_1.png'))" />
     <meta property="og:url" content="{{ url()->current() }}" />
     <meta property="og:type" content="website" />
     <meta name="theme-color" content="#0e0e0e">
 
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="@yield('twitter_title', 'Piyush - Laravel Developer')">
+    <meta name="twitter:description" content="@yield('twitter_description', 'Experienced in Laravel, MVC architecture, and REST APIs.')">
+    <meta name="twitter:image" content="@yield('twitter_image', asset('/public/assets/img/hero/hero_1.png'))">
 
-    <!-- Twitter Cards -->
-    {{-- <meta name="twitter:card" content="summary_large_image"> --}}
-    <meta name="twitter:title" content="Piyush - Laravel Developer">
-    <meta name="twitter:description" content="Experienced in Laravel, MVC architecture, and REST APIs.">
-    {{-- <meta name="twitter:image" content="{{ asset('/public/assets/img/hero/hero_1.png') }}"> --}}
-
-
-    {{-- <link rel="canonical" href="https://piyushkumawat.in/" /> --}}
-
+    <!-- Canonical and Alternate -->
     <link rel="canonical" href="{{ url()->current() }}" />
-    <link rel="alternate" hreflang="en" href="{{ url()->current() }}" />    
-    <!-- Favicon Icon -->
+    <link rel="alternate" hreflang="en" href="{{ url()->current() }}" />
+
+
+    <meta name="msvalidate.01" content="74994E9B26F8A392675172E86F79431B" />
+
+
+    <!-- Favicon -->
     <link rel="icon" href="{{ asset('public/assets/img/p.png') }}">
-    
-    <!-- Site Title -->
-    {{-- <title>Piyush - </title> --}}
-    {{-- <title>Piyush - {{ ucfirst(request()->route()->getName()) }}</title> --}}
-    <title>Piyush - {{ ucfirst(request()->route()->getName() ?? 'Home') }}</title>
-    
-    
-      <!-- Stylesheets -->
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="{{ asset('public/assets/css/plugins/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('public/assets/css/plugins/fontawesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('public/assets/css/plugins/odometer-theme-default.css') }}">
     <link rel="stylesheet" href="{{ asset('public/assets/css/plugins/select2.min.css') }}">
     <link rel="stylesheet" href="{{ asset('public/assets/css/plugins/animate.css') }}">
     <link rel="stylesheet" href="{{ asset('public/assets/css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('public/assets/css/development.css') }}">
 
     {{-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> --}}
       <!-- Schema JSON-LD -->

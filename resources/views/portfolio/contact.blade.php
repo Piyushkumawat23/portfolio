@@ -1,5 +1,15 @@
 @extends('layouts.app')
+@section('title', 'Contact Piyush - Hire Laravel Developer')
+@section('meta_description', 'Get in touch with Piyush, an experienced Laravel & PHP developer. Reach out for web development projects, freelancing, or collaboration.')
+@section('meta_keywords', 'Contact Piyush, Laravel Developer Contact, Hire PHP Developer, Web Developer India')
 
+@section('og_title', 'Contact Piyush - Laravel & PHP Expert')
+@section('og_description', 'Reach out to Piyush for any Laravel, backend development, or freelance project inquiries.')
+@section('og_image', asset('public/assets/img/contact_og.jpg'))
+
+@section('twitter_title', 'Contact Laravel Developer - Piyush')
+@section('twitter_description', 'Want to hire a Laravel backend developer? Contact Piyush for your next web project.')
+@section('twitter_image', asset('public/assets/img/contact_og.jpg'))
 @section('content')
     <!-- Main content inside start-->
     <main>

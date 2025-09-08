@@ -1,5 +1,20 @@
 @extends('layouts.app')
 
+
+@section('title', 'About Piyush - Laravel Expert')
+@section('meta_description', 'Know more about Piyush, a passionate backend developer skilled in Laravel, PHP, and MySQL.')
+@section('meta_keywords', 'About Piyush, Laravel Developer India, PHP Developer')
+
+@section('og_title', 'Meet Piyush - Laravel Backend Expert')
+@section('og_description', 'Explore the journey of Piyush, a professional backend developer.')
+@section('og_image', asset('public/assets/img/about_og.jpg'))
+
+@section('twitter_title', 'About Piyush')
+@section('twitter_description', 'Discover the story of Piyush - Laravel developer & tech enthusiast.')
+@section('twitter_image', asset('public/assets/img/about_og.jpg'))
+
+
+
 @section('content')
     <!-- End Header Section -->
 

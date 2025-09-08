@@ -1,5 +1,18 @@
 @extends('layouts.app')
 
+@section('title', 'FAQs - Piyush | Laravel & PHP Developer')
+@section('meta_description', 'Find answers to common questions about working with Piyush, a professional Laravel backend developer. Get clarity on services, availability, and process.')
+@section('meta_keywords', 'Laravel Developer FAQ, Piyush FAQs, Backend Developer Questions, Freelance PHP Developer FAQ')
+
+@section('og_title', 'Frequently Asked Questions - Piyush')
+@section('og_description', 'Explore frequently asked questions about Piyush\'s Laravel development services, timeline, project handling, and more.')
+@section('og_image', asset('public/assets/img/faq_og.jpg'))
+
+@section('twitter_title', 'FAQs - Piyush | Laravel Developer')
+@section('twitter_description', 'Answers to common questions about working with Piyush – Laravel backend expert.')
+@section('twitter_image', asset('public/assets/img/faq_og.jpg'))
+
+
 @section('content')
 
   <!-- End Header Section -->
