@@ -2,6 +2,9 @@
 <html class="no-js" lang="en">
 
 <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7802640688646022"
+        crossorigin="anonymous"></script>
+
     <!-- Basic Meta Tags -->
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -39,7 +42,7 @@
 
 
     <meta name="msvalidate.01" content="74994E9B26F8A392675172E86F79431B" />
-
+    <meta name="google-adsense-account" content="ca-pub-7802640688646022">
 
     <!-- Favicon -->
     <link rel="icon" href="{{ asset('public/assets/img/p.png') }}">
@@ -76,10 +79,13 @@
         }
         </script>
 
-        
 </head>
 
 <body>
+    
+    <amp-auto-ads type="adsense"
+        data-ad-client="ca-pub-7802640688646022">
+</amp-auto-ads>
     <div class="cs_preloader cs_center">
         <div class="cs_preloader_in"></div>
     </div>
@@ -188,6 +194,16 @@
       <div class="cs_copyright"  style="margin-top: 15px;">© 2025 <a href="mailto:piyushkumawat90607@gmail.com">Piyush Kumawat</a>. All rights reserved.</div>
 
     </div>
+    {{-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7802640688646022"
+     crossorigin="anonymous"></script>
+<!-- piyush -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:1200px;height:50px"
+     data-ad-client="ca-pub-7802640688646022"
+     data-ad-slot="5361819804"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script> --}}
   </footer>
   <!-- End Footer -->
 

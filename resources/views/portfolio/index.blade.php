@@ -443,6 +443,8 @@
                             </a>
                         </div>
                     @endforeach
+                    
+                    
                     {{-- <div class="cs_isotop_item">
                         <div class="cs_portfolio cs_style_2 cs_radius_20 position-relative">
                             <div class="cs_browser cs_style_1">
@@ -516,6 +518,18 @@
                             </a>
                         </div>
                     </div>
+                    
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7802640688646022"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-g1-1v+b-o3+15p"
+     data-ad-client="ca-pub-7802640688646022"
+     data-ad-slot="3587921712"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
                 </div>
             </div>
             <div class="cs_height_150 cs_height_lg_80"></div>
