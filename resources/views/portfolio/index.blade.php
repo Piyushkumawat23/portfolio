@@ -381,7 +381,8 @@
         <!-- End About Section -->
 
         <!-- Start Portfolio Section -->
-        <section class="cs_filled_bg cs_100_bg" data-src="public/assets/img/bg/protfolio_bg2.png">
+        {{-- <section class="cs_filled_bg cs_100_bg" data-src="public/assets/img/bg/protfolio_bg2.png"> --}}
+        <section class="cs_filled_bg cs_100_bg" data-src="public/assets/img/bg/protfolio_bg2.webp">
             <div class="cs_height_150 cs_height_lg_80"></div>
             <div class="container">
                 <div class="cs_isotop cs_isotop_col_2 cs_has_gutter_80">
@@ -538,7 +539,8 @@
 
         <!-- Start Funfact Section -->
         <section class="cs_funfact_2_wrap">
-            <div class="cs_funfact_bg cs_filled_bg" data-src="public/assets/img/bg/funfact_bg_1.svg"></div>
+            {{-- <div class="cs_funfact_bg cs_filled_bg" data-src="public/assets/img/bg/funfact_bg_1.svg"></div> --}}
+            <div class="cs_funfact_bg cs_filled_bg" data-src="public/assets/img/bg/funfact_bg_1.webp"></div>
             <div class="container">
                 <div class="row cs_gap_40">
                     <div class="col-lg-4 cs_mt_40">
@@ -832,7 +834,8 @@
         <!-- End Testimonial Section -->
 
         <!-- Start Blog Section -->
-        <section class="cs_filled_bg" data-src="public/assets/img/bg/blog_bg_2.png">
+        {{-- <section class="cs_filled_bg" data-src="public/assets/img/bg/blog_bg_2.png"> --}}
+        <section class="cs_filled_bg" data-src="public/assets/img/bg/blog_bg_2.webp">
             <div class="cs_height_145 cs_height_lg_75"></div>
             <div class="container">
                 <div class="d-md-flex justify-content-between">

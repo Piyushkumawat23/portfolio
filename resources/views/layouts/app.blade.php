@@ -172,7 +172,8 @@
 
   <!-- Start Footer -->
   <footer class="cs_footer cs_style_1 cs_filled_bg position-relative" 
-    data-src="{{ asset('public/assets/img/bg/footer_bg.svg') }}">
+  data-src="{{ asset('public/assets/img/bg/footer_bg.webp') }}">
+    {{-- data-src="{{ asset('public/assets/img/bg/footer_bg.svg') }}"> --}}
 
     <div class="position-absolute cs_footer_shape_1">
         <img src="{{ asset('/public/assets/img/footer_shape.svg') }}" alt="">
